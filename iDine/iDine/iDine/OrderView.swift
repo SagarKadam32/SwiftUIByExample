@@ -30,7 +30,6 @@ struct OrderView: View {
                 }
             }
             .navigationTitle("Order")
-            .navigationBarTitleDisplayMode(.inline)
             .listStyle(.insetGrouped)
         }
 
