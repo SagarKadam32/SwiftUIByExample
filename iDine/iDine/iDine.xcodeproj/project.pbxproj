@@ -17,6 +17,7 @@
 		969944CE28C79B42001F98D4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944CA28C79B42001F98D4 /* Order.swift */; };
 		969C571628C8E2AE00D1BA9C /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571528C8E2AE00D1BA9C /* ItemRow.swift */; };
 		969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571728C8EBDE00D1BA9C /* ItemDetail.swift */; };
+		969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571928C8FD0C00D1BA9C /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		969944CA28C79B42001F98D4 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		969C571528C8E2AE00D1BA9C /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 		969C571728C8EBDE00D1BA9C /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		969C571928C8FD0C00D1BA9C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				969944BB28C799A5001F98D4 /* ContentView.swift */,
 				969C571528C8E2AE00D1BA9C /* ItemRow.swift */,
 				969C571728C8EBDE00D1BA9C /* ItemDetail.swift */,
+				969C571928C8FD0C00D1BA9C /* OrderView.swift */,
 				969944BD28C799A7001F98D4 /* Assets.xcassets */,
 				969944BF28C799A7001F98D4 /* Preview Content */,
 			);
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
+				969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
