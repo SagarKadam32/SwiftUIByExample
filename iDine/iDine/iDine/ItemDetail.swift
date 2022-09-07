@@ -14,13 +14,18 @@ struct ItemDetail: View {
         VStack {
             Image(item.mainImage)
             Text(item.description)
+                .padding()
+            Spacer()
         }
         .navigationTitle(item.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDetail(item: MenuItem.example)
+        NavigationView {
+            ItemDetail(item: MenuItem.example)
+        }
     }
 }
