@@ -19,6 +19,7 @@
 		969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571728C8EBDE00D1BA9C /* ItemDetail.swift */; };
 		969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571928C8FD0C00D1BA9C /* OrderView.swift */; };
 		969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571B28C8FFBD00D1BA9C /* MainView.swift */; };
+		969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571D28C90E8B00D1BA9C /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		969C571728C8EBDE00D1BA9C /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		969C571928C8FD0C00D1BA9C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		969C571B28C8FFBD00D1BA9C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		969C571D28C90E8B00D1BA9C /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				969944C928C79B42001F98D4 /* Menu.swift */,
 				969944CA28C79B42001F98D4 /* Order.swift */,
 				969C571928C8FD0C00D1BA9C /* OrderView.swift */,
+				969C571D28C90E8B00D1BA9C /* CheckoutView.swift */,
 				969C571B28C8FFBD00D1BA9C /* MainView.swift */,
 				969944BB28C799A5001F98D4 /* ContentView.swift */,
 				969C571528C8E2AE00D1BA9C /* ItemRow.swift */,
@@ -164,6 +167,7 @@
 			files = (
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
+				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,
 				969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
