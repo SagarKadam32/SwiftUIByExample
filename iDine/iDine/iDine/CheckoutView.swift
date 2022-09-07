@@ -9,8 +9,13 @@ import SwiftUI
 
 struct CheckoutView: View {
     @EnvironmentObject var order: Order
-    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    
     @State private var paymentType = "Cash"
+    @State private var addLoyaltyDetails = false
+    @State private var loyaltyNumber = ""
+    
+    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+
     
     var body: some View {
         Form {
@@ -19,6 +24,11 @@ struct CheckoutView: View {
                     ForEach(paymentTypes, id: \.self) {
                         Text($0)
                     }
+                }
+                
+                Toggle("Add iDine loyalty card", isOn: $addLoyaltyDetails.animation())
+                if addLoyaltyDetails {
+                    TextField("Enter your iDine ID", text: $loyaltyNumber)
                 }
             }
         }
