@@ -54,6 +54,10 @@ struct MyLearnings: View {
                             NavigationLink(destination: Example_1_9()) {
                                 Text("9. How to mark content as a placeholder using redacted()")
                             }
+                            
+                            NavigationLink(destination: Example_1_10()) {
+                                Text("10. How to mark content as private using privacySensitive()")
+                            }
                         
                         }
 
