@@ -58,6 +58,10 @@ struct MyLearnings: View {
                             NavigationLink(destination: Example_1_10()) {
                                 Text("10. How to mark content as private using privacySensitive()")
                             }
+                            
+                            NavigationLink(destination: Example_1_11()) {
+                                Text("11. How to render Markdown content in text")
+                            }
                         
                         }
 
