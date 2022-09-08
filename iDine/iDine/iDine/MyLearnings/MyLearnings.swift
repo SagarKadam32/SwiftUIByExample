@@ -42,6 +42,10 @@ struct MyLearnings: View {
                             NavigationLink(destination: Example_1_6()) {
                                 Text("6. How to format dates inside text views")
                             }
+                            
+                            NavigationLink(destination: Example_1_7()) {
+                                Text("7. How to make TextField uppercase or lowercase using textCase()")
+                            }
                        
                         
                         }
