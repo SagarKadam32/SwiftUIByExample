@@ -22,8 +22,8 @@ struct MyLearnings: View {
                         Text("1. How to create static labels with a Text view")
                     }
                     
-                    NavigationLink(destination: Example_1_1()) {
-                        Text("2. How to create static labels with a Text view")
+                    NavigationLink(destination: Example_1_2()) {
+                        Text("2. How to style text views with fonts, colors, line spacing, and more")
                     }
                 }
             }

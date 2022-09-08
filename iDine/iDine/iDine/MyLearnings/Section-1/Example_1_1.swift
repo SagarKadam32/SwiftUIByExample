@@ -32,7 +32,7 @@ struct Example_1_1: View {
             .padding()
 
         }
-        .navigationTitle("Working with static text")
+        .navigationTitle("1. How to create static labels with a Text view")
         .navigationBarTitleDisplayMode(.inline)
 
         

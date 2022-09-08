@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */; };
+		9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5D428C9A7160053C255 /* Example_1_2.swift */; };
 		969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944B928C799A5001F98D4 /* iDineApp.swift */; };
 		969944BC28C799A5001F98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944BB28C799A5001F98D4 /* ContentView.swift */; };
 		969944BE28C799A7001F98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969944BD28C799A7001F98D4 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_1.swift; sourceTree = "<group>"; };
+		9662C5D428C9A7160053C255 /* Example_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_2.swift; sourceTree = "<group>"; };
 		969944B628C799A5001F98D4 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969944B928C799A5001F98D4 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		969944BB28C799A5001F98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,9 +60,42 @@
 			isa = PBXGroup;
 			children = (
 				969C571F28C9234D00D1BA9C /* MyLearnings.swift */,
-				9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */,
+				9662C5D328C9A6F30053C255 /* Section-1 */,
 			);
 			path = MyLearnings;
+			sourceTree = "<group>";
+		};
+		9662C5D128C9A6890053C255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				969944CA28C79B42001F98D4 /* Order.swift */,
+				969944C828C79B42001F98D4 /* Helper.swift */,
+				969944C728C79B42001F98D4 /* menu.json */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9662C5D228C9A6AC0053C255 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				969C571928C8FD0C00D1BA9C /* OrderView.swift */,
+				969C571B28C8FFBD00D1BA9C /* MainView.swift */,
+				969944C928C79B42001F98D4 /* Menu.swift */,
+				969C571528C8E2AE00D1BA9C /* ItemRow.swift */,
+				969C571728C8EBDE00D1BA9C /* ItemDetail.swift */,
+				969944BB28C799A5001F98D4 /* ContentView.swift */,
+				969C571D28C90E8B00D1BA9C /* CheckoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9662C5D328C9A6F30053C255 /* Section-1 */ = {
+			isa = PBXGroup;
+			children = (
+				9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */,
+				9662C5D428C9A7160053C255 /* Example_1_2.swift */,
+			);
+			path = "Section-1";
 			sourceTree = "<group>";
 		};
 		969944AD28C799A5001F98D4 = {
@@ -82,18 +117,10 @@
 		969944B828C799A5001F98D4 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
-				9662C5CE28C9A3A50053C255 /* MyLearnings */,
 				969944B928C799A5001F98D4 /* iDineApp.swift */,
-				969944C828C79B42001F98D4 /* Helper.swift */,
-				969944C728C79B42001F98D4 /* menu.json */,
-				969944C928C79B42001F98D4 /* Menu.swift */,
-				969944CA28C79B42001F98D4 /* Order.swift */,
-				969C571928C8FD0C00D1BA9C /* OrderView.swift */,
-				969C571D28C90E8B00D1BA9C /* CheckoutView.swift */,
-				969C571B28C8FFBD00D1BA9C /* MainView.swift */,
-				969944BB28C799A5001F98D4 /* ContentView.swift */,
-				969C571528C8E2AE00D1BA9C /* ItemRow.swift */,
-				969C571728C8EBDE00D1BA9C /* ItemDetail.swift */,
+				9662C5D228C9A6AC0053C255 /* Views */,
+				9662C5D128C9A6890053C255 /* Supporting Files */,
+				9662C5CE28C9A3A50053C255 /* MyLearnings */,
 				969944BD28C799A7001F98D4 /* Assets.xcassets */,
 				969944BF28C799A7001F98D4 /* Preview Content */,
 			);
@@ -186,6 +213,7 @@
 				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
+				9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
 				969C571628C8E2AE00D1BA9C /* ItemRow.swift in Sources */,
 				969944CD28C79B42001F98D4 /* Menu.swift in Sources */,
