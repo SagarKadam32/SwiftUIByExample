@@ -23,7 +23,8 @@ struct Example_1_7: View {
             }
             .navigationTitle("7. How to make TextField uppercase or lowercase using textCase()")
             .navigationBarTitleDisplayMode(.inline)
-        }    }
+        }
+    }
 }
 
 struct Example_1_7_Previews: PreviewProvider {

@@ -47,6 +47,9 @@ struct MyLearnings: View {
                                 Text("7. How to make TextField uppercase or lowercase using textCase()")
                             }
                        
+                            NavigationLink(destination: Example_1_8()) {
+                                Text("8. How to show text and an icon side by side using Label")
+                            }
                         
                         }
 
