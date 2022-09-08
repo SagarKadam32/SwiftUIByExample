@@ -25,6 +25,10 @@ struct MyLearnings: View {
                     NavigationLink(destination: Example_1_2()) {
                         Text("2. How to style text views with fonts, colors, line spacing, and more")
                     }
+                    
+                    NavigationLink(destination: Example_1_3()) {
+                        Text("3. How to adjust text alignment using multilineTextAlignment()")
+                    }
                 }
             }
             .navigationTitle("My Learnings")

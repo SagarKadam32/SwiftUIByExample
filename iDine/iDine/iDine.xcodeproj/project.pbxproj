@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */; };
 		9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5D428C9A7160053C255 /* Example_1_2.swift */; };
+		968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F064628CA28AD00D364E4 /* Example_1_3.swift */; };
 		969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944B928C799A5001F98D4 /* iDineApp.swift */; };
 		969944BC28C799A5001F98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944BB28C799A5001F98D4 /* ContentView.swift */; };
 		969944BE28C799A7001F98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969944BD28C799A7001F98D4 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_1.swift; sourceTree = "<group>"; };
 		9662C5D428C9A7160053C255 /* Example_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_2.swift; sourceTree = "<group>"; };
+		968F064628CA28AD00D364E4 /* Example_1_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_3.swift; sourceTree = "<group>"; };
 		969944B628C799A5001F98D4 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969944B928C799A5001F98D4 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		969944BB28C799A5001F98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */,
 				9662C5D428C9A7160053C255 /* Example_1_2.swift */,
+				968F064628CA28AD00D364E4 /* Example_1_3.swift */,
 			);
 			path = "Section-1";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */,
 				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
+				968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
 				9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
