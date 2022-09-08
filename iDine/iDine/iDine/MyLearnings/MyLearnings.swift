@@ -62,6 +62,10 @@ struct MyLearnings: View {
                             NavigationLink(destination: Example_1_11()) {
                                 Text("11. How to render Markdown content in text")
                             }
+                            
+                            NavigationLink(destination: Example_1_12()) {
+                                Text("12. How to let users select text")
+                            }
                         
                         }
 
