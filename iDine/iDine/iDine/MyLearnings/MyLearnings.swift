@@ -50,6 +50,10 @@ struct MyLearnings: View {
                             NavigationLink(destination: Example_1_8()) {
                                 Text("8. How to show text and an icon side by side using Label")
                             }
+                            
+                            NavigationLink(destination: Example_1_9()) {
+                                Text("9. How to mark content as a placeholder using redacted()")
+                            }
                         
                         }
 

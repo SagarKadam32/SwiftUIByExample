@@ -19,7 +19,8 @@ struct Example_1_6: View {
             }
             .navigationTitle("6. How to format dates inside text views")
             .navigationBarTitleDisplayMode(.inline)
-        }    }
+        }
+    }
 }
 
 struct Example_1_6_Previews: PreviewProvider {
