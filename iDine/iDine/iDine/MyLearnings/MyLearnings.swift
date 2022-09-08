@@ -33,6 +33,10 @@ struct MyLearnings: View {
                     NavigationLink(destination: Example_1_4()) {
                         Text("4. How to format text inside text views")
                     }
+                    
+                    NavigationLink(destination: Example_1_5()) {
+                        Text("5. How to add spacing between letters in text")
+                    }
                 }
             }
             .navigationTitle("My Learnings")
