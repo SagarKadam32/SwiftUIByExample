@@ -18,6 +18,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
                 }
+            MyLearnings()
+                .tabItem {
+                    Label("My Learning", systemImage: "pencil.and.outline")
+                }
         }
 
     }

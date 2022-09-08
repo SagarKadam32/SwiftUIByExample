@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */; };
 		969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944B928C799A5001F98D4 /* iDineApp.swift */; };
 		969944BC28C799A5001F98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944BB28C799A5001F98D4 /* ContentView.swift */; };
 		969944BE28C799A7001F98D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969944BD28C799A7001F98D4 /* Assets.xcassets */; };
@@ -20,9 +21,11 @@
 		969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571928C8FD0C00D1BA9C /* OrderView.swift */; };
 		969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571B28C8FFBD00D1BA9C /* MainView.swift */; };
 		969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571D28C90E8B00D1BA9C /* CheckoutView.swift */; };
+		969C572028C9234D00D1BA9C /* MyLearnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571F28C9234D00D1BA9C /* MyLearnings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_1.swift; sourceTree = "<group>"; };
 		969944B628C799A5001F98D4 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969944B928C799A5001F98D4 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
 		969944BB28C799A5001F98D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		969C571928C8FD0C00D1BA9C /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		969C571B28C8FFBD00D1BA9C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		969C571D28C90E8B00D1BA9C /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		969C571F28C9234D00D1BA9C /* MyLearnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLearnings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9662C5CE28C9A3A50053C255 /* MyLearnings */ = {
+			isa = PBXGroup;
+			children = (
+				969C571F28C9234D00D1BA9C /* MyLearnings.swift */,
+				9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */,
+			);
+			path = MyLearnings;
+			sourceTree = "<group>";
+		};
 		969944AD28C799A5001F98D4 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 		969944B828C799A5001F98D4 /* iDine */ = {
 			isa = PBXGroup;
 			children = (
+				9662C5CE28C9A3A50053C255 /* MyLearnings */,
 				969944B928C799A5001F98D4 /* iDineApp.swift */,
 				969944C828C79B42001F98D4 /* Helper.swift */,
 				969944C728C79B42001F98D4 /* menu.json */,
@@ -169,11 +183,13 @@
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
 				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,
 				969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */,
+				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
 				969C571628C8E2AE00D1BA9C /* ItemRow.swift in Sources */,
 				969944CD28C79B42001F98D4 /* Menu.swift in Sources */,
+				969C572028C9234D00D1BA9C /* MyLearnings.swift in Sources */,
 				969944CC28C79B42001F98D4 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
