@@ -25,6 +25,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_4()) {
                 Text("4. How to place content outside the safe area")
             }
+            
+            NavigationLink(destination: Example_2_5()) {
+                Text("5.  to return different view types")
+            }
         }
     }
 }
