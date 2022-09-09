@@ -21,6 +21,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_3()) {
                 Text("3. How to provide relative sizes using GeometryReader")
             }
+            
+            NavigationLink(destination: Example_2_4()) {
+                Text("4. How to place content outside the safe area")
+            }
         }
     }
 }
