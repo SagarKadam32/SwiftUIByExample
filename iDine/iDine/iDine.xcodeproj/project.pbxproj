@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */; };
 		9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5D428C9A7160053C255 /* Example_1_2.swift */; };
+		967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A628CBB2DD0027F77E /* Example_2_1.swift */; };
+		967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A828CBB70A0027F77E /* Example_2_2.swift */; };
+		968DFB3628CB5DEC00657D72 /* Example_1_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DFB3528CB5DEC00657D72 /* Example_1_Main.swift */; };
+		968DFB3928CB822300657D72 /* Example_2_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DFB3828CB822300657D72 /* Example_2_Main.swift */; };
 		968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F064628CA28AD00D364E4 /* Example_1_3.swift */; };
 		968F064928CA2B1300D364E4 /* Example_1_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F064828CA2B1300D364E4 /* Example_1_4.swift */; };
 		968F064B28CA41D900D364E4 /* Example_1_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F064A28CA41D900D364E4 /* Example_1_5.swift */; };
@@ -38,6 +42,10 @@
 /* Begin PBXFileReference section */
 		9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_1.swift; sourceTree = "<group>"; };
 		9662C5D428C9A7160053C255 /* Example_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_2.swift; sourceTree = "<group>"; };
+		967648A628CBB2DD0027F77E /* Example_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_1.swift; sourceTree = "<group>"; };
+		967648A828CBB70A0027F77E /* Example_2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_2.swift; sourceTree = "<group>"; };
+		968DFB3528CB5DEC00657D72 /* Example_1_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_Main.swift; sourceTree = "<group>"; };
+		968DFB3828CB822300657D72 /* Example_2_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_Main.swift; sourceTree = "<group>"; };
 		968F064628CA28AD00D364E4 /* Example_1_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_3.swift; sourceTree = "<group>"; };
 		968F064828CA2B1300D364E4 /* Example_1_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_4.swift; sourceTree = "<group>"; };
 		968F064A28CA41D900D364E4 /* Example_1_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_5.swift; sourceTree = "<group>"; };
@@ -81,6 +89,7 @@
 			children = (
 				969C571F28C9234D00D1BA9C /* MyLearnings.swift */,
 				9662C5D328C9A6F30053C255 /* Section-1 */,
+				968DFB3728CB81F200657D72 /* Section-2 */,
 			);
 			path = MyLearnings;
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 		9662C5D328C9A6F30053C255 /* Section-1 */ = {
 			isa = PBXGroup;
 			children = (
+				968DFB3528CB5DEC00657D72 /* Example_1_Main.swift */,
 				9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */,
 				9662C5D428C9A7160053C255 /* Example_1_2.swift */,
 				968F064628CA28AD00D364E4 /* Example_1_3.swift */,
@@ -126,6 +136,16 @@
 				968F065828CA74A800D364E4 /* Example_1_12.swift */,
 			);
 			path = "Section-1";
+			sourceTree = "<group>";
+		};
+		968DFB3728CB81F200657D72 /* Section-2 */ = {
+			isa = PBXGroup;
+			children = (
+				968DFB3828CB822300657D72 /* Example_2_Main.swift */,
+				967648A628CBB2DD0027F77E /* Example_2_1.swift */,
+				967648A828CBB70A0027F77E /* Example_2_2.swift */,
+			);
+			path = "Section-2";
 			sourceTree = "<group>";
 		};
 		969944AD28C799A5001F98D4 = {
@@ -241,16 +261,20 @@
 				968F064D28CA546E00D364E4 /* Example_1_6.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
 				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,
+				968DFB3928CB822300657D72 /* Example_2_Main.swift in Sources */,
 				969C571A28C8FD0D00D1BA9C /* OrderView.swift in Sources */,
 				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				968F065928CA74A800D364E4 /* Example_1_12.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */,
+				967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */,
 				968F064928CA2B1300D364E4 /* Example_1_4.swift in Sources */,
 				968F065728CA73EE00D364E4 /* Example_1_11.swift in Sources */,
 				969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */,
 				968F064F28CA55E900D364E4 /* Example_1_7.swift in Sources */,
+				967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */,
 				968F065328CA6FA500D364E4 /* Example_1_9.swift in Sources */,
+				968DFB3628CB5DEC00657D72 /* Example_1_Main.swift in Sources */,
 				9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */,
 				968F065528CA715500D364E4 /* Example_1_10.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
