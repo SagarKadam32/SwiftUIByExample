@@ -17,6 +17,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_2()) {
                 Text("2. How to control spacing around individual views using padding")
             }
+            
+            NavigationLink(destination: Example_2_3()) {
+                Text("3. How to provide relative sizes using GeometryReader")
+            }
         }
     }
 }
