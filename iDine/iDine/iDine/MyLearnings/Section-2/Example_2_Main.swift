@@ -56,6 +56,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_7()) {
                 Text("7.  How to control layout priority using layoutPriority()")
             }
+            
+            NavigationLink(destination: Example_2_8()) {
+                Text("8.  How to make two views the same width or height")
+            }
         }
     }
 }
