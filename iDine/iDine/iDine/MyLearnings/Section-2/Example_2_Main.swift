@@ -7,6 +7,25 @@
 
 import SwiftUI
 
+/*
+ ScrollView {
+     VStack(spacing: 10) {
+         VStack {
+             
+         }
+         
+         VStack {
+             
+         }
+         
+         VStack {
+             
+         }
+     }
+ }
+ 
+ */
+
 struct Example_2_Main: View {
     var body: some View {
         Group {
@@ -32,6 +51,10 @@ struct Example_2_Main: View {
             
             NavigationLink(destination: Example_2_6()) {
                 Text("6.  How to create views in a loop using ForEach")
+            }
+            
+            NavigationLink(destination: Example_2_7()) {
+                Text("7.  How to control layout priority using layoutPriority()")
             }
         }
     }
