@@ -50,23 +50,29 @@ struct Example_2_Main: View {
             }
             
             NavigationLink(destination: Example_2_6()) {
-                Text("6.  How to create views in a loop using ForEach")
+                Text("6. How to create views in a loop using ForEach")
             }
             
             NavigationLink(destination: Example_2_7()) {
-                Text("7.  How to control layout priority using layoutPriority()")
+                Text("7. How to control layout priority using layoutPriority()")
             }
             
             NavigationLink(destination: Example_2_8()) {
-                Text("8.  How to make two views the same width or height")
+                Text("8. How to make two views the same width or height")
             }
             
             NavigationLink(destination: Example_2_9()) {
-                Text("9.  How to provide visual structure using foreground styles")
+                Text("9. How to provide visual structure using foreground styles")
             }
             
             NavigationLink(destination: Example_2_10()) {
-                Text("10.  How to inset the safe area with custom content")
+                Text("10. How to inset the safe area with custom content")
+            }
+        }
+        
+        Group {
+            NavigationLink(destination: Example_2_11()) {
+                Text("11. How to hide the home indicator and other system UI")
             }
         }
     }
