@@ -9,17 +9,50 @@ import SwiftUI
 
 struct Example_3_1: View {
     var body: some View {
-        VStack {
+        ScrollView {
             VStack {
-                Text("SwiftUI")
-                Text("rocks")
-            }
-            
-            HStack {
-                Text("SwiftUI")
-                Text("rocks")
+                VStack {
+                    Text("SwiftUI")
+                    Text("rocks")
+                }
+                
+                HStack {
+                    Text("SwiftUI")
+                    Text("rocks")
+                }
+                
+                VStack(spacing: 50) {
+                    Text("SwiftUI")
+                    Text("rocks")
+                }
+                
+                VStack {
+                    Text("SwiftUI")
+                    Divider()
+                    Text("rocks")
+                }
+                
+                VStack(alignment: .leading) {
+                    Text("SwiftUI")
+                    Text("rocks")
+                }
+                
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("SwiftUI")
+                    Text("rocks")
+                }
+                
+                Text("How to force views to one side inside a stack using Spacer")
+                    .font(.headline)
+                VStack {
+                    Spacer()
+                    Text("Hello World")
+                    Spacer()
+                    Spacer()
+                }
             }
         }
+
 
     }
 }
