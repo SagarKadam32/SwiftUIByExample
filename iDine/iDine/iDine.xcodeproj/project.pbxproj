@@ -44,6 +44,7 @@
 		969C66A728CC50D9005EAC29 /* Example_2_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66A628CC50D9005EAC29 /* Example_2_7.swift */; };
 		969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66A828CC5921005EAC29 /* Example_2_8.swift */; };
 		969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AA28CC6A02005EAC29 /* Example_2_9.swift */; };
+		969C66AD28CC6BA9005EAC29 /* Example_2_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		969C66A628CC50D9005EAC29 /* Example_2_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_7.swift; sourceTree = "<group>"; };
 		969C66A828CC5921005EAC29 /* Example_2_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_8.swift; sourceTree = "<group>"; };
 		969C66AA28CC6A02005EAC29 /* Example_2_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_9.swift; sourceTree = "<group>"; };
+		969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_10.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				969C66A628CC50D9005EAC29 /* Example_2_7.swift */,
 				969C66A828CC5921005EAC29 /* Example_2_8.swift */,
 				969C66AA28CC6A02005EAC29 /* Example_2_9.swift */,
+				969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */,
 			);
 			path = "Section-2";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				968F065928CA74A800D364E4 /* Example_1_12.swift in Sources */,
 				969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
+				969C66AD28CC6BA9005EAC29 /* Example_2_10.swift in Sources */,
 				968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */,
 				967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */,
 				968F064928CA2B1300D364E4 /* Example_1_4.swift in Sources */,

@@ -64,6 +64,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_9()) {
                 Text("9.  How to provide visual structure using foreground styles")
             }
+            
+            NavigationLink(destination: Example_2_10()) {
+                Text("10.  How to inset the safe area with custom content")
+            }
         }
     }
 }
