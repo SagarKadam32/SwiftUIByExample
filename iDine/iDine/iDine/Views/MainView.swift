@@ -10,6 +10,10 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
+            MyLearnings()
+                .tabItem {
+                    Label("My Learning", systemImage: "pencil.and.outline")
+                }
             ContentView()
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
@@ -18,10 +22,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
                 }
-            MyLearnings()
-                .tabItem {
-                    Label("My Learning", systemImage: "pencil.and.outline")
-                }
+
         }
 
     }

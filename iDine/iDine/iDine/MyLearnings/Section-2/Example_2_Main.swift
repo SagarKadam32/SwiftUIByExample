@@ -27,7 +27,11 @@ struct Example_2_Main: View {
             }
             
             NavigationLink(destination: Example_2_5()) {
-                Text("5.  to return different view types")
+                Text("5. How to return different view types")
+            }
+            
+            NavigationLink(destination: Example_2_6()) {
+                Text("6.  How to create views in a loop using ForEach")
             }
         }
     }
