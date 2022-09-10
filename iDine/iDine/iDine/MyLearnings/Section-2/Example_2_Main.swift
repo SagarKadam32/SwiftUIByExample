@@ -74,6 +74,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_11()) {
                 Text("11. How to hide the home indicator and other system UI")
             }
+            
+            NavigationLink(destination: Example_2_12()) {
+                Text("12. How to dynamically change between VStack and HStack")
+            }
         }
     }
 }

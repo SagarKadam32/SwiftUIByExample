@@ -46,6 +46,7 @@
 		969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AA28CC6A02005EAC29 /* Example_2_9.swift */; };
 		969C66AD28CC6BA9005EAC29 /* Example_2_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */; };
 		969C66AF28CC6E86005EAC29 /* Example_2_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AE28CC6E86005EAC29 /* Example_2_11.swift */; };
+		969C66B128CC709B005EAC29 /* Example_2_12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B028CC709B005EAC29 /* Example_2_12.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		969C66AA28CC6A02005EAC29 /* Example_2_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_9.swift; sourceTree = "<group>"; };
 		969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_10.swift; sourceTree = "<group>"; };
 		969C66AE28CC6E86005EAC29 /* Example_2_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_11.swift; sourceTree = "<group>"; };
+		969C66B028CC709B005EAC29 /* Example_2_12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_12.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				969C66AA28CC6A02005EAC29 /* Example_2_9.swift */,
 				969C66AC28CC6BA9005EAC29 /* Example_2_10.swift */,
 				969C66AE28CC6E86005EAC29 /* Example_2_11.swift */,
+				969C66B028CC709B005EAC29 /* Example_2_12.swift */,
 			);
 			path = "Section-2";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				967648AB28CBB8CD0027F77E /* Example_2_3.swift in Sources */,
 				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				968F065928CA74A800D364E4 /* Example_1_12.swift in Sources */,
+				969C66B128CC709B005EAC29 /* Example_2_12.swift in Sources */,
 				969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969C66AD28CC6BA9005EAC29 /* Example_2_10.swift in Sources */,
