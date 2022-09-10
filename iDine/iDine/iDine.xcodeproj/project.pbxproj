@@ -43,6 +43,7 @@
 		969C572028C9234D00D1BA9C /* MyLearnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C571F28C9234D00D1BA9C /* MyLearnings.swift */; };
 		969C66A728CC50D9005EAC29 /* Example_2_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66A628CC50D9005EAC29 /* Example_2_7.swift */; };
 		969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66A828CC5921005EAC29 /* Example_2_8.swift */; };
+		969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66AA28CC6A02005EAC29 /* Example_2_9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		969C571F28C9234D00D1BA9C /* MyLearnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLearnings.swift; sourceTree = "<group>"; };
 		969C66A628CC50D9005EAC29 /* Example_2_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_7.swift; sourceTree = "<group>"; };
 		969C66A828CC5921005EAC29 /* Example_2_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_8.swift; sourceTree = "<group>"; };
+		969C66AA28CC6A02005EAC29 /* Example_2_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				967648B028CBC6EF0027F77E /* Example_2_6.swift */,
 				969C66A628CC50D9005EAC29 /* Example_2_7.swift */,
 				969C66A828CC5921005EAC29 /* Example_2_8.swift */,
+				969C66AA28CC6A02005EAC29 /* Example_2_9.swift */,
 			);
 			path = "Section-2";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				968F065128CA56B900D364E4 /* Example_1_8.swift in Sources */,
+				969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */,
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
 				968F064D28CA546E00D364E4 /* Example_1_6.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,

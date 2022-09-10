@@ -60,6 +60,10 @@ struct Example_2_Main: View {
             NavigationLink(destination: Example_2_8()) {
                 Text("8.  How to make two views the same width or height")
             }
+            
+            NavigationLink(destination: Example_2_9()) {
+                Text("9.  How to provide visual structure using foreground styles")
+            }
         }
     }
 }
