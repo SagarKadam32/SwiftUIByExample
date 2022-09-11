@@ -32,6 +32,10 @@ struct Example_3_Main: View {
             NavigationLink(destination: Example_3_6()) {
                 Text("6. How to create 3D effects like Cover Flow using ScrollView and GeometryReader")
             }
+            
+            NavigationLink(destination: Example_3_7()) {
+                Text("7. How to lazy load views using LazyVStack and LazyHStack")
+            }
         }
     }
 }
