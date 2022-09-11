@@ -51,6 +51,7 @@
 		969C66B628CC756E005EAC29 /* Example_3_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B528CC756E005EAC29 /* Example_3_1.swift */; };
 		969C66B828CCA981005EAC29 /* Example_3_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B728CCA981005EAC29 /* Example_3_2.swift */; };
 		969C66BA28CCABAA005EAC29 /* Example_3_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B928CCABAA005EAC29 /* Example_3_3.swift */; };
+		96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB528CDC838007C60AC /* Example_3_4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		969C66B528CC756E005EAC29 /* Example_3_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_1.swift; sourceTree = "<group>"; };
 		969C66B728CCA981005EAC29 /* Example_3_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_2.swift; sourceTree = "<group>"; };
 		969C66B928CCABAA005EAC29 /* Example_3_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_3.swift; sourceTree = "<group>"; };
+		96E3EBB528CDC838007C60AC /* Example_3_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 				969C66B528CC756E005EAC29 /* Example_3_1.swift */,
 				969C66B728CCA981005EAC29 /* Example_3_2.swift */,
 				969C66B928CCABAA005EAC29 /* Example_3_3.swift */,
+				96E3EBB528CDC838007C60AC /* Example_3_4.swift */,
 			);
 			path = "Section-3";
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				969C66AF28CC6E86005EAC29 /* Example_2_11.swift in Sources */,
 				968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */,
 				967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */,
+				96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */,
 				969C66B628CC756E005EAC29 /* Example_3_1.swift in Sources */,
 				968F064928CA2B1300D364E4 /* Example_1_4.swift in Sources */,
 				968F065728CA73EE00D364E4 /* Example_1_11.swift in Sources */,

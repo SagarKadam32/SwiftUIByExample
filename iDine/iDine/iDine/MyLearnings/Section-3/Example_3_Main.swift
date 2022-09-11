@@ -20,6 +20,10 @@ struct Example_3_Main: View {
             NavigationLink(destination: Example_3_3()) {
                 Text("3. How to create different layouts using size classes\n How to automatically switch between HStack and VStack based on size class")
             }
+            
+            NavigationLink(destination: Example_3_4()) {
+                Text("4. How to add horizontal and vertical scrolling using ScrollView")
+            }
         }
     }
 }
