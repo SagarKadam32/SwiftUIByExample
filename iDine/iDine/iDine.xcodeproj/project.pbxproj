@@ -52,6 +52,7 @@
 		969C66B828CCA981005EAC29 /* Example_3_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B728CCA981005EAC29 /* Example_3_2.swift */; };
 		969C66BA28CCABAA005EAC29 /* Example_3_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969C66B928CCABAA005EAC29 /* Example_3_3.swift */; };
 		96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB528CDC838007C60AC /* Example_3_4.swift */; };
+		96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB728CDD140007C60AC /* Example_3_5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +102,7 @@
 		969C66B728CCA981005EAC29 /* Example_3_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_2.swift; sourceTree = "<group>"; };
 		969C66B928CCABAA005EAC29 /* Example_3_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_3.swift; sourceTree = "<group>"; };
 		96E3EBB528CDC838007C60AC /* Example_3_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_4.swift; sourceTree = "<group>"; };
+		96E3EBB728CDD140007C60AC /* Example_3_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 				969C66B728CCA981005EAC29 /* Example_3_2.swift */,
 				969C66B928CCABAA005EAC29 /* Example_3_3.swift */,
 				96E3EBB528CDC838007C60AC /* Example_3_4.swift */,
+				96E3EBB728CDD140007C60AC /* Example_3_5.swift */,
 			);
 			path = "Section-3";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */,
 				968F065928CA74A800D364E4 /* Example_1_12.swift in Sources */,
 				969C66B128CC709B005EAC29 /* Example_2_12.swift in Sources */,
+				96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */,
 				969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				969C66AD28CC6BA9005EAC29 /* Example_2_10.swift in Sources */,

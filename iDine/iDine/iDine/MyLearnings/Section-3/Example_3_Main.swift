@@ -24,6 +24,10 @@ struct Example_3_Main: View {
             NavigationLink(destination: Example_3_4()) {
                 Text("4. How to add horizontal and vertical scrolling using ScrollView")
             }
+            
+            NavigationLink(destination: Example_3_5()) {
+                Text("5. How to make a scroll view move to a location using ScrollViewReader")
+            }
         }
     }
 }
