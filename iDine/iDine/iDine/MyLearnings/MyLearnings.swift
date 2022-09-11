@@ -53,7 +53,7 @@ struct MyLearnings: View {
                     Divider()
                     VStack(alignment: .leading, spacing: 10) {
                         SectionHeader(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state")
-                        Example_3_Main()
+                        Example_4_Main()
                             .frame(maxWidth: .infinity,alignment: .leading)
                     }
                     Divider()
