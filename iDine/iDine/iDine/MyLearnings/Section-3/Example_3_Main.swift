@@ -14,7 +14,11 @@ struct Example_3_Main: View {
                 Text("1. How to create stacks using VStack and HStack\n How to customize stack layouts with alignment and spacing\n How to force views to one side inside a stack using Spacer")
             }
             NavigationLink(destination: Example_3_2()) {
-                Text("2. How to make a fixed size Spacer")
+                Text("2. How to make a fixed size Spacer\n How to adjust the position of a view using its offset\n How to change the order of view layering using Z index")
+            }
+            
+            NavigationLink(destination: Example_3_3()) {
+                Text("3. How to create different layouts using size classes\n How to automatically switch between HStack and VStack based on size class")
             }
         }
     }
