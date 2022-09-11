@@ -28,6 +28,10 @@ struct Example_3_Main: View {
             NavigationLink(destination: Example_3_5()) {
                 Text("5. How to make a scroll view move to a location using ScrollViewReader")
             }
+            
+            NavigationLink(destination: Example_3_6()) {
+                Text("6. How to create 3D effects like Cover Flow using ScrollView and GeometryReader")
+            }
         }
     }
 }
