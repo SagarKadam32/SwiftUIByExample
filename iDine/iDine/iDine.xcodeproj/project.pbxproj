@@ -55,6 +55,7 @@
 		96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB728CDD140007C60AC /* Example_3_5.swift */; };
 		96E3EBBA28CDD39E007C60AC /* Example_3_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB928CDD39E007C60AC /* Example_3_6.swift */; };
 		96E3EBBC28CDD5AD007C60AC /* Example_3_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBBB28CDD5AD007C60AC /* Example_3_7.swift */; };
+		96E3EBBE28CDF07F007C60AC /* Example_3_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBBD28CDF07F007C60AC /* Example_3_8.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		96E3EBB728CDD140007C60AC /* Example_3_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_5.swift; sourceTree = "<group>"; };
 		96E3EBB928CDD39E007C60AC /* Example_3_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_6.swift; sourceTree = "<group>"; };
 		96E3EBBB28CDD5AD007C60AC /* Example_3_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_7.swift; sourceTree = "<group>"; };
+		96E3EBBD28CDF07F007C60AC /* Example_3_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_8.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 				96E3EBB728CDD140007C60AC /* Example_3_5.swift */,
 				96E3EBB928CDD39E007C60AC /* Example_3_6.swift */,
 				96E3EBBB28CDD5AD007C60AC /* Example_3_7.swift */,
+				96E3EBBD28CDF07F007C60AC /* Example_3_8.swift */,
 			);
 			path = "Section-3";
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				969C572028C9234D00D1BA9C /* MyLearnings.swift in Sources */,
 				969944CC28C79B42001F98D4 /* Helper.swift in Sources */,
 				969C66B428CC73F6005EAC29 /* Example_3_Main.swift in Sources */,
+				96E3EBBE28CDF07F007C60AC /* Example_3_8.swift in Sources */,
 				967648AF28CBBC340027F77E /* Example_2_5.swift in Sources */,
 				969C66A728CC50D9005EAC29 /* Example_2_7.swift in Sources */,
 			);

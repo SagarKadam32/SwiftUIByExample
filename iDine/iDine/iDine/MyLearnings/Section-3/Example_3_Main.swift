@@ -36,6 +36,10 @@ struct Example_3_Main: View {
             NavigationLink(destination: Example_3_7()) {
                 Text("7. How to lazy load views using LazyVStack and LazyHStack")
             }
+            
+            NavigationLink(destination: Example_3_8()) {
+                Text("8. How to position views in a grid using LazyVGrid and LazyHGrid")
+            }
         }
     }
 }
