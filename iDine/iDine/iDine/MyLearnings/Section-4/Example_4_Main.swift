@@ -17,6 +17,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_2()) {
                 Text("2. How to read text from a TextField\n How to add a border to a TextField\n How to add a placeholder to a TextField\n How to disable autocorrect in a TextField\n How to dismiss the keyboard for a TextField\n How to format a TextField for numbers\n How to create secure text fields using SecureField")
             }
+            
+            NavigationLink(destination: Example_4_3()) {
+                Text("3. How to create a toggle switch")
+            }
         }
     }
 }
