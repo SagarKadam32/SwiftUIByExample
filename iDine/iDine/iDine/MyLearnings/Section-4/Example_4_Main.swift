@@ -13,6 +13,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_1()) {
                 Text("1. Working with state\n How to create a tappable button\n How to disable the overlay color for images inside Button and NavigationLink")
             }
+            
+            NavigationLink(destination: Example_4_2()) {
+                Text("2. How to read text from a TextField\n How to add a border to a TextField\n How to add a placeholder to a TextField\n How to disable autocorrect in a TextField\n How to dismiss the keyboard for a TextField\n How to format a TextField for numbers\n How to create secure text fields using SecureField")
+            }
         }
     }
 }
