@@ -29,6 +29,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_5()) {
                 Text("5. How to create a date picker and read values from it")
             }
+            
+            NavigationLink(destination: Example_4_6()) {
+                Text("6. How to create a segmented control and read values from it")
+            }
         }
     }
 }
