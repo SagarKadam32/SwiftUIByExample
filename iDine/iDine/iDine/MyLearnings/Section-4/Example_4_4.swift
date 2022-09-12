@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct 4: View {
+struct Example_4_4: View {
     var colors = ["Red", "Green", "Blue", "Tartan"]
     @State private var selectedColor = "Red"
     var body: some View {
