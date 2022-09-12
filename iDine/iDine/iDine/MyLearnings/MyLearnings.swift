@@ -6,6 +6,45 @@
 //
 
 import SwiftUI
+import WebKit
+
+struct MoreDetailsView : View {
+    var linkURL: String
+    var title: String
+    
+    var body: some View {
+        Divider()
+        Spacer()
+        NavigationLink(destination: DisplayReadingLink(link: linkURL, title: title)) {
+            Text("More on \(title)")
+        }
+    }
+}
+
+
+struct DisplayReadingLink : View {
+    var link: String
+    var title : String
+    var body: some View {
+        WebView(url: URL(string: link)!)
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+    }
+    
+}
+
+struct WebView: UIViewRepresentable {
+    var url: URL
+
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
+}
 
 struct SectionHeader : View {
     var sectionTitle = ""

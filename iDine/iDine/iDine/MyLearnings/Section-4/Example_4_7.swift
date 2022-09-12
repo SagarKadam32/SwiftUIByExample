@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct Example_4_7: View {
     @State private var age = 18
     
@@ -21,6 +22,8 @@ struct Example_4_7: View {
                 age -= 1
             })
             Text("Your age is \(age)")
+            
+            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-stepper-and-read-values-from-it", title: "Stepper")
 
         }
         .padding()
