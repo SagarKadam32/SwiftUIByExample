@@ -56,6 +56,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_11()) {
                 Text("11. How to show progress on a task using ProgressView")
             }
+            
+            NavigationLink(destination: Example_4_12()) {
+                Text("12. How to show indeterminate progress using ProgressView")
+            }
         }
     }
 }
