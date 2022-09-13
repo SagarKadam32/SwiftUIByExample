@@ -68,6 +68,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_14()) {
                 Text("14. How to show annotations in a Map view")
             }
+            
+            NavigationLink(destination: Example_4_15()) {
+                Text("15. How to open web links in Safari")
+            }
         }
     }
 }
