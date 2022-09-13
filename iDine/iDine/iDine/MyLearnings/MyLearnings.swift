@@ -96,6 +96,13 @@ struct MyLearnings: View {
                             .frame(maxWidth: .infinity,alignment: .leading)
                     }
                     Divider()
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        SectionHeader(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance")
+                        Example_4_Main()
+                            .frame(maxWidth: .infinity,alignment: .leading)
+                    }
+                    Divider()
 
                 }
                 .padding()
