@@ -80,6 +80,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_17()) {
                 Text("17. How to take action when the user submits a TextField")
             }
+            
+            NavigationLink(destination: Example_4_18()) {
+                Text("18. How to get bordered buttons that stand out")
+            }
         }
     }
 }
