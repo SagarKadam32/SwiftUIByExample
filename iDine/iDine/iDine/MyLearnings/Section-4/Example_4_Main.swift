@@ -37,6 +37,14 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_7()) {
                 Text("7. How to create a stepper and read values from it")
             }
+            
+            NavigationLink(destination: Example_4_8()) {
+                Text("8. How to hide the label of a Picker, Stepper, Toggle, and more using labelsHidden()")
+            }
+            
+            NavigationLink(destination: Example_4_9()) {
+                Text("9. How to create multi-line editable text with TextEditor")
+            }
         }
     }
 }
