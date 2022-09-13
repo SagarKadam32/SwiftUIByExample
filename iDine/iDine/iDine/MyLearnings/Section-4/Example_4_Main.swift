@@ -76,6 +76,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_16()) {
                 Text("16. How to customize the submit button for TextField, SecureField, and TextEditor")
             }
+            
+            NavigationLink(destination: Example_4_17()) {
+                Text("17. How to take action when the user submits a TextField")
+            }
         }
     }
 }
