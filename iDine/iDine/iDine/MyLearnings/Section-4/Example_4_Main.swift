@@ -64,6 +64,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_13()) {
                 Text("13. How to show a Map view")
             }
+            
+            NavigationLink(destination: Example_4_14()) {
+                Text("14. How to show annotations in a Map view")
+            }
         }
     }
 }
