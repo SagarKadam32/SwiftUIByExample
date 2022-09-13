@@ -72,6 +72,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_15()) {
                 Text("15. How to open web links in Safari")
             }
+            
+            NavigationLink(destination: Example_4_16()) {
+                Text("16. How to customize the submit button for TextField, SecureField, and TextEditor")
+            }
         }
     }
 }
