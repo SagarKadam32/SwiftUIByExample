@@ -50,6 +50,13 @@ struct Example_4_Main: View {
                 Text("10. How to let users select a color with ColorPicker")
             }
         }
+        
+        Group {
+            
+            NavigationLink(destination: Example_4_11()) {
+                Text("11. How to show progress on a task using ProgressView")
+            }
+        }
     }
 }
 
