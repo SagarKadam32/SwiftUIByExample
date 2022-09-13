@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9650E4B928D10318001923DB /* Example_4_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4B828D10318001923DB /* Example_4_8.swift */; };
 		9650E4BB28D104E1001923DB /* Example_4_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4BA28D104E1001923DB /* Example_4_9.swift */; };
+		9650E4BD28D1062D001923DB /* Example_4_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4BC28D1062D001923DB /* Example_4_10.swift */; };
 		9662C5D028C9A3CE0053C255 /* Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */; };
 		9662C5D528C9A7160053C255 /* Example_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662C5D428C9A7160053C255 /* Example_1_2.swift */; };
 		967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A628CBB2DD0027F77E /* Example_2_1.swift */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		9650E4B828D10318001923DB /* Example_4_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_8.swift; sourceTree = "<group>"; };
 		9650E4BA28D104E1001923DB /* Example_4_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_9.swift; sourceTree = "<group>"; };
+		9650E4BC28D1062D001923DB /* Example_4_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_10.swift; sourceTree = "<group>"; };
 		9662C5CF28C9A3CE0053C255 /* Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_1.swift; sourceTree = "<group>"; };
 		9662C5D428C9A7160053C255 /* Example_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_2.swift; sourceTree = "<group>"; };
 		967648A628CBB2DD0027F77E /* Example_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_1.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				968EA54728CFAF8100736416 /* Example_4_7.swift */,
 				9650E4B828D10318001923DB /* Example_4_8.swift */,
 				9650E4BA28D104E1001923DB /* Example_4_9.swift */,
+				9650E4BC28D1062D001923DB /* Example_4_10.swift */,
 			);
 			path = "Section-4";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */,
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
 				9650E4B928D10318001923DB /* Example_4_8.swift in Sources */,
+				9650E4BD28D1062D001923DB /* Example_4_10.swift in Sources */,
 				968F064D28CA546E00D364E4 /* Example_1_6.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
 				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,

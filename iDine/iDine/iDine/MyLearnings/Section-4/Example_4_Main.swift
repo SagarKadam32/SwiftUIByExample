@@ -45,6 +45,10 @@ struct Example_4_Main: View {
             NavigationLink(destination: Example_4_9()) {
                 Text("9. How to create multi-line editable text with TextEditor")
             }
+            
+            NavigationLink(destination: Example_4_10()) {
+                Text("10. How to let users select a color with ColorPicker")
+            }
         }
     }
 }
