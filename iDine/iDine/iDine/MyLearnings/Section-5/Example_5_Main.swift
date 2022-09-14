@@ -33,6 +33,9 @@ struct Example_5_Main: View {
             NavigationLink(destination: Example_5_5()) {
                 Text("6. How to run an asynchronous task when a view is shown")
             }
+            NavigationLink(destination: Example_5_5_1()) {
+                Text("6. How to run an asynchronous task when a view is shown")
+            }
         }
     }
 }
