@@ -10,6 +10,14 @@ import SwiftUI
 @main
 struct iDineApp: App {
     @StateObject var order = Order()
+    
+    // register initial UserDefaults values eery launch
+    init() {
+        UserDefaults.standard.register(defaults:[
+            "name" : "Sagar Kadam",
+            "hightScore": 10
+        ])
+    }
     var body: some Scene {
         WindowGroup {
             MainView()

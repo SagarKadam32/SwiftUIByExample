@@ -23,15 +23,19 @@ struct DetailView: View {
 }
 
 struct Example_5_2: View {
+    @AppStorage("name") var name = "Anonymous"
     var body: some View {
         VStack {
             
+            Text("Your name is \(name).")
             NavigationLink(destination: DetailView()) {
                 Text("Hello World!")
             }
             
             
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-respond-to-view-lifecycle-events-onappear-and-ondisappear", title: "onAppear() and onDisappear()")
+            
+            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-run-code-when-your-app-launches", title: "Run Code App Launch")
         }
         .onAppear() {
             print("ContentView Appeared!")
