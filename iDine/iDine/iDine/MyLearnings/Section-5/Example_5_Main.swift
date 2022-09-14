@@ -29,6 +29,10 @@ struct Example_5_Main: View {
             NavigationLink(destination: Example_5_4()) {
                 Text("5. How to add a toolbar to the keyboard")
             }
+            
+            NavigationLink(destination: Example_5_5()) {
+                Text("6. How to run an asynchronous task when a view is shown")
+            }
         }
     }
 }
