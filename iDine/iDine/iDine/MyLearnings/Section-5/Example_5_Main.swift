@@ -17,6 +17,10 @@ struct Example_5_Main: View {
             NavigationLink(destination: Example_5_2()) {
                 Text("2. How to respond to view lifecycle events: onAppear() and onDisappear()")
             }
+            
+            NavigationLink(destination: Example_5_2()) {
+                Text("3. How to detect device rotation")
+            }
         }
     }
 }
