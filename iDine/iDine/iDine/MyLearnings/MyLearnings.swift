@@ -99,7 +99,7 @@ struct MyLearnings: View {
                     
                     VStack(alignment: .leading, spacing: 10) {
                         SectionHeader(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance")
-                        Example_4_Main()
+                        Example_5_Main()
                             .frame(maxWidth: .infinity,alignment: .leading)
                     }
                     Divider()
