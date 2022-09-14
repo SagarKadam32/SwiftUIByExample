@@ -21,6 +21,14 @@ struct Example_5_Main: View {
             NavigationLink(destination: Example_5_2()) {
                 Text("3. How to detect device rotation")
             }
+            
+            NavigationLink(destination: Example_5_3()) {
+                Text("4. Detect device rotation")
+            }
+            
+            NavigationLink(destination: Example_5_4()) {
+                Text("5. How to add a toolbar to the keyboard")
+            }
         }
     }
 }
