@@ -13,6 +13,10 @@ struct Example_5_Main: View {
             NavigationLink(destination: Example_5_1()) {
                 Text("1. How to detect when your app moves to the background or foreground with scenePhase")
             }
+            
+            NavigationLink(destination: Example_5_2()) {
+                Text("2. How to respond to view lifecycle events: onAppear() and onDisappear()")
+            }
         }
     }
 }
