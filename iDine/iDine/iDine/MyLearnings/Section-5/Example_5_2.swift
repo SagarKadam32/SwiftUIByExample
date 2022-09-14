@@ -36,6 +36,9 @@ struct Example_5_2: View {
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-respond-to-view-lifecycle-events-onappear-and-ondisappear", title: "onAppear() and onDisappear()")
             
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-run-code-when-your-app-launches", title: "Run Code App Launch")
+            
+            
+            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-an-appdelegate-to-a-swiftui-app", title: "AppDelegate to a SwiftUI app")
         }
         .onAppear() {
             print("ContentView Appeared!")

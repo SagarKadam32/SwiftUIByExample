@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct iDineApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var order = Order()
     
     // register initial UserDefaults values eery launch
