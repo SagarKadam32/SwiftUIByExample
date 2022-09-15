@@ -72,37 +72,51 @@ struct MyLearnings: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
-                    VStack(alignment: .leading, spacing: 10) {
-                        SectionHeader(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly")
-                        Example_1_Main()
-                            .frame(maxWidth: .infinity,alignment: .leading)
+                    Group {
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly")
+                            Example_1_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing")
+                            Example_2_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way")
+                            Example_3_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state")
+                            Example_4_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
+                        
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance")
+                            Example_5_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
                     }
-                    Divider()
-                    VStack(alignment: .leading, spacing: 10) {
-                        SectionHeader(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing")
-                        Example_2_Main()
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                    }
-                    Divider()
-                    VStack(alignment: .leading, spacing: 10) {
-                        SectionHeader(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way")
-                        Example_3_Main()
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                    }
-                    Divider()
-                    VStack(alignment: .leading, spacing: 10) {
-                        SectionHeader(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state")
-                        Example_4_Main()
-                            .frame(maxWidth: .infinity,alignment: .leading)
-                    }
-                    Divider()
                     
-                    VStack(alignment: .leading, spacing: 10) {
-                        SectionHeader(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance")
-                        Example_5_Main()
-                            .frame(maxWidth: .infinity,alignment: .leading)
+                    Group {
+                        VStack(alignment: .leading, spacing: 10) {
+                            SectionHeader(sectionTitle: "Taps and gestures", sectionTitleDescription: "Swipes, taps, shakes, and other input")
+                            Example_6_Main()
+                                .frame(maxWidth: .infinity,alignment: .leading)
+                        }
+                        Divider()
+                        
                     }
-                    Divider()
+                    
+                    
 
                 }
                 .padding()
