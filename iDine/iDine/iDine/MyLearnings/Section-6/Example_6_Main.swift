@@ -18,6 +18,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_2()) {
                 Text("2. How to read tap and double-tap gestures")
             }
+            
+            NavigationLink(destination: Example_6_3()) {
+                Text("3. How to force one gesture to recognize before another using highPriorityGesture()")
+            }
         }
 
     }
