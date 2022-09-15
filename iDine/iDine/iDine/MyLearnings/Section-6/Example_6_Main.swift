@@ -14,6 +14,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_1()) {
                 Text("1. How to add a gesture recognizer to a view")
             }
+            
+            NavigationLink(destination: Example_6_2()) {
+                Text("2. How to read tap and double-tap gestures")
+            }
         }
 
     }
