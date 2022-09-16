@@ -26,6 +26,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_4()) {
                 Text("4. How to make two gestures recognize at the same time using simultaneousGesture()")
             }
+            
+            NavigationLink(destination: Example_6_5()) {
+                Text("5. How to create gesture chains using sequenced(before:)")
+            }
         }
 
     }
