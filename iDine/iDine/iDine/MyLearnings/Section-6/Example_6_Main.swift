@@ -38,6 +38,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_7()) {
                 Text("7. How to control the tappable area of a view using contentShape()")
             }
+            
+            NavigationLink(destination: Example_6_8()) {
+                Text("8. How to disable taps for a view using allowsHitTesting()")
+            }
         }
 
     }
