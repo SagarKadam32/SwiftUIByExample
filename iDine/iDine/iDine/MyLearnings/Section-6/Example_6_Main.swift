@@ -30,6 +30,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_5()) {
                 Text("5. How to create gesture chains using sequenced(before:)")
             }
+            
+            NavigationLink(destination: Example_6_6()) {
+                Text("6. How to detect the user hovering over a view")
+            }
         }
 
     }
