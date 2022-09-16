@@ -34,6 +34,10 @@ struct Example_6_Main: View {
             NavigationLink(destination: Example_6_6()) {
                 Text("6. How to detect the user hovering over a view")
             }
+            
+            NavigationLink(destination: Example_6_7()) {
+                Text("7. How to control the tappable area of a view using contentShape()")
+            }
         }
 
     }
