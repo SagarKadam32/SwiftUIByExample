@@ -46,6 +46,21 @@ struct WebView: UIViewRepresentable {
     }
 }
 
+struct SectionMainView<Content: View> : View {
+    var sectionTitle = ""
+    var sectionTitleDescription = ""
+    @ViewBuilder var content : Content
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            SectionHeader(sectionTitle:sectionTitle, sectionTitleDescription: sectionTitleDescription)
+            content
+                .frame(maxWidth: .infinity,alignment: .leading)
+        }
+        Divider()
+    }
+}
+
 struct SectionHeader : View {
     var sectionTitle = ""
     var sectionTitleDescription = ""
@@ -73,51 +88,37 @@ struct MyLearnings: View {
             ScrollView {
                 VStack(spacing: 20) {
                     Group {
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly")
+                        SectionMainView(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly") {
                             Example_1_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
                         }
-                        Divider()
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing")
-                            Example_2_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
-                        }
-                        Divider()
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way")
-                            Example_3_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
-                        }
-                        Divider()
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state")
-                            Example_4_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
-                        }
-                        Divider()
                         
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance")
-                            Example_5_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
+                        SectionMainView(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing") {
+                            Example_2_Main()
                         }
-                        Divider()
+                        
+                        SectionMainView(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way") {
+                            Example_3_Main()
+                        }
+                        
+                        SectionMainView(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state") {
+                            Example_4_Main()
+                        }
+                        
+                        SectionMainView(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance") {
+                            Example_5_Main()
+                        }
                     }
                     
                     Group {
-                        VStack(alignment: .leading, spacing: 10) {
-                            SectionHeader(sectionTitle: "Taps and gestures", sectionTitleDescription: "Swipes, taps, shakes, and other input")
-                            Example_6_Main()
-                                .frame(maxWidth: .infinity,alignment: .leading)
-                        }
-                        Divider()
                         
+                        SectionMainView(sectionTitle: "Taps and gestures", sectionTitleDescription: "Swipes, taps, shakes, and other input") {
+                            Example_6_Main()
+                        }
+                        
+                        SectionMainView(sectionTitle: "Advanced state", sectionTitleDescription: "Learn how to bind objects and query the environment") {
+                            Example_6_Main()
+                        }
                     }
-                    
-                    
-
                 }
                 .padding()
             }
