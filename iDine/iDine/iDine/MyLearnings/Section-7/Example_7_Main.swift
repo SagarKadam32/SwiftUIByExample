@@ -29,6 +29,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_5()) {
                 Text("5. How to create custom bindings")
             }
+            
+            NavigationLink(destination: Example_7_6()) {
+                Text("6. How to use a timer with SwiftUI")
+            }
         }
     }
 }
