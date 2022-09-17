@@ -21,6 +21,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_3()) {
                 Text("3. How to use @EnvironmentObject to share data between views")
             }
+            
+            NavigationLink(destination: Example_7_4()) {
+                Text("4. How to send state updates manually using objectWillChange")
+            }
         }
     }
 }
