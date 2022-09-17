@@ -33,6 +33,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_6()) {
                 Text("6. How to use a timer with SwiftUI")
             }
+            
+            NavigationLink(destination: Example_7_7()) {
+                Text("7. How to run some code when state changes using onChange()")
+            }
         }
     }
 }
