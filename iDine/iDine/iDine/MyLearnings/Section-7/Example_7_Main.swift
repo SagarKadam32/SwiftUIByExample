@@ -25,6 +25,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_4()) {
                 Text("4. How to send state updates manually using objectWillChange")
             }
+            
+            NavigationLink(destination: Example_7_5()) {
+                Text("5. How to create custom bindings")
+            }
         }
     }
 }
