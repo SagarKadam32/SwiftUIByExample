@@ -17,6 +17,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_2()) {
                 Text("2. How to use @ObservedObject to manage state from external objects")
             }
+            
+            NavigationLink(destination: Example_7_3()) {
+                Text("3. How to use @EnvironmentObject to share data between views")
+            }
         }
     }
 }
