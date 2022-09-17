@@ -24,7 +24,15 @@ struct Example_7_4: View {
             TextField("Enter your name", text: $user.userName)
             Text("Your username is: \(user.userName)")
             
+            Toggle(isOn: .constant(true)) {
+                Text("Show advanced options")
+            }
+            
             MoreDetailsView(linkURL: "hhttps://www.hackingwithswift.com/quick-start/swiftui/how-to-send-state-updates-manually-using-objectwillchange", title: "State updates manually using objectWillChange")
+            
+            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-constant-bindings", title: "Constant Bindings")
+            
+            
         }
        
         .padding()
