@@ -13,6 +13,10 @@ struct Example_7_Main: View {
             NavigationLink(destination: Example_7_1()) {
                 Text("1. What’s the difference between @ObservedObject, @State, and @EnvironmentObject?")
             }
+            
+            NavigationLink(destination: Example_7_2()) {
+                Text("2. How to use @ObservedObject to manage state from external objects")
+            }
         }
     }
 }
