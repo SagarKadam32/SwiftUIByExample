@@ -86,42 +86,53 @@ struct MyLearnings: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(spacing: 20) {
-                    Group {
-                        SectionMainView(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly") {
-                            Example_1_Main()
-                        }
-                        
-                        SectionMainView(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing") {
-                            Example_2_Main()
-                        }
-                        
-                        SectionMainView(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way") {
-                            Example_3_Main()
-                        }
-                        
-                        SectionMainView(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state") {
-                            Example_4_Main()
-                        }
-                        
-                        SectionMainView(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance") {
-                            Example_5_Main()
-                        }
-                    }
+                ScrollViewReader { value in
                     
-                    Group {
-                        
-                        SectionMainView(sectionTitle: "Taps and gestures", sectionTitleDescription: "Swipes, taps, shakes, and other input") {
-                            Example_6_Main()
+                    VStack(spacing: 20) {
+                        Group {
+                            SectionMainView(sectionTitle: "Working with static text", sectionTitleDescription: "Laying out text neatly") {
+                                Example_1_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "View layout", sectionTitleDescription: "Layout sizes, priorities, and spacing") {
+                                Example_2_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "Stacks, grids, scrollviews", sectionTitleDescription: "Position views in a structured way") {
+                                Example_3_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "User interface controls", sectionTitleDescription: "Respond to interaction and control your program state") {
+                                Example_4_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "Responding to events", sectionTitleDescription: "Shortcuts, rotations, and appearance") {
+                                Example_5_Main()
+                            }
                         }
                         
-                        SectionMainView(sectionTitle: "Advanced state", sectionTitleDescription: "Learn how to bind objects and query the environment") {
-                            Example_6_Main()
-                        }
+                        Group {
+                            
+                            SectionMainView(sectionTitle: "Taps and gestures", sectionTitleDescription: "Swipes, taps, shakes, and other input") {
+                                Example_6_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "Advanced state", sectionTitleDescription: "Learn how to bind objects and query the environment") {
+                                Example_7_Main()
+                            }
+                        }.id(0)
                     }
+                    .onAppear() {
+                        value.scrollTo(0)
+                    }
+                    .padding()
+                    
+                    
+                    
                 }
-                .padding()
+
             }
+            
             .navigationTitle("My Learning")
         }
     }
