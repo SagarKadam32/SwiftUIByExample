@@ -45,6 +45,9 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_9()) {
                 Text("9. How to use implicit stacking")
             }
+            NavigationLink(destination: Example_8_10()) {
+                Text("10. How to enable pull to refresh")
+            }
         }
     }
 }
