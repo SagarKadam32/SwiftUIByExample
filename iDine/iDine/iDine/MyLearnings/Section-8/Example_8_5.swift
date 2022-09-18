@@ -15,23 +15,73 @@ struct TaskRow: View {
 
 struct Example_8_5: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
+            VStack {
+                Text("List Style Sidebar")
+                List {
+                    Section(header: Text("Important Tasks")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                    .headerProminence(.increased)
+                    
+                    Section(header: Text("Other Tasks"), footer: Text("End")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                }
+                .listStyle(.sidebar)
+            
+            Divider()
 
-            List {
-                Section(header: Text("Important Tasks")) {
-                    TaskRow()
-                    TaskRow()
-                    TaskRow()
-                }
-                .headerProminence(.increased)
-                
-                Section(header: Text("Other Tasks"), footer: Text("End")) {
-                    TaskRow()
-                    TaskRow()
-                    TaskRow()
-                }
             }
-            .listStyle(.sidebar)
+
+            VStack {
+                Text("List Stype Grouped")
+                List {
+                    Section(header: Text("Important Tasks")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                    .headerProminence(.increased)
+                    
+                    Section(header: Text("Other Tasks"), footer: Text("End")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                }
+                .listStyle(.grouped)
+            
+            Divider()
+
+            }
+
+            
+            VStack {
+                Text("List Stype Inset Grouped")
+                List {
+                    Section(header: Text("Important Tasks")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                    .headerProminence(.increased)
+                    
+                    Section(header: Text("Other Tasks"), footer: Text("End")) {
+                        TaskRow()
+                        TaskRow()
+                        TaskRow()
+                    }
+                }
+                .listStyle(.insetGrouped)
+            }
+            
+            Divider()
+
             
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-sections-to-a-list", title: "Sections to a List")
         }

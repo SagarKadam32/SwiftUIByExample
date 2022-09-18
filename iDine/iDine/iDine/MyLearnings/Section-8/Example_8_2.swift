@@ -51,6 +51,7 @@ struct Example_8_2: View {
                 .onDelete(perform: delete)
                 .listRowBackground(Color.teal)
             }
+            .listStyle(.grouped)
             
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-list-of-dynamic-items", title: "List of Dynamic Items")
         }
