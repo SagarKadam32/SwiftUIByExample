@@ -120,7 +120,12 @@ struct MyLearnings: View {
                             SectionMainView(sectionTitle: "Advanced state", sectionTitleDescription: "Learn how to bind objects and query the environment") {
                                 Example_7_Main()
                             }
-                        }.id(0)
+                            
+                            SectionMainView(sectionTitle: "Lists", sectionTitleDescription: "Create scrolling tables of data") {
+                                Example_8_Main()
+                            }
+                            .id(0)
+                        }
                     }
                     .onAppear() {
                         value.scrollTo(0)

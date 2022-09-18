@@ -24,6 +24,8 @@
 		9665279828D612D500BF5DA6 /* Example_7_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279728D612D500BF5DA6 /* Example_7_5.swift */; };
 		9665279A28D61C4100BF5DA6 /* Example_7_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279928D61C4100BF5DA6 /* Example_7_6.swift */; };
 		9665279C28D63C6900BF5DA6 /* Example_7_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279B28D63C6900BF5DA6 /* Example_7_7.swift */; };
+		9665279F28D63FD800BF5DA6 /* Example_8_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279E28D63FD800BF5DA6 /* Example_8_Main.swift */; };
+		966527A128D6407100BF5DA6 /* Example_8_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527A028D6407100BF5DA6 /* Example_8_1.swift */; };
 		967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A628CBB2DD0027F77E /* Example_2_1.swift */; };
 		967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A828CBB70A0027F77E /* Example_2_2.swift */; };
 		967648AB28CBB8CD0027F77E /* Example_2_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648AA28CBB8CD0027F77E /* Example_2_3.swift */; };
@@ -123,6 +125,8 @@
 		9665279728D612D500BF5DA6 /* Example_7_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_7_5.swift; sourceTree = "<group>"; };
 		9665279928D61C4100BF5DA6 /* Example_7_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_7_6.swift; sourceTree = "<group>"; };
 		9665279B28D63C6900BF5DA6 /* Example_7_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_7_7.swift; sourceTree = "<group>"; };
+		9665279E28D63FD800BF5DA6 /* Example_8_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_Main.swift; sourceTree = "<group>"; };
+		966527A028D6407100BF5DA6 /* Example_8_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_1.swift; sourceTree = "<group>"; };
 		967648A628CBB2DD0027F77E /* Example_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_1.swift; sourceTree = "<group>"; };
 		967648A828CBB70A0027F77E /* Example_2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_2.swift; sourceTree = "<group>"; };
 		967648AA28CBB8CD0027F77E /* Example_2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_3.swift; sourceTree = "<group>"; };
@@ -243,6 +247,7 @@
 				9650E4D028D11934001923DB /* Section-5 */,
 				96994EF828D37E72002ECBDD /* Section-6 */,
 				969C158828D5A73F00A920DC /* Section-7 */,
+				9665279D28D63FB900BF5DA6 /* Section-8 */,
 			);
 			path = MyLearnings;
 			sourceTree = "<group>";
@@ -289,6 +294,15 @@
 				968F065828CA74A800D364E4 /* Example_1_12.swift */,
 			);
 			path = "Section-1";
+			sourceTree = "<group>";
+		};
+		9665279D28D63FB900BF5DA6 /* Section-8 */ = {
+			isa = PBXGroup;
+			children = (
+				9665279E28D63FD800BF5DA6 /* Example_8_Main.swift */,
+				966527A028D6407100BF5DA6 /* Example_8_1.swift */,
+			);
+			path = "Section-8";
 			sourceTree = "<group>";
 		};
 		968DFB3728CB81F200657D72 /* Section-2 */ = {
@@ -509,6 +523,7 @@
 				96B8101428D212F300F76E8B /* Example_5_5_1.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
 				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,
+				966527A128D6407100BF5DA6 /* Example_8_1.swift in Sources */,
 				968DFB3928CB822300657D72 /* Example_2_Main.swift in Sources */,
 				967648AD28CBBA250027F77E /* Example_2_4.swift in Sources */,
 				96B8100E28D1F95700F76E8B /* Example_5_3.swift in Sources */,
@@ -552,6 +567,7 @@
 				967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */,
 				968F065328CA6FA500D364E4 /* Example_1_9.swift in Sources */,
 				968DFB3628CB5DEC00657D72 /* Example_1_Main.swift in Sources */,
+				9665279F28D63FD800BF5DA6 /* Example_8_Main.swift in Sources */,
 				969C66B828CCA981005EAC29 /* Example_3_2.swift in Sources */,
 				968EA54428CFAAC300736416 /* Example_4_5.swift in Sources */,
 				96994EFA28D37EB5002ECBDD /* Example_6_Main.swift in Sources */,
