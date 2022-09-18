@@ -25,6 +25,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_4()) {
                 Text("4. How to let users move rows in a list")
             }
+            
+            NavigationLink(destination: Example_8_5()) {
+                Text("5. How to add sections to a list")
+            }
         }
     }
 }
