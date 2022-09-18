@@ -49,6 +49,12 @@ struct Example_8_Main: View {
                 Text("10. How to enable pull to refresh")
             }
         }
+        
+        Group {
+            NavigationLink(destination: Example_8_11()) {
+                Text("11. How to add custom swipe action buttons to a List row")
+            }
+        }
     }
 }
 
