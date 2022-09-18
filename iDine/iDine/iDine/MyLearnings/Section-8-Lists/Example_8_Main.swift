@@ -7,22 +7,6 @@
 
 import SwiftUI
 
-struct iOS16SpecialCase : View {
-    var title: String
-    var body: some View {
-        HStack {
-            Text(title)
-            Spacer()
-            Image(systemName: "star.fill")
-                .resizable()
-                .frame(width: 30, height: 30)
-            Image(systemName: "16.circle")
-                .resizable()
-                .frame(width: 30, height: 30)
-        }
-    }
-}
-
 struct Example_8_Main: View {
     var body: some View {
         Group {

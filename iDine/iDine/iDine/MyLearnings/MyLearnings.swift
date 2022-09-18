@@ -8,6 +8,22 @@
 import SwiftUI
 import WebKit
 
+struct iOS16SpecialCase : View {
+    var title: String
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Image(systemName: "star.fill")
+                .resizable()
+                .frame(width: 30, height: 30)
+            Image(systemName: "16.circle")
+                .resizable()
+                .frame(width: 30, height: 30)
+        }
+    }
+}
+
 struct MoreDetailsView : View {
     var linkURL: String
     var title: String
@@ -123,6 +139,10 @@ struct MyLearnings: View {
                             
                             SectionMainView(sectionTitle: "Lists", sectionTitleDescription: "Create scrolling tables of data") {
                                 Example_8_Main()
+                            }
+                            
+                            SectionMainView(sectionTitle: "Forms", sectionTitleDescription: "Get user entry quickly and efficiently") {
+                                Example_9_Main()
                             }
                             .id(0)
                         }

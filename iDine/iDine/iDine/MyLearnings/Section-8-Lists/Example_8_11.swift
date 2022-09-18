@@ -97,7 +97,7 @@ struct Example_8_11: View {
                 .navigationTitle("Total: \(total)")
             }
             
-            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/working-with-lists", title: "Working with lists")
+            MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-custom-swipe-action-buttons-to-a-list-row", title: "Custom swipe action buttons")
         }
        
         .padding()
