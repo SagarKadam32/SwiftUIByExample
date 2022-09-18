@@ -9,11 +9,12 @@ import SwiftUI
 
 struct User: Identifiable {
     let id = UUID()
-    let userName = "Anonymous"
+    let userName : String
+    var isContacted = false
 }
 
 struct Example_8_9: View {
-    let users = [User(),User(),User(),User(),User()]
+    let users = [User(userName: "Amar"),User(userName: "Amar"),User(userName: "Amar"),User(userName: "Amar"),User(userName: "Amar")]
     var body: some View {
   
             VStack {

@@ -7,6 +7,22 @@
 
 import SwiftUI
 
+struct iOS16SpecialCase : View {
+    var title: String
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Image(systemName: "star.fill")
+                .resizable()
+                .frame(width: 30, height: 30)
+            Image(systemName: "16.circle")
+                .resizable()
+                .frame(width: 30, height: 30)
+        }
+    }
+}
+
 struct Example_8_Main: View {
     var body: some View {
         Group {
@@ -53,6 +69,12 @@ struct Example_8_Main: View {
         Group {
             NavigationLink(destination: Example_8_11()) {
                 Text("11. How to add custom swipe action buttons to a List row")
+            }
+            NavigationLink(destination: Example_8_12()) {
+                Text("12. How to create a List or a ForEach from a binding")
+            }
+            NavigationLink(destination: Example_8_13()) {
+                iOS16SpecialCase(title: "13. How to create a List or a ForEach from a binding")
             }
         }
     }
