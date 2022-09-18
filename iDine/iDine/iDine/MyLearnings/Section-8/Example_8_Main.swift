@@ -33,6 +33,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_6()) {
                 Text("6. How to create expanding lists")
             }
+            
+            NavigationLink(destination: Example_8_7()) {
+                Text("7. How to scroll to a specific row in a list")
+            }
         }
     }
 }
