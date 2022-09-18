@@ -21,6 +21,10 @@ struct Example_9_Main: View {
             NavigationLink(destination: Example_9_3()) {
                 Text("3. Pickers in forms")
             }
+            
+            NavigationLink(destination: Example_9_4()) {
+                Text("4. Enabling and disabling elements in forms")
+            }
         }
     }
 }
