@@ -13,6 +13,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_1()) {
                 Text("1. How to create a list of static items")
             }
+            
+            NavigationLink(destination: Example_8_2()) {
+                Text("2. How to create a list of dynamic items")
+            }
         }
     }
 }
