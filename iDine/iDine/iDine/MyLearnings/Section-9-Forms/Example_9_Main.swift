@@ -25,6 +25,10 @@ struct Example_9_Main: View {
             NavigationLink(destination: Example_9_4()) {
                 Text("4. Enabling and disabling elements in forms")
             }
+            
+            NavigationLink(destination: Example_9_5()) {
+                Text("5. Showing and hiding form rows")
+            }
         }
     }
 }
