@@ -37,6 +37,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_7()) {
                 Text("7. How to scroll to a specific row in a list")
             }
+            
+            NavigationLink(destination: Example_8_8()) {
+                Text("8. How to allow row selection in a list")
+            }
         }
     }
 }
