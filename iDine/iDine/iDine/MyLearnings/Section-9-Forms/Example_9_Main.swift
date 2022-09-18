@@ -17,6 +17,10 @@ struct Example_9_Main: View {
             NavigationLink(destination: Example_9_2()) {
                 Text("2. Breaking forms into sections")
             }
+            
+            NavigationLink(destination: Example_9_3()) {
+                Text("3. Pickers in forms")
+            }
         }
     }
 }
