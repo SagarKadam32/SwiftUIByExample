@@ -13,6 +13,10 @@ struct Example_9_Main: View {
             NavigationLink(destination: Example_9_1()) {
                 Text("1. Basic form design")
             }
+            
+            NavigationLink(destination: Example_9_2()) {
+                Text("2. Breaking forms into sections")
+            }
         }
     }
 }

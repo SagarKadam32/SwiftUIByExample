@@ -16,10 +16,10 @@ struct iOS16SpecialCase : View {
             Spacer()
             Image(systemName: "star.fill")
                 .resizable()
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
             Image(systemName: "16.circle")
                 .resizable()
-                .frame(width: 30, height: 30)
+                .frame(width: 25, height: 25)
         }
     }
 }
