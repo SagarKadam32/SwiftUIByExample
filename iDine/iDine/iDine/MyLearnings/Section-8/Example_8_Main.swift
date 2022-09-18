@@ -41,6 +41,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_8()) {
                 Text("8. How to allow row selection in a list")
             }
+            
+            NavigationLink(destination: Example_8_9()) {
+                Text("9. How to use implicit stacking")
+            }
         }
     }
 }
