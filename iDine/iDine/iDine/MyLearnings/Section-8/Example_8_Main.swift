@@ -17,6 +17,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_2()) {
                 Text("2. How to create a list of dynamic items")
             }
+            
+            NavigationLink(destination: Example_8_3()) {
+                Text("3. How to let users delete rows from a list")
+            }
         }
     }
 }

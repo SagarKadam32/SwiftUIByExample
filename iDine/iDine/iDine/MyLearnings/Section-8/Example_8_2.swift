@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Restaurant: Identifiable {
+struct Restaurant: Identifiable, Hashable {
     let id = UUID()
     let name: String
 }
@@ -44,15 +44,21 @@ struct Example_8_2: View {
             .foregroundColor(.white)
             .disabled(newRestaurant.isEmpty)
             
-
-            List(restaurents) { restaurant in
-                RestaurantRow(restaurant: restaurant)
+            List{
+                ForEach(restaurents, id: \.self) { restaurant in
+                    RestaurantRow(restaurant: restaurant)
+                }
+                .onDelete(perform: delete)
             }
             
             MoreDetailsView(linkURL: "https://www.hackingwithswift.com/quick-start/swiftui/how-to-create-a-list-of-dynamic-items", title: "List of Dynamic Items")
         }
        
         .padding()
+    }
+    
+    func delete(at offsets: IndexSet) {
+        restaurents.remove(atOffsets: offsets)
     }
 }
 
