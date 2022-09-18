@@ -21,6 +21,10 @@ struct Example_8_Main: View {
             NavigationLink(destination: Example_8_3()) {
                 Text("3. How to let users delete rows from a list")
             }
+            
+            NavigationLink(destination: Example_8_4()) {
+                Text("4. How to let users move rows in a list")
+            }
         }
     }
 }
