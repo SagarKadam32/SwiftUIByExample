@@ -144,6 +144,10 @@ struct MyLearnings: View {
                             SectionMainView(sectionTitle: "Forms", sectionTitleDescription: "Get user entry quickly and efficiently") {
                                 Example_9_Main()
                             }
+                            
+                            SectionMainView(sectionTitle: "Containers", sectionTitleDescription: "Place your views inside a navigation controller and more") {
+                                Example_10_Main()
+                            }
                             .id(0)
                         }
                     }

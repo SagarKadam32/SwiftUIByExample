@@ -107,6 +107,8 @@
 		969E72DB28D75E5100422DA6 /* Example_9_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72DA28D75E5100422DA6 /* Example_9_3.swift */; };
 		969E72DD28D7607A00422DA6 /* Example_9_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72DC28D7607A00422DA6 /* Example_9_4.swift */; };
 		969E72DF28D761A300422DA6 /* Example_9_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72DE28D761A300422DA6 /* Example_9_5.swift */; };
+		969E72E228D762D500422DA6 /* Example_10_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72E128D762D500422DA6 /* Example_10_Main.swift */; };
+		969E72E428D7631200422DA6 /* Example_10_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72E328D7631200422DA6 /* Example_10_1.swift */; };
 		96B8100628D1C2B900F76E8B /* Example_5_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100528D1C2B900F76E8B /* Example_5_Main.swift */; };
 		96B8100828D1C33900F76E8B /* Example_5_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100728D1C33900F76E8B /* Example_5_1.swift */; };
 		96B8100A28D1C56E00F76E8B /* Example_5_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100928D1C56E00F76E8B /* Example_5_2.swift */; };
@@ -227,6 +229,8 @@
 		969E72DA28D75E5100422DA6 /* Example_9_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_9_3.swift; sourceTree = "<group>"; };
 		969E72DC28D7607A00422DA6 /* Example_9_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_9_4.swift; sourceTree = "<group>"; };
 		969E72DE28D761A300422DA6 /* Example_9_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_9_5.swift; sourceTree = "<group>"; };
+		969E72E128D762D500422DA6 /* Example_10_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_10_Main.swift; sourceTree = "<group>"; };
+		969E72E328D7631200422DA6 /* Example_10_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_10_1.swift; sourceTree = "<group>"; };
 		96B8100528D1C2B900F76E8B /* Example_5_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_Main.swift; sourceTree = "<group>"; };
 		96B8100728D1C33900F76E8B /* Example_5_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_1.swift; sourceTree = "<group>"; };
 		96B8100928D1C56E00F76E8B /* Example_5_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_2.swift; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 				969C158828D5A73F00A920DC /* Section-7 */,
 				9665279D28D63FB900BF5DA6 /* Section-8-Lists */,
 				969E72D328D758F600422DA6 /* Section-9-Forms */,
+				969E72E028D762B300422DA6 /* Section-10-Containers */,
 			);
 			path = MyLearnings;
 			sourceTree = "<group>";
@@ -472,6 +477,15 @@
 			path = "Section-9-Forms";
 			sourceTree = "<group>";
 		};
+		969E72E028D762B300422DA6 /* Section-10-Containers */ = {
+			isa = PBXGroup;
+			children = (
+				969E72E128D762D500422DA6 /* Example_10_Main.swift */,
+				969E72E328D7631200422DA6 /* Example_10_1.swift */,
+			);
+			path = "Section-10-Containers";
+			sourceTree = "<group>";
+		};
 		96E3EBBF28CE0223007C60AC /* Section-4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +604,7 @@
 				96B8101428D212F300F76E8B /* Example_5_5_1.swift in Sources */,
 				969C571C28C8FFBD00D1BA9C /* MainView.swift in Sources */,
 				969C571E28C90E8B00D1BA9C /* CheckoutView.swift in Sources */,
+				969E72E228D762D500422DA6 /* Example_10_Main.swift in Sources */,
 				966527A128D6407100BF5DA6 /* Example_8_1.swift in Sources */,
 				968DFB3928CB822300657D72 /* Example_2_Main.swift in Sources */,
 				967648AD28CBBA250027F77E /* Example_2_4.swift in Sources */,
@@ -653,6 +668,7 @@
 				967648B128CBC6EF0027F77E /* Example_2_6.swift in Sources */,
 				968F065528CA715500D364E4 /* Example_1_10.swift in Sources */,
 				9665279C28D63C6900BF5DA6 /* Example_7_7.swift in Sources */,
+				969E72E428D7631200422DA6 /* Example_10_1.swift in Sources */,
 				969E72D728D7597300422DA6 /* Example_9_1.swift in Sources */,
 				969944CE28C79B42001F98D4 /* Order.swift in Sources */,
 				969C571628C8E2AE00D1BA9C /* ItemRow.swift in Sources */,
