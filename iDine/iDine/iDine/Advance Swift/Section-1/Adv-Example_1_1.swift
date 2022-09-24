@@ -21,8 +21,8 @@ struct BoolModel {
     }
 }
 
-struct GenericModel<CustomType> {
-    let info: CustomType?
+struct GenericModel<T> {
+    let info: T?
     func removeInfo() -> GenericModel {
         GenericModel(info: nil)
     }
