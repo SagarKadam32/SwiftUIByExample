@@ -30,6 +30,23 @@ struct HeaderViewRegular: View {
     }
 }
 
+struct HeaderViewGeneric<Content:View>: View {
+    let title: String
+    let content: Content
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(title)
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+            content
+            
+            RoundedRectangle(cornerRadius: 5)
+                .frame(height:2)
+        }
+    }
+}
+
 struct Adv_Example_1_2: View {
     var body: some View {
         VStack {
@@ -38,6 +55,17 @@ struct Adv_Example_1_2: View {
             HeaderViewRegular(title: "Another Title", description: "Title2", iconName: "pencil")
             
             HeaderViewRegular(title: "Another Title 1", description: nil, iconName: nil)
+            RoundedRectangle(cornerRadius: 5)
+                .frame(height:2)
+            
+            HeaderViewGeneric(title: "Generic View Title", content: Text("This is sample text"))
+            HeaderViewGeneric(title: "Generic View Title 2", content:
+                                HStack {
+                                    Image(systemName: "heart")
+                                    Text("This is sample text")
+                                }
+            )
+            
             Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
