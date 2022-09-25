@@ -34,6 +34,11 @@ struct HeaderViewGeneric<Content:View>: View {
     let title: String
     let content: Content
     
+    init(title: String, @ViewBuilder content: () -> Content) {
+        self.title = title
+        self.content = content()
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text(title)
@@ -58,13 +63,17 @@ struct Adv_Example_1_2: View {
             RoundedRectangle(cornerRadius: 5)
                 .frame(height:2)
             
-            HeaderViewGeneric(title: "Generic View Title", content: Text("This is sample text"))
-            HeaderViewGeneric(title: "Generic View Title 2", content:
-                                HStack {
-                                    Image(systemName: "heart")
-                                    Text("This is sample text")
-                                }
-            )
+            HeaderViewGeneric(title: "Generic View Title") {
+                Text("This is sample Generic Text")
+            }
+            HeaderViewGeneric(title: "Generic View 2") {
+                HStack {
+                    Image(systemName: "heart")
+                    Text("This is sample text")
+                }
+            }
+            
+           
             
             Spacer()
         }
