@@ -20,7 +20,7 @@ struct AdvExample_1_Main: View {
                 Text("3. How to use Protocols in Swift")
             }
             
-            NavigationLink(destination: DependancyInjectionBootcamp()) {
+            NavigationLink(destination: DependancyInjectionBootcamp(dataService: ProductionDataService())) {
                 Text("4. How to use Dependency Injection in SwiftUI ")
             }
             
