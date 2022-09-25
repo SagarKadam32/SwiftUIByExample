@@ -27,6 +27,17 @@ struct GenericModel<T> {
         GenericModel(info: nil)
     }
 }
+
+struct GenericView<CustomType:View>: View {
+    let title: String
+    let content: CustomType
+    var body: some View {
+        Text(title)
+        content
+    }
+    
+    
+}
 class GenericsViewModel: ObservableObject {
     @Published var stringModel = StringModel(info: "Hello World!")
     @Published var boolModel = BoolModel(info: true)
@@ -46,12 +57,14 @@ class GenericsViewModel: ObservableObject {
 struct Adv_Example_1_1: View {
     @StateObject private var vm = GenericsViewModel()
     var body: some View {
-        VStack {
+        VStack(spacing:10) {
             Text(vm.stringModel.info ?? "No String Data")
             Text(vm.boolModel.info?.description ?? "No Bool Data")
             
             Text(vm.genericStringModel.info ?? "No Generic String Data")
             Text(vm.genericBoolModel.info?.description ?? "No Generic Bool Data")
+            
+            GenericView(title:"My New View", content: Text("Generic Content View"))
             
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=rx3uRICZr5I&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=9", title: "Generics")
