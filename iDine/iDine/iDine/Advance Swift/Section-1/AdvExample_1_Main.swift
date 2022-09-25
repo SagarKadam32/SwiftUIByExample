@@ -16,6 +16,9 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: Adv_Example_1_2()) {
                 Text("2. How to use @ViewBuilder in SwiftUI")
             }
+            NavigationLink(destination: Adv_Example_1_3()) {
+                Text("3. How to use Protocols in Swift")
+            }
         }
     }
 }
