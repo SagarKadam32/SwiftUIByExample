@@ -19,6 +19,12 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: Adv_Example_1_3(colorTheme: DefaultColorTheme(), datasource: DefaultDataSource())) {
                 Text("3. How to use Protocols in Swift")
             }
+            
+            NavigationLink(destination: DependancyInjectionBootcamp()) {
+                Text("4. How to use Dependency Injection in SwiftUI ")
+            }
+            
+            
         }
     }
 }
