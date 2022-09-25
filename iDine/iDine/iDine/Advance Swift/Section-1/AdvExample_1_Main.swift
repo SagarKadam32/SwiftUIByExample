@@ -13,6 +13,9 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: Adv_Example_1_1()) {
                 Text("1. How to use: Generics")
             }
+            NavigationLink(destination: Adv_Example_1_2()) {
+                Text("2. How to use @ViewBuilder in SwiftUI")
+            }
         }
     }
 }
