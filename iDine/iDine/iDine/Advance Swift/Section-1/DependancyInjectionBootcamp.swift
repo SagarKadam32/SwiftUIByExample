@@ -15,9 +15,17 @@ struct PostModel: Codable, Identifiable {
     let body: String
 }
 
-class ProductionDataService {
-    let url: URL = URL(string: "https://jsonplaceholder.typicode.com/posts")!
+protocol DataServiceProtocol {
+    func getData() -> AnyPublisher<[PostModel], Error>
+}
+
+class ProductionDataService: DataServiceProtocol {
+    let url: URL
     
+    init(url: URL) {
+        self.url = url
+    }
+
     func getData() -> AnyPublisher<[PostModel], Error> {
         URLSession.shared.dataTaskPublisher(for: url)
             .map({ $0.data})
@@ -27,12 +35,27 @@ class ProductionDataService {
     }
 }
 
+class MockDataService: DataServiceProtocol {
+    
+    let testData: [PostModel] = [
+        PostModel(userId: 1, id: 1, title: "One", body: "One"),
+        PostModel(userId: 2, id: 2, title: "Two", body: "Two")
+    ]
+    
+    func getData() -> AnyPublisher<[PostModel], Error> {
+        Just(testData)
+            .tryMap({ $0 })
+            .eraseToAnyPublisher()
+    }
+    
+}
+
 class DependancyInjectionViewModel: ObservableObject {
     @Published var dataArray:[PostModel] = []
     var cancellables = Set<AnyCancellable>()
-    let dataService: ProductionDataService
+    let dataService: DataServiceProtocol
     
-    init(dataService: ProductionDataService) {
+    init(dataService: DataServiceProtocol) {
         self.dataService = dataService
         loadPosts()
     }
@@ -51,7 +74,7 @@ class DependancyInjectionViewModel: ObservableObject {
 
 struct DependancyInjectionBootcamp: View {
     @StateObject private var vm : DependancyInjectionViewModel
-    init(dataService: ProductionDataService) {
+    init(dataService: DataServiceProtocol) {
         _vm = StateObject(wrappedValue: DependancyInjectionViewModel.init(dataService: dataService))
     }
     var body: some View {
@@ -71,7 +94,8 @@ struct DependancyInjectionBootcamp: View {
 }
 
 struct DependancyInjectionBootcamp_Previews: PreviewProvider {
-    static let dataService = ProductionDataService()
+    // static let dataService = ProductionDataService(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
+    static let dataService = MockDataService()
     static var previews: some View {
         DependancyInjectionBootcamp(dataService: dataService)
     }
