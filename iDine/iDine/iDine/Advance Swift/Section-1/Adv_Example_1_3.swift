@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+protocol ColorThemeProtocol {
+    var primary: Color { get }
+    var secondary: Color { get }
+    var tertiary: Color { get }
+}
+
 struct DefaultColorTheme : ColorThemeProtocol{
     let primary: Color = .blue
     let secondary: Color = .white
@@ -19,22 +25,17 @@ struct AlternativeColorTheme : ColorThemeProtocol {
     let tertiary: Color = .yellow
 }
 
-protocol ColorThemeProtocol {
-    var primary: Color { get }
-    var secondary: Color { get }
-    var tertiary: Color { get }
+struct AnotherThemeProtocol: ColorThemeProtocol {
+    var primary: Color = .purple
+    var secondary: Color = .white
+    var tertiary: Color = .mint
 }
 
 struct Adv_Example_1_3: View {
-  //  let colorTheme: DefaultColorTheme = DefaultColorTheme()
-  //  let colorTheme: AlternativeColorTheme = AlternativeColorTheme()
-    
-    let colorTheme : ColorThemeProtocol = AlternativeColorTheme()
-
+    let colorTheme : ColorThemeProtocol
     var body: some View {
         ZStack {
             colorTheme.tertiary.ignoresSafeArea()
-            
             Text("Protocols are awesome!")
                 .font(.headline)
                 .padding()
@@ -46,7 +47,7 @@ struct Adv_Example_1_3: View {
 }
 
 struct Adv_Example_1_3_Previews: PreviewProvider {
-    static var previews: some View {
-        Adv_Example_1_3()
+     static var previews: some View {
+        Adv_Example_1_3(colorTheme: AnotherThemeProtocol())
     }
 }
