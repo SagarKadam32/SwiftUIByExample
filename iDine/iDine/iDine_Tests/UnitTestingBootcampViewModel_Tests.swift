@@ -228,5 +228,25 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
     }
     
     
-    
+    func test_UnitTestingBootcampViewModel_saveItem_shouldSaveItem() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+
+        // When
+        let loopCount: Int = Int.random(in: 1..<100)
+        var itemsArray: [String] = []
+        
+        for _ in 0..<loopCount {
+            let newItem = randomString(length: 8)
+            vm.addItem(item: newItem)
+            itemsArray.append(newItem)
+        }
+        
+        let randomItem = itemsArray.randomElement() ?? ""
+        XCTAssertFalse(randomItem.isEmpty)
+  
+        // Then
+        XCTAssertNoThrow(try vm.saveItem(item: randomItem)) 
+      }
 }
