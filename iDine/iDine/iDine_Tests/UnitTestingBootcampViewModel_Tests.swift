@@ -14,6 +14,11 @@ import XCTest
 @testable import iDine
 
 class UnitTestingBootcampViewModel_Tests: XCTestCase {
+    
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+      return String((0..<length).map{ _ in letters.randomElement()! })
+    }
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -85,15 +90,29 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
         let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
 
         // When
-        vm.addItem(item: "Item-1")
+        let loopCount: Int = Int.random(in: 1..<100)
+        for _ in 0..<loopCount {
+            vm.addItem(item: randomString(length: 8) )
+        }
         
         // Then
         XCTAssertTrue(!vm.dataArray.isEmpty)
         XCTAssertFalse(vm.dataArray.isEmpty)
-        XCTAssertEqual(vm.dataArray.count, 1)
+        XCTAssertEqual(vm.dataArray.count, loopCount)
         XCTAssertNotEqual(vm.dataArray.count, 0)
         XCTAssertGreaterThan(vm.dataArray.count, 0)
- 
+    }
+    
+    
+    func test_UnitTestingBootcampViewModel_dataArray_shouldNotAddBlankString() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+        // When
+        vm.addItem(item: "")
+        
+        // Then
+        XCTAssertTrue(vm.dataArray.isEmpty)
     }
 
 }
