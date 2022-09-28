@@ -114,5 +114,51 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
         // Then
         XCTAssertTrue(vm.dataArray.isEmpty)
     }
+    
+    
+    func test_UnitTestingBootcampViewModel_selectedItem_shouldStartAsNil() {
+        // Given
+
+        // When
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+        // Then
+        XCTAssertTrue(vm.selectedItem == nil)
+        XCTAssertNil(vm.selectedItem)
+    }
+    
+    func test_UnitTestingBootcampViewModel_selectedItem_shouldBeNilWhenSelectingInvalidItem() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+
+        // When
+        
+        // select valid item
+        let newItem = randomString(length: 8)
+        vm.addItem(item: newItem)
+        vm.selectItem(item: newItem)
+        
+        // select invalid item
+        vm.selectItem(item: randomString(length: 8))
+
+        // Then
+        XCTAssertNil(vm.selectedItem)
+    }
+    
+    func test_UnitTestingBootcampViewModel_selectedItem_shouldBeSelected() {
+        // Given
+        let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+
+        // When
+        let newItem = randomString(length: 8)
+        vm.addItem(item: newItem)
+        vm.selectItem(item: newItem)
+
+        // Then
+        XCTAssertNotNil(vm.selectedItem)
+        XCTAssertEqual(vm.selectedItem, newItem)
+    }
 
 }
