@@ -219,11 +219,14 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
          }
   
         // Then
-        XCTAssertThrowsError(try vm.saveItem(item: ""))
-        XCTAssertThrowsError(try vm.saveItem(item: ""), "Should Throw No Data error!") { error in
+        do {
+            try vm.saveItem(item: "")
+        } catch let error {
             let returnedError = error as? UnitTestingBootcampViewModel.DataError
             XCTAssertEqual(returnedError, UnitTestingBootcampViewModel.DataError.noData)
         }
     }
-
+    
+    
+    
 }
