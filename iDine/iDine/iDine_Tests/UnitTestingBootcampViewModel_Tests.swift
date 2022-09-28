@@ -247,6 +247,12 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
         XCTAssertFalse(randomItem.isEmpty)
   
         // Then
-        XCTAssertNoThrow(try vm.saveItem(item: randomItem)) 
+        XCTAssertNoThrow(try vm.saveItem(item: randomItem))
+        
+        do {
+            try vm.saveItem(item: randomItem)
+        } catch {
+            XCTFail()
+        }
       }
 }
