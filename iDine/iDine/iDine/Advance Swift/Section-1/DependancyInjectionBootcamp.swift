@@ -37,10 +37,16 @@ class ProductionDataService: DataServiceProtocol {
 
 class MockDataService: DataServiceProtocol {
     
-    let testData: [PostModel] = [
-        PostModel(userId: 1, id: 1, title: "One", body: "One"),
-        PostModel(userId: 2, id: 2, title: "Two", body: "Two")
-    ]
+    let testData: [PostModel]
+    
+    init(data: [PostModel]?) {
+        self.testData = data ?? [
+            PostModel(userId: 1, id: 1, title: "One", body: "One"),
+            PostModel(userId: 2, id: 2, title: "Two", body: "Two"),
+            PostModel(userId: 3, id: 3, title: "Three", body: "Three"),
+            PostModel(userId: 4, id: 4, title: "Four", body: "Four")
+        ]
+    }
     
     func getData() -> AnyPublisher<[PostModel], Error> {
         Just(testData)
@@ -95,7 +101,7 @@ struct DependancyInjectionBootcamp: View {
 
 struct DependancyInjectionBootcamp_Previews: PreviewProvider {
     // static let dataService = ProductionDataService(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
-    static let dataService = MockDataService()
+    static let dataService = MockDataService(data: nil)
     static var previews: some View {
         DependancyInjectionBootcamp(dataService: dataService)
     }
