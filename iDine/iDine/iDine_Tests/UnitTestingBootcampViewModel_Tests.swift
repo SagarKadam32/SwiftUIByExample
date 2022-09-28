@@ -34,15 +34,26 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
         XCTAssertTrue(vm.isPremium)
     }
     
-    func test_UnitTestingBootcvampViewModel_isPremium_shouldBeFalse() {
+    func test_UnitTestingBootcampViewModel_isPremium_shouldBeFalse() {
         // Given
-        let userIsNotPremium: Bool = false
+        let userIsPremium: Bool = false
         
         // When
-        let vm = UnitTestingBootcampViewModel(isPremium: userIsNotPremium)
+        let vm = UnitTestingBootcampViewModel(isPremium: userIsPremium)
         
         // Then
         XCTAssertFalse(vm.isPremium)
+    }
+    
+    func test_UnitTestingBootcampViewModel_isPremium_shouldBeInjectedValue() {
+        // Given
+        let userIsPremium: Bool = Bool.random()
+        
+        // When
+        let vm = UnitTestingBootcampViewModel(isPremium: userIsPremium)
+        
+        // Then
+        XCTAssertEqual(vm.isPremium, userIsPremium)
     }
 
 }
