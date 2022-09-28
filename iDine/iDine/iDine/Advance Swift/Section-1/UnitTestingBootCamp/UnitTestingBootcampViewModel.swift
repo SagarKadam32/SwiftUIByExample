@@ -9,6 +9,7 @@ import Foundation
 
 class UnitTestingBootcampViewModel : ObservableObject {
     @Published var isPremium : Bool
+    
 
     init(isPremium: Bool) {
         self.isPremium = isPremium
