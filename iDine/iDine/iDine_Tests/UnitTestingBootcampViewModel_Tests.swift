@@ -15,19 +15,24 @@ import XCTest
 
 class UnitTestingBootcampViewModel_Tests: XCTestCase {
     
-    func randomString(length: Int) -> String {
-      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-      return String((0..<length).map{ _ in letters.randomElement()! })
-    }
-
+    var viewModel: UnitTestingBootcampViewModel?
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+         viewModel = UnitTestingBootcampViewModel(isPremium: Bool.random())
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+        viewModel = nil
     }
 
+    func randomString(length: Int) -> String {
+      let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+      return String((0..<length).map{ _ in letters.randomElement()! })
+    }
+    
     func test_UnitTestingBootcampViewModel_isPremium_shouldBeTrue() {
         // Given
         let userIsPremium: Bool = true
@@ -107,6 +112,20 @@ class UnitTestingBootcampViewModel_Tests: XCTestCase {
     func test_UnitTestingBootcampViewModel_dataArray_shouldNotAddBlankString() {
         // Given
         let vm = UnitTestingBootcampViewModel(isPremium: Bool.random())
+
+        // When
+        vm.addItem(item: "")
+        
+        // Then
+        XCTAssertTrue(vm.dataArray.isEmpty)
+    }
+    
+    func test_UnitTestingBootcampViewModel_dataArray_shouldNotAddBlankString2() {
+        // Given
+        guard let vm = viewModel else {
+            XCTFail()
+            return
+        }
 
         // When
         vm.addItem(item: "")
