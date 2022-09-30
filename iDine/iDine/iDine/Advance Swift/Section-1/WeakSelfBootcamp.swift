@@ -26,6 +26,11 @@ struct WeakSelfBootcamp: View {
                 .background(Color.green.cornerRadius(10))
             , alignment: .topTrailing)
             
+    
+        
+        Section {
+            MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=TPHp9kR0Go8&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=19", title: "Weak Self Usage & WHY ")
+        }
         
     }
 }
