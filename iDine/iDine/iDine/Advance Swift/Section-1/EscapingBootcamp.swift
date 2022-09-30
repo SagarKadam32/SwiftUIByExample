@@ -18,10 +18,13 @@ class EscaptingViewMoel: ObservableObject {
         text = newData
         */
         // Basic Synchronous Closure call
+        /*
         downloadData2 { (returnedData) in
             text = returnedData
         }
+        */
         
+        // Escaping Closure
         downloadData3 { [weak self] data in
             self?.text = data
         }
