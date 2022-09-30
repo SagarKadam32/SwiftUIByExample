@@ -22,8 +22,8 @@ class EscaptingViewMoel: ObservableObject {
             text = returnedData
         }
         
-        downloadData3 { data in
-            text = data
+        downloadData3 { [weak self] data in
+            self?.text = data
         }
         
         
