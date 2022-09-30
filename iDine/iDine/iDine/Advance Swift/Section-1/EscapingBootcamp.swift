@@ -17,20 +17,35 @@ class EscaptingViewMoel: ObservableObject {
         let newData = downloadData()
         text = newData
         */
+        // Basic Synchronous Closure call
+        downloadData2 { (returnedData) in
+            text = returnedData
+        }
         
-        let newData = downloadData2()
-        text = newData
+        
+        doSomething(forData: "Internal is diff than the external name")
+        doSomething1(data: "Intername and external name is same for function")
+        doSomething2("External name is stashed and internal not exposed")
     }
     
     func downloadData() -> String {
         return "New Data!"
     }
     
-    func downloadData2() -> String {
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            return "New Data!"
-        }
+    func downloadData2(completionHandler: (_ data: String) -> Void){
+        completionHandler("New Data!")
+    }
+    
+    func doSomething(forData data: String) {
+        print(data)
+    }
+    
+    func doSomething1(data: String) {
+        print(data)
+    }
+    
+    func doSomething2(_ data: String) {
+        print(data)
     }
 }
 
