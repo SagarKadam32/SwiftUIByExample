@@ -40,7 +40,7 @@ class EscaptingViewMoel: ObservableObject {
         completionHandler("New Data!")
     }
     
-    func downloadData3(completionHandler: (_ data: String) -> ()){
+    func downloadData3(completionHandler: @escaping (_ data: String) -> ()){
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             completionHandler("New Data!")
         }
