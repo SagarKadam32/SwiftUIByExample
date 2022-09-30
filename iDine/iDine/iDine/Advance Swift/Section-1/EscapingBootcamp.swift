@@ -12,13 +12,25 @@ class EscaptingViewMoel: ObservableObject {
     @Published var text: String = "Hello"
     
     func getData() {
+        // Basic Syncrhonous Call
+        /*
         let newData = downloadData()
         text = newData
+        */
         
+        let newData = downloadData2()
+        text = newData
     }
     
     func downloadData() -> String {
         return "New Data!"
+    }
+    
+    func downloadData2() -> String {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            return "New Data!"
+        }
     }
 }
 
