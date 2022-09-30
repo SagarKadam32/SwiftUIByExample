@@ -36,6 +36,10 @@ struct AdvExample_1_Main: View {
                 Text("7. How to use Typealias in Swift ")
             }
             
+            NavigationLink(destination: EscapingBootcamp()) {
+                Text("8. How to use escaping closures in Swift")
+            }
+            
             
         }
     }
