@@ -28,6 +28,10 @@ struct AdvExample_1_Main: View {
                 Text("5. Multi-threading with background threads and queues in Xcode")
             }
             
+            NavigationLink(destination: WeakSelfBootcamp()) {
+                Text("6. Use weak self in Swift")
+            }
+            
             
         }
     }
