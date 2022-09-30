@@ -29,10 +29,17 @@ class EscaptingViewMoel: ObservableObject {
         downloadData3 { [weak self] data in
             self?.text = data
         }
-         */
+        */
         
         // Update with the model for the closure params
+        /*
         downloadData4 { [weak self] (returnedResult) in
+            self?.text = returnedResult.data
+        }
+        */
+        
+        // Using the typealias
+        downloadData5 { [weak self] (returnedResult) in
             self?.text = returnedResult.data
         }
         
@@ -63,6 +70,13 @@ class EscaptingViewMoel: ObservableObject {
         }
     }
     
+    func downloadData5(completionHandler: @escaping DownloadCompletion){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            let result = DownloadResult(data: "New Data!")
+            completionHandler(result)
+        }
+    }
+    
     func doSomething(forData data: String) {
         print(data)
     }
@@ -80,6 +94,8 @@ class EscaptingViewMoel: ObservableObject {
 struct DownloadResult {
     let data: String
 }
+
+typealias DownloadCompletion = (DownloadResult) -> ()
 
 struct EscapingBootcamp: View {
     
