@@ -32,6 +32,10 @@ struct AdvExample_1_Main: View {
                 Text("6. Use weak self in Swift")
             }
             
+            NavigationLink(destination: TypealiasBootcamp()) {
+                Text("7. How to use Typealias in Swift ")
+            }
+            
             
         }
     }
