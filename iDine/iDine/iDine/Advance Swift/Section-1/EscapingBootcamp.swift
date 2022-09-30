@@ -22,6 +22,10 @@ class EscaptingViewMoel: ObservableObject {
             text = returnedData
         }
         
+        downloadData3 { data in
+            text = data
+        }
+        
         
         doSomething(forData: "Internal is diff than the external name")
         doSomething1(data: "Intername and external name is same for function")
@@ -34,6 +38,12 @@ class EscaptingViewMoel: ObservableObject {
     
     func downloadData2(completionHandler: (_ data: String) -> Void){
         completionHandler("New Data!")
+    }
+    
+    func downloadData3(completionHandler: (_ data: String) -> ()){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            completionHandler("New Data!")
+        }
     }
     
     func doSomething(forData data: String) {
