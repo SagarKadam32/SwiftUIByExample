@@ -39,6 +39,10 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: EscapingBootcamp()) {
                 Text("8. How to use escaping closures in Swift")
             }
+                        
+            NavigationLink(destination: CodableBootcamp()) {
+                Text("9. Codable, Decodable, and Encodable in Swift")
+            }
             
             
         }
