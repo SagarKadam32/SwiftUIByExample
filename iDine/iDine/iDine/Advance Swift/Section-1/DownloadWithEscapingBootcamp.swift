@@ -7,7 +7,15 @@
 
 import SwiftUI
 
+struct PostModelObject : Identifiable, Codable {
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
+}
+
 class DownloadWithEscapingViewModel: ObservableObject {
+    @Published var posts: [PostModelObject] = []
     
     init() {
         getPosts()
@@ -16,34 +24,32 @@ class DownloadWithEscapingViewModel: ObservableObject {
     func getPosts() {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1") else { return }
         
+        downloadData(fromURL: url) { (returnedData) in
+            if let returnedData = returnedData {
+                guard let newPost = try? JSONDecoder().decode(PostModelObject.self, from: returnedData) else { return }
+                DispatchQueue.main.async { [weak self] in
+                    self?.posts.append(newPost)
+                }
+            } else {
+                print("No data returned.")
+            }
+        }
+    }
+    
+    func downloadData(fromURL url: URL, completionHandler: @escaping (_ data: Data?) -> ()) {
+        
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else {
-                print("No Data")
+            guard
+                let data = data,
+                error == nil,
+                let response = response as? HTTPURLResponse,
+                response.statusCode >= 200 && response.statusCode < 300 else {
+                print("Error downloading data..")
+                completionHandler(nil)
                 return
             }
-            
-            guard error == nil else {
-                print("Error \(String(describing: error))")
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse else {
-                print("Invalid Response")
-                return
-            }
-            
-            guard response.statusCode >= 200 && response.statusCode < 300 else {
-                print("Status code should 2xx, but it is \(response.statusCode)")
-                return
-            }
-            
-            print("Successfully Downloaded Data !!!")
-            print(data)
-            let jsonString = String(data: data, encoding: .utf8)
-            print(jsonString)
- 
-            
-            
+            completionHandler(data)
+      
         }.resume()
     }
     
@@ -60,6 +66,17 @@ struct DownloadWithEscapingBootcamp: View {
                 .fontWeight(.semibold)
             
             Spacer()
+            
+            List {
+                ForEach(vm.posts) { post in
+                    VStack(alignment: .leading) {
+                        Text(post.title)
+                            .font(.headline)
+                        Text(post.body)
+                            .foregroundColor(.gray)
+                    }
+                }
+            }
             
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=h42OHc5CRBQ&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=24", title: "Download JSON from API in Swift w/ URLSession and escaping closures")
