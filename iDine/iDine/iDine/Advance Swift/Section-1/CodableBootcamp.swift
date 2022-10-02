@@ -25,8 +25,26 @@ class CodableViewModel: ObservableObject {
     func getData() {
         
         guard let data = getJSONData() else { return }
+        /*
         print("JSON DATA:")
         print(data)
+        let jsonString = String(data: data, encoding: .utf8)
+        print(jsonString)
+         */
+        
+        if
+            let localData = try? JSONSerialization.jsonObject(with: data, options: []),
+            let dictionary = localData as? [String:Any],
+            let id = dictionary["id"] as? String,
+            let name = dictionary["name"] as? String,
+            let points = dictionary["points"] as? Int,
+            let isPremium = dictionary["isPremium"] as? Bool {
+            
+            let newCustomer = CustomerModel(id: id, name: name, points: points, isPremium: isPremium)
+            customer = newCustomer
+            
+        }
+                
         
     }
     
@@ -53,12 +71,15 @@ struct CodableBootcamp: View {
             Text("Codable is one of the most powerful protocols in Swift! We use this to 'decode' and 'encode' data in our application. This is especially useful for downloading data from the internet, because when we download data it will come as a foreign data type (usually JSON data). We then use Codable to transform (or 'decode') the JSON data into a data type that we have in our iOS application. In this video we will first learn how Codable is actually using Decodable and Encodable protocols behind the scenes to transform the data and then we will learn how to implement Codable itself!")
                 .font(.headline)
                 .fontWeight(.semibold)
-            
+            Spacer()
             if let customer = vm.customer {
                 Text(customer.id)
                 Text(customer.name)
                 Text("\(customer.points)")
                 Text(customer.isPremium.description)
+            }
+            Section {
+                MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=H9mt8WjpZgM&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=24", title: "Codable Protocol")
             }
         }
         .padding()
