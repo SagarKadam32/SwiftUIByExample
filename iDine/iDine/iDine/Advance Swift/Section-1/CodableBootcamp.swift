@@ -66,6 +66,14 @@ class CodableViewModel: ObservableObject {
             customer = newCustomer
         }
          */
+        /*
+        do {
+            self.customer = try JSONDecoder().decode(CustomerModel.self, from: data)
+        } catch let error {
+            print("Error decoding. \(error)")
+        }
+        */
+
         self.customer = try? JSONDecoder().decode(CustomerModel.self, from: data)
     }
     
