@@ -5,14 +5,17 @@
 //  Created by Sagar Kadam on 01/10/22.
 //
 
+// Codable = Encodable + Decodable
+
 import SwiftUI
 
-struct CustomerModel : Identifiable, Decodable, Encodable {
+struct CustomerModel : Identifiable, Codable {
     let id: String
     let name: String
     let points: Int
     let isPremium: Bool
     
+    /*
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -43,6 +46,7 @@ struct CustomerModel : Identifiable, Decodable, Encodable {
         try container.encode(points, forKey: .points)
         try container.encode(isPremium, forKey: .isPremium)
     }
+    */
 }
 
 class CodableViewModel: ObservableObject {
