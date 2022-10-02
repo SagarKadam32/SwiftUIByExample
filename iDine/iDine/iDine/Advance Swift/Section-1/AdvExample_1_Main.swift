@@ -44,7 +44,9 @@ struct AdvExample_1_Main: View {
                 Text("9. Codable, Decodable, and Encodable in Swift")
             }
             
-            
+            NavigationLink(destination: DownloadWithEscapingBootcamp()) {
+                Text("10. Download JSON from API in Swift w/ URLSession and escaping closures")
+            }
         }
     }
 }
