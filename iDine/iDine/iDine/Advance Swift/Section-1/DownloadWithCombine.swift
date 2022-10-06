@@ -73,17 +73,32 @@ struct DownloadWithCombine: View {
     @StateObject var vm = DownloadWithCombineViewModel()
     
     var body: some View {
-        List{
-            ForEach(vm.posts) { post in
-                
-                Text(post.title)
-                    .font(.headline)
-                
-                Text(post.body)
-                    .foregroundColor(.gray)
-                
+        
+        VStack {
+            Text("In this video we jump in to the excited world of Combine! Combine is a new framework from Apple that is made specifically for handling asynchronous events. By using Publishers and Subscribers, we are able to constantly keep out data in sync across our application. At the end of this video, we will compare the code to the last video (doing the same with but without Combine) to highlight the benefits of using this method. In the next few videos we will continue exploring this new framework!")
+                .font(.headline)
+                .fontWeight(.semibold)
+            
+            Spacer()
+            
+            List{
+                ForEach(vm.posts) { post in
+                    
+                    Text(post.title)
+                        .font(.headline)
+                    
+                    Text(post.body)
+                        .foregroundColor(.gray)
+                    
+                }
             }
-        }
+            
+            Section {
+                MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=fdxFp5vU6MQ&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=24", title: "Download JSON from API in Swift with Combine")
+            }
+            
+        }.padding()
+        
 
 
     }
