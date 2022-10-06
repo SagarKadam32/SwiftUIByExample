@@ -48,6 +48,12 @@ struct AdvExample_1_Main: View {
                 Text("10. Download JSON from API in Swift w/ URLSession and escaping closures")
             }
         }
+        
+        Group {
+            NavigationLink(destination: DownloadWithCombine()) {
+                Text("11. Download JSON from API in Swift with Combine")
+            }
+        }
     }
 }
 
