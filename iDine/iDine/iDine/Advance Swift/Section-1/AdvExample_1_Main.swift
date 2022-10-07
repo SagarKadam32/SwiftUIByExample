@@ -53,6 +53,12 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: DownloadWithCombine()) {
                 Text("11. Download JSON from API in Swift with Combine")
             }
+            
+            NavigationLink(destination: TimerBootcamp()) {
+                Text("12. How to use Timer and onReceive in SwiftUI ")
+            }
+            
+            
         }
     }
 }
