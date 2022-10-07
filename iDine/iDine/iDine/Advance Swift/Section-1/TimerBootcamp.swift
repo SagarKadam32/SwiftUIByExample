@@ -58,6 +58,12 @@ struct TimerBootcamp: View {
             ScrollView {
                 
                 VStack(spacing:0){
+                    Text("Implementing a Timer in SwiftUI is as simple as one line of code! In this video we will add a Timer to our View and then explore several different methods to create custom animations and features. We will use the .onReceive function to listen to the Timer (also known as 'subscribing'). This video will also serve as an introduction to Publishers and Subscribers, which we will expand on in the next video!")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                    
+                    Spacer()
+                    
                     Text("Currrent Date Time ")
                         .foregroundColor(.white)
                     Text(dateFormatter.string(from: currentDate))
@@ -132,6 +138,10 @@ struct TimerBootcamp: View {
                     .frame(height: 200)
                     .tabViewStyle(PageTabViewStyle())
                 }
+                
+                Section {
+                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=ymXRX6ZB-J0&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=25", title: "How to use Timer and onReceive in SwiftUI")
+                }
             }
         }
         .onReceive(timer, perform: { value in
@@ -154,7 +164,7 @@ struct TimerBootcamp: View {
         .onReceive(tabViewTimer, perform:  { _ in
             
             withAnimation(.default) {
-                tabViewCount = tabViewCount == 5 ? 0 : tabViewCount + 1
+                tabViewCount = tabViewCount == 5 ? 1 : tabViewCount + 1
             }
             
         })
