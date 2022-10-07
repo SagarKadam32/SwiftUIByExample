@@ -11,6 +11,7 @@ struct TimerBootcamp: View {
     
     let timer = Timer.publish(every: 1.0 , on: .main, in: .common).autoconnect()
     let animationTimer = Timer.publish(every: 0.5 , on: .main, in: .common).autoconnect()
+    let tabViewTimer = Timer.publish(every: 3.0 , on: .main, in: .common).autoconnect()
 
     
     /** Current Date Time */
@@ -41,6 +42,9 @@ struct TimerBootcamp: View {
     
     // Animation Counter
     @State var animationCount: Int = 0
+    
+    // TabView
+    @State var tabViewCount: Int = 0
     
     
     var body: some View {
@@ -101,10 +105,34 @@ struct TimerBootcamp: View {
                     .frame(width: 150)
                     .foregroundColor(.white)
                 }
-
-  
+                
+                VStack(spacing:0){
+                    Text("Tab View")
+                        .foregroundColor(.white)
+                    
+                    TabView(selection: $tabViewCount,
+                            content:  {
+                            Rectangle()
+                                .foregroundColor(.red)
+                                .tag(1)
+                            Rectangle()
+                                .foregroundColor(.blue)
+                                .tag(2)
+                            Rectangle()
+                                .foregroundColor(.green)
+                                .tag(3)
+                            Rectangle()
+                                .foregroundColor(.orange)
+                                .tag(4)
+                            Rectangle()
+                                .foregroundColor(.pink)
+                                .tag(5)
+                        
+                    })
+                    .frame(height: 200)
+                    .tabViewStyle(PageTabViewStyle())
+                }
             }
- 
         }
         .onReceive(timer, perform: { value in
             currentDate = value
@@ -123,7 +151,13 @@ struct TimerBootcamp: View {
                 animationCount = animationCount == 5 ? 0 : animationCount + 1
             }
         })
-        
+        .onReceive(tabViewTimer, perform:  { _ in
+            
+            withAnimation(.default) {
+                tabViewCount = tabViewCount == 5 ? 0 : tabViewCount + 1
+            }
+            
+        })
     }
 }
 
