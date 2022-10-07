@@ -37,6 +37,9 @@ struct TimerBootcamp: View {
         timeRemaining = "\(hour):\(minute):\(second)"
     }
     
+    // Animation Counter
+    @State var animationCount: Int = 0
+    
     
     var body: some View {
         ZStack {
@@ -76,6 +79,21 @@ struct TimerBootcamp: View {
                         .minimumScaleFactor(0.1)
                         .padding()
                 }
+                
+                VStack(spacing:40){
+                    Text("Animation Counter")
+                        .foregroundColor(.white)
+                    HStack(spacing: 15) {
+                        Circle()
+                            .offset(y: animationCount == 1 ? -20 : 0)
+                        Circle()
+                            .offset(y: animationCount == 2 ? -20 : 0)
+                        Circle()
+                            .offset(y: animationCount == 3 ? -20 : 0)
+                    }
+                    .frame(width: 200)
+                    .foregroundColor(.white )
+                }
 
   
             }
@@ -91,6 +109,12 @@ struct TimerBootcamp: View {
             }
             
             updateTimeRemaining()
+            
+            if count == 3 {
+                count = 0
+            }else {
+                count += 1
+            }
             
         })
         
