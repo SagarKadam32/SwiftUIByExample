@@ -11,7 +11,14 @@ struct TimerBootcamp: View {
     
     let timer = Timer.publish(every: 1.0 , on: .main, in: .common).autoconnect()
     
+    /** Current Date Time */
     @State var currentDate: Date = Date()
+    var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .medium
+        formatter.dateStyle = .medium
+        return formatter
+    }
     
     var body: some View {
         ZStack {
@@ -21,15 +28,25 @@ struct TimerBootcamp: View {
                            startRadius: 5,
                            endRadius: 500)
                             .ignoresSafeArea()
-            
-            Text(currentDate.description)
-                .font(.system(size: 100, weight: .semibold, design: .rounded))
-                .lineLimit(1)
-                .minimumScaleFactor(0.1)
+            ScrollView {
+                VStack(spacing:0){
+                    Text("Currrent Date Time ")
+                        .foregroundColor(.white)
+                    Text(dateFormatter.string(from: currentDate))
+                        .font(.system(size: 100, weight: .semibold, design: .rounded))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.1)
+                        .padding()
+                }
+
+  
+            }
+ 
         }
         .onReceive(timer, perform: { value in
             currentDate = value
         })
+        
     }
 }
 
