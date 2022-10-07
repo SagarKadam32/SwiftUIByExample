@@ -10,6 +10,8 @@ import SwiftUI
 struct TimerBootcamp: View {
     
     let timer = Timer.publish(every: 1.0 , on: .main, in: .common).autoconnect()
+    let animationTimer = Timer.publish(every: 0.5 , on: .main, in: .common).autoconnect()
+
     
     /** Current Date Time */
     @State var currentDate: Date = Date()
@@ -50,6 +52,7 @@ struct TimerBootcamp: View {
                            endRadius: 500)
                             .ignoresSafeArea()
             ScrollView {
+                
                 VStack(spacing:0){
                     Text("Currrent Date Time ")
                         .foregroundColor(.white)
@@ -83,16 +86,20 @@ struct TimerBootcamp: View {
                 VStack(spacing:40){
                     Text("Animation Counter")
                         .foregroundColor(.white)
-                    HStack(spacing: 15) {
+                    HStack(spacing: 2) {
                         Circle()
                             .offset(y: animationCount == 1 ? -20 : 0)
                         Circle()
                             .offset(y: animationCount == 2 ? -20 : 0)
                         Circle()
                             .offset(y: animationCount == 3 ? -20 : 0)
+                        Circle()
+                            .offset(y: animationCount == 4 ? -20 : 0)
+                        Circle()
+                            .offset(y: animationCount == 5 ? -20 : 0)
                     }
-                    .frame(width: 200)
-                    .foregroundColor(.white )
+                    .frame(width: 150)
+                    .foregroundColor(.white)
                 }
 
   
@@ -109,13 +116,12 @@ struct TimerBootcamp: View {
             }
             
             updateTimeRemaining()
+        })
+        .onReceive(animationTimer, perform:  { _ in
             
-            if count == 3 {
-                count = 0
-            }else {
-                count += 1
+            withAnimation(.easeOut(duration: 0.5)) {
+                animationCount = animationCount == 5 ? 0 : animationCount + 1
             }
-            
         })
         
     }
