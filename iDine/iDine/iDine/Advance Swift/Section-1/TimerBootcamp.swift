@@ -20,6 +20,10 @@ struct TimerBootcamp: View {
         return formatter
     }
     
+    // CountDown
+    @State var count: Int = 10
+    @State var finishedText: String? = nil
+    
     var body: some View {
         ZStack {
             
@@ -38,6 +42,16 @@ struct TimerBootcamp: View {
                         .minimumScaleFactor(0.1)
                         .padding()
                 }
+                
+                VStack(spacing:0){
+                    Text("CountDown Timer")
+                        .foregroundColor(.white)
+                    Text(finishedText ?? "\(count)")
+                        .font(.system(size: 100, weight: .semibold, design: .rounded))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.1)
+                        .padding()
+                }
 
   
             }
@@ -45,6 +59,11 @@ struct TimerBootcamp: View {
         }
         .onReceive(timer, perform: { value in
             currentDate = value
+            if count <= 1 {
+                finishedText = "WoW !!!"
+            }else {
+                count -= 1
+            }
         })
         
     }
