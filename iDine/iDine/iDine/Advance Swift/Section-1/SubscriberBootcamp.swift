@@ -70,7 +70,7 @@ struct SubscriberBootcamp: View {
                 .font(.largeTitle)
                 .foregroundColor(.blue)
             
-            Text(vm.textIsValid.description)
+            
             
             TextField("Type something here...", text:  $vm.textField)
                 .padding(.leading)
@@ -78,6 +78,24 @@ struct SubscriberBootcamp: View {
                 .font(.headline)
                 .background(Color.gray)
                 .cornerRadius(10)
+                .overlay (
+                    ZStack {
+                        Image(systemName: "xmark")
+                           .foregroundColor(.red)
+                        
+                           .opacity(
+                            vm.textField.count < 1 ? 0.0 :
+                            vm.textIsValid ? 0.0 : 1.0)
+                        
+                        Image(systemName: "checkmark")
+                           .foregroundColor(.green)
+                           .opacity(vm.textIsValid ? 1.0 : 0.0)
+                        
+                    }
+                    .font(.title)
+                    .padding(.trailing)
+                    , alignment: .trailing
+                )
             
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=Q-1EDHXUunI&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar", title: "Publishers and Subscribers in Combine")
