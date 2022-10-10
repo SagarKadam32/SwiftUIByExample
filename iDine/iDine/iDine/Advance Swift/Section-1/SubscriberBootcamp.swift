@@ -30,7 +30,10 @@ class SubscriberViewModel: ObservableObject {
                 }
                 return false
             }
-            .assign(to: \.textIsValid, on: self)
+            //.assign(to: \.textIsValid, on: self)
+            .sink(receiveValue: { [weak self] (isValid) in
+                self?.textIsValid = isValid
+            })
             .store(in: &cancellables)
     }
     
