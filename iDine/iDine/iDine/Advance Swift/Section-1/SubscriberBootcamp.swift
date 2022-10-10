@@ -22,11 +22,11 @@ class SubscriberViewModel: ObservableObject {
             .publish(every: 0.01, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
+                guard let strongSelf = self else { return }
+                strongSelf.count += 1
                 
-                self?.count += 1
-                
-                if let count = self?.count, count >= 100 {
-                    self?.timer?.cancel()
+                if strongSelf.count >= 100 {
+                    strongSelf.timer?.cancel()
                 }
             }
     }
