@@ -58,6 +58,10 @@ struct AdvExample_1_Main: View {
                 Text("12. How to use Timer and onReceive in SwiftUI ")
             }
             
+            NavigationLink(destination: SubscriberBootcamp()) {
+                Text("13. Publishers and Subscribers in Combine with a SwiftUI project  ")
+            }
+            
             
         }
     }

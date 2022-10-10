@@ -107,6 +107,7 @@
 		969D29C828D4BB2300443238 /* Example_6_6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D29C728D4BB2300443238 /* Example_6_6.swift */; };
 		969D29CA28D4BE4200443238 /* Example_6_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D29C928D4BE4200443238 /* Example_6_7.swift */; };
 		969D29CC28D4BFD900443238 /* Example_6_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D29CB28D4BFD900443238 /* Example_6_8.swift */; };
+		969D3B7A28F3CEEC0039FCF1 /* SubscriberBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D3B7928F3CEEC0039FCF1 /* SubscriberBootcamp.swift */; };
 		969E72BC28D6C43400422DA6 /* Example_8_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72BB28D6C43400422DA6 /* Example_8_2.swift */; };
 		969E72BE28D6CA8100422DA6 /* Example_8_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72BD28D6CA8100422DA6 /* Example_8_3.swift */; };
 		969E72C028D6CE3500422DA6 /* Example_8_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72BF28D6CE3500422DA6 /* Example_8_4.swift */; };
@@ -258,6 +259,7 @@
 		969D29C728D4BB2300443238 /* Example_6_6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_6_6.swift; sourceTree = "<group>"; };
 		969D29C928D4BE4200443238 /* Example_6_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_6_7.swift; sourceTree = "<group>"; };
 		969D29CB28D4BFD900443238 /* Example_6_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_6_8.swift; sourceTree = "<group>"; };
+		969D3B7928F3CEEC0039FCF1 /* SubscriberBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberBootcamp.swift; sourceTree = "<group>"; };
 		969E72BB28D6C43400422DA6 /* Example_8_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_2.swift; sourceTree = "<group>"; };
 		969E72BD28D6CA8100422DA6 /* Example_8_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_3.swift; sourceTree = "<group>"; };
 		969E72BF28D6CE3500422DA6 /* Example_8_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_4.swift; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 				969CE20528E9F8E30071F453 /* DownloadWithEscapingBootcamp.swift */,
 				9659E90628EF4A5E005EBE46 /* DownloadWithCombine.swift */,
 				9688BCC928F09F1000FF89CD /* TimerBootcamp.swift */,
+				969D3B7928F3CEEC0039FCF1 /* SubscriberBootcamp.swift */,
 				9689F3AE28E75984002BD7DA /* WeakSelfBootcamp.swift */,
 				9689F3B028E76490002BD7DA /* TypealiasBootcamp.swift */,
 				9689F3B228E76D01002BD7DA /* EscapingBootcamp.swift */,
@@ -796,6 +799,7 @@
 				96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */,
 				969C66B628CC756E005EAC29 /* Example_3_1.swift in Sources */,
 				9664844F28E0352E00F19508 /* Adv_Example_1_2.swift in Sources */,
+				969D3B7A28F3CEEC0039FCF1 /* SubscriberBootcamp.swift in Sources */,
 				964B667428E4B08E00B32B96 /* UnitTestingBootcampViewModel.swift in Sources */,
 				968F064928CA2B1300D364E4 /* Example_1_4.swift in Sources */,
 				969E72CA28D70B8500422DA6 /* Example_8_9.swift in Sources */,
