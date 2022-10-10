@@ -13,6 +13,7 @@ class SubscriberViewModel: ObservableObject {
     @Published var count: Int = 0
     @Published var textField: String = ""
     @Published var textIsValid: Bool = false
+    @Published var showButton: Bool = false
     
     var timer : AnyCancellable?
     var cancellables = Set<AnyCancellable>()
@@ -20,6 +21,7 @@ class SubscriberViewModel: ObservableObject {
     init() {
         setUpTimer()
         addTextFieldSubscriber()
+        addButtonSubscriber()
     }
     
     func addTextFieldSubscriber() {
@@ -52,6 +54,21 @@ class SubscriberViewModel: ObservableObject {
                         item.cancel()
                     }
                 } */
+            }
+            .store(in: &cancellables)
+    }
+    
+    func addButtonSubscriber() {
+        $textIsValid
+            .combineLatest($count)
+            .sink { [weak self] (isValid, count) in
+                guard let strongSelf = self else { return }
+                
+                if isValid && count > 10 {
+                    strongSelf.showButton = true
+                }else {
+                    strongSelf.showButton = false
+                }
             }
             .store(in: &cancellables)
     }
@@ -97,6 +114,18 @@ struct SubscriberBootcamp: View {
                     .padding(.trailing)
                     , alignment: .trailing
                 )
+            
+            Button(action: {}, label: {
+                Text("Submit".uppercased())
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    .opacity(vm.showButton ? 1.0 : 0.5)
+            })
+            .disabled(!vm.showButton)
             
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=Q-1EDHXUunI&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar", title: "Publishers and Subscribers in Combine")
