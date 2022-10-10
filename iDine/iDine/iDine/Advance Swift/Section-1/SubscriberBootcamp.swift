@@ -12,13 +12,14 @@ class SubscriberViewModel: ObservableObject {
     
     @Published var count: Int = 0
     var timer : AnyCancellable?
+    var cancellables = Set<AnyCancellable>()
     
     init() {
         setUpTimer()
     }
     
     func setUpTimer() {
-        timer = Timer
+        Timer
             .publish(every: 0.01, on: .main, in: .common)
             .autoconnect()
             .sink { [weak self] _ in
@@ -26,11 +27,13 @@ class SubscriberViewModel: ObservableObject {
                 strongSelf.count += 1
                 
                 if strongSelf.count >= 100 {
-                    strongSelf.timer?.cancel()
+                    for item in strongSelf.cancellables {
+                        item.cancel()
+                    }
                 }
             }
+            .store(in: &cancellables)
     }
-    
 }
 
 struct SubscriberBootcamp: View {
