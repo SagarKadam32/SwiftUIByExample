@@ -18,16 +18,22 @@ class LocalFileManager {
             print("Error getting data.")
             return
         }
-
-        let directory = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
-        let directory1 = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        let directory2 = FileManager.default.temporaryDirectory
         
-        print(directory)
-        print(directory1)
-        print(directory2)
+        guard
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent("\(name)") else {
+            return
+        }
 
-        //data.write(to: <#T##URL#>)
+        do {
+            try data.write(to: path)
+            print("Success saving!")
+        } catch let error  {
+            print("Error saving. \(error)")
+        }
     }
 }
 
