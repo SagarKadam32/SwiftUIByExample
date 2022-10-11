@@ -62,7 +62,9 @@ struct AdvExample_1_Main: View {
                 Text("13. Publishers and Subscribers in Combine with a SwiftUI project  ")
             }
             
-            
+            NavigationLink(destination: FileManagerBootcamp()) {
+                Text("14. Save data and images to FileManager in Xcode")
+            }
         }
     }
 }

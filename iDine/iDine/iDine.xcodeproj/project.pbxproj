@@ -144,6 +144,7 @@
 		96E3EBC128CE0242007C60AC /* Example_4_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBC028CE0242007C60AC /* Example_4_Main.swift */; };
 		96E3EBC328CE06DC007C60AC /* Example_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBC228CE06DC007C60AC /* Example_4_1.swift */; };
 		96E3EBC528CE1943007C60AC /* Example_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBC428CE1943007C60AC /* Example_4_2.swift */; };
+		96EBDC5828F5DE0C0018D49C /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,6 +297,7 @@
 		96E3EBC028CE0242007C60AC /* Example_4_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_Main.swift; sourceTree = "<group>"; };
 		96E3EBC228CE06DC007C60AC /* Example_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_1.swift; sourceTree = "<group>"; };
 		96E3EBC428CE1943007C60AC /* Example_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_2.swift; sourceTree = "<group>"; };
+		96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 				9659E90628EF4A5E005EBE46 /* DownloadWithCombine.swift */,
 				9688BCC928F09F1000FF89CD /* TimerBootcamp.swift */,
 				969D3B7928F3CEEC0039FCF1 /* SubscriberBootcamp.swift */,
+				96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */,
 				9689F3AE28E75984002BD7DA /* WeakSelfBootcamp.swift */,
 				9689F3B028E76490002BD7DA /* TypealiasBootcamp.swift */,
 				9689F3B228E76D01002BD7DA /* EscapingBootcamp.swift */,
@@ -778,6 +781,7 @@
 				969C158C28D5A78300A920DC /* Example_7_1.swift in Sources */,
 				9650E4CB28D1158A001923DB /* Example_4_17.swift in Sources */,
 				969E72C828D7030D00422DA6 /* Example_8_8.swift in Sources */,
+				96EBDC5828F5DE0C0018D49C /* FileManagerBootcamp.swift in Sources */,
 				96B8100828D1C33900F76E8B /* Example_5_1.swift in Sources */,
 				968EA54628CFAD3100736416 /* Example_4_6.swift in Sources */,
 				96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */,
