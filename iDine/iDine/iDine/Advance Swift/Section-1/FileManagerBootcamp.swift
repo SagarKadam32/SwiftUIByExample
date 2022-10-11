@@ -10,6 +10,32 @@ import SwiftUI
 class LocalFileManager {
     
     static let instance = LocalFileManager()
+    let folderName = "MyApp_Images"
+    
+    init() {
+        createFolderIfNeeded()
+    }
+    
+    func createFolderIfNeeded() {
+        guard
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent(folderName)
+                .path else {
+            return
+        }
+        
+        if !FileManager.default.fileExists(atPath: path) {
+            do {
+                try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
+                print("Success creating folder.")
+            } catch let error {
+                print("Error creating folder \(error)")
+            }
+        }
+    }
     
     func saveImage(image: UIImage, name: String) -> String {
        
@@ -21,6 +47,7 @@ class LocalFileManager {
         
         do {
             try data.write(to: path)
+            print(path)
             return "Success saving!"
         } catch let error  {
             return "Error saving. \(error)"
@@ -60,6 +87,7 @@ class LocalFileManager {
                 .default
                 .urls(for: .cachesDirectory, in: .userDomainMask)
                 .first?
+                .appendingPathComponent(folderName)
                 .appendingPathComponent("\(name)") else {
             return nil
         }
