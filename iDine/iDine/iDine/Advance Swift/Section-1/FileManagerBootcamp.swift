@@ -11,20 +11,19 @@ class LocalFileManager {
     
     static let instance = LocalFileManager()
     
-    func saveImage(image: UIImage, name: String) {
+    func saveImage(image: UIImage, name: String) -> String {
        
         guard
             let data = image.jpegData(compressionQuality: 1.0),
             let path = getPathForImage(name: name) else {
-            print("Error getting data.")
-            return
-        }
+            return "Error getting data."
+         }
         
         do {
             try data.write(to: path)
-            print("Success saving!")
+            return "Success saving!"
         } catch let error  {
-            print("Error saving. \(error)")
+            return "Error saving. \(error)"
         }
     }
     
@@ -39,20 +38,18 @@ class LocalFileManager {
         return UIImage(contentsOfFile: path)
     }
     
-    func deleteImage(name: String) {
+    func deleteImage(name: String) -> String {
         guard
             let path = getPathForImage(name: name),
             FileManager.default.fileExists(atPath: path.path) else {
-            print("Error getting path.")
-            return
+            return "Error getting path."
         }
         
         do {
             try FileManager.default.removeItem(at: path)
-            print("Successfully deleted image.")
+            return "Successfully deleted image."
         } catch let error {
-            print("Error deleting image.")
-
+            return "Error deleting image."
         }
         
     }
@@ -77,6 +74,7 @@ class FileManagerViewModel: ObservableObject {
     @Published var image: UIImage? = nil
     let imageName: String = "Maverick"
     let manager = LocalFileManager.instance
+    @Published var infoMessage: String = ""
 
     
     init() {
@@ -90,7 +88,7 @@ class FileManagerViewModel: ObservableObject {
     
     func saveImage() {
         guard let image = image else { return }
-        manager.saveImage(image: image, name: imageName)
+        infoMessage = manager.saveImage(image: image, name: imageName)
     }
     
     func getImageFromFileManager() {
@@ -98,7 +96,7 @@ class FileManagerViewModel: ObservableObject {
     }
     
     func deleteImage() {
-        manager.deleteImage(name: imageName)
+        infoMessage = manager.deleteImage(name: imageName)
     }
 }
 
@@ -145,6 +143,10 @@ struct FileManagerBootcamp: View {
                     })
                 }
 
+                Text(vm.infoMessage)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.purple)
                 
 
                 Spacer()
