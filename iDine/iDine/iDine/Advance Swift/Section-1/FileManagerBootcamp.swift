@@ -14,26 +14,41 @@ class LocalFileManager {
     func saveImage(image: UIImage, name: String) {
        
         guard
-            let data = image.jpegData(compressionQuality: 1.0) else {
+            let data = image.jpegData(compressionQuality: 1.0),
+            let path = getPathForImage(name: name) else {
             print("Error getting data.")
             return
         }
         
-        guard
-            let path = FileManager
-                .default
-                .urls(for: .cachesDirectory, in: .userDomainMask)
-                .first?
-                .appendingPathComponent("\(name)") else {
-            return
-        }
-
         do {
             try data.write(to: path)
             print("Success saving!")
         } catch let error  {
             print("Error saving. \(error)")
         }
+    }
+    
+    func getImage(name: String) -> UIImage? {
+        guard
+            let path = getPathForImage(name: name)?.path,
+            FileManager.default.fileExists(atPath: path) else {
+            print("Error getting path.")
+            return nil
+        }
+        
+        return UIImage(contentsOfFile: path)
+    }
+    
+    func getPathForImage(name: String) -> URL? {
+        guard
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appendingPathComponent("\(name)") else {
+            return nil
+        }
+        return path
     }
 }
 
@@ -46,6 +61,7 @@ class FileManagerViewModel: ObservableObject {
     
     init() {
         getImageFromAssetsFolder()
+        //getImageFromFileManager()
     }
     
     func getImageFromAssetsFolder() {
@@ -55,6 +71,10 @@ class FileManagerViewModel: ObservableObject {
     func saveImage() {
         guard let image = image else { return }
         manager.saveImage(image: image, name: imageName)
+    }
+    
+    func getImageFromFileManager() {
+        image = manager.getImage(name: imageName)
     }
 }
 
