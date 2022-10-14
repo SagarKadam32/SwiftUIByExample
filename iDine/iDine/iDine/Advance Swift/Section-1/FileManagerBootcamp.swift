@@ -156,6 +156,10 @@ struct FileManagerBootcamp: View {
         
         NavigationView {
             VStack {
+                Text("In this video we switch gears and look at saving documents to the FileManager. This is a handy resource for any iOS developer where we can save documents (files, data, images, videos, etc.) directly to a user's device. As the developer, it becomes your responsibility to manage the data that you save to someone's device and therefore we need to know how to save data, fetch data, and also delete data!")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                
                 if let image = vm.image {
                     Image(uiImage: image)
                         .resizable()
@@ -198,8 +202,13 @@ struct FileManagerBootcamp: View {
                 
 
                 Spacer()
+                
+                Section {
+                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=Yiq-hdhLzVM&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar", title: "Save data and images to FileManager in Xcode")
+                }
             }
             .navigationTitle("File Manager")
+            .padding()
         }
     }
 }
