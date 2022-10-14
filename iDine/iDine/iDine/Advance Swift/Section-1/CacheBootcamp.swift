@@ -54,7 +54,7 @@ class CacheViewModel : ObservableObject {
     }
     
     func saveToCache() {
-        guard let image = startingImage else { return }
+         guard let image = startingImage else { return }
         infoMessage = manager.add(image: image, name: imageName)
     }
     
