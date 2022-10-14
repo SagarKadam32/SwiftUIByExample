@@ -13,7 +13,7 @@ class CacheViewModel : ObservableObject {
     let imageName: String = "Maverick"
 
     init() {
-        
+        getImageFromAssetsFolder()
     }
     
     func getImageFromAssetsFolder() {
@@ -34,12 +34,15 @@ struct CacheBootcamp: View {
                         .font(.headline)
                         .fontWeight(.semibold)
                     
-                    Image("Maverick")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 200, height: 200)
-                        .clipped()
-                        .cornerRadius(10)
+                    if let image = vm.startingImage {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 200, height: 200)
+                            .clipped()
+                            .cornerRadius(10)
+                    }
+
                     
                     HStack {
                         Button(action:  {
