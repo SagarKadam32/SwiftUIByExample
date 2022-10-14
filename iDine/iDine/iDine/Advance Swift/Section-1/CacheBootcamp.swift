@@ -20,14 +20,14 @@ class CacheManager {
     }()
     
     
-    func add(image : UIImage, name: String) {
+    func add(image : UIImage, name: String) -> String {
         imageCache.setObject(image, forKey: name as NSString)
-        print("Added to Cache!")
+        return "Added to Cache!"
     }
     
-    func remove(name: String) {
+    func remove(name: String) -> String {
         imageCache.removeObject(forKey: name as NSString)
-        print("Removed from Cache!")
+        return "Removed from Cache!"
     }
     
     func getImage(name: String) -> UIImage? {
@@ -41,6 +41,7 @@ class CacheViewModel : ObservableObject {
     
     @Published var startingImage: UIImage? = nil
     @Published var cachedImage: UIImage? = nil
+    @Published var infoMessage: String = ""
     let imageName: String = "Maverick"
     let manager = CacheManager.instance
 
@@ -54,15 +55,20 @@ class CacheViewModel : ObservableObject {
     
     func saveToCache() {
         guard let image = startingImage else { return }
-        manager.add(image: image, name: imageName)
+        infoMessage = manager.add(image: image, name: imageName)
     }
     
     func removeFromCache() {
-        manager.remove(name: imageName)
+        infoMessage = manager.remove(name: imageName)
     }
     
     func getFromCache() {
-        cachedImage = manager.getImage(name: imageName)
+        if let returnedImage = manager.getImage(name: imageName) {
+            cachedImage = returnedImage
+            infoMessage = "Got image from Cache !!!"
+        }else {
+            infoMessage = "Image not found in Cache !"
+        }
     }
     
  
@@ -124,6 +130,8 @@ struct CacheBootcamp: View {
                                 .cornerRadius(10)
                         })
                     }
+                    Text(vm.infoMessage)
+                        .font(.title)
                     
                     if let image = vm.cachedImage {
                         Image(uiImage: image)
