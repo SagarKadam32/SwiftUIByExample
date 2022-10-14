@@ -7,10 +7,16 @@
 
 import SwiftUI
 
+class CacheManager {
+    static let instance = CacheManager() // Singleton
+    private init() {}
+}
+
 class CacheViewModel : ObservableObject {
     
     @Published var startingImage: UIImage? = nil
     let imageName: String = "Maverick"
+    let manager = CacheManager.instance
 
     init() {
         getImageFromAssetsFolder()
