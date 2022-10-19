@@ -69,6 +69,10 @@ struct AdvExample_1_Main: View {
             NavigationLink(destination: CacheBootcamp()) {
                 Text("15. Save and cache images in a SwiftUI app")
             }
+            
+            NavigationLink(destination: DownloadingImagesBootcamp()) {
+                Text("16. Download and save images using FileManager and NSCache")
+            }
         }
     }
 }
