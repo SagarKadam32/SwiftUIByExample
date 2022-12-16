@@ -10,6 +10,7 @@
 		96188D64294CB68F008F8DA7 /* Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D63294CB68F008F8DA7 /* Basics.swift */; };
 		96188D66294CB773008F8DA7 /* BasicsExamplesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */; };
 		96188D68294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */; };
+		96188D6A294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */; };
 		96402E8328DF70F400DA5E40 /* MyAdvancedSwiftLearnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96402E8228DF70F400DA5E40 /* MyAdvancedSwiftLearnings.swift */; };
 		96402E8628DF754F00DA5E40 /* AdvExample_1_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96402E8528DF754F00DA5E40 /* AdvExample_1_Main.swift */; };
 		96402E8828DF756A00DA5E40 /* Adv-Example_1_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96402E8728DF756A00DA5E40 /* Adv-Example_1_1.swift */; };
@@ -172,6 +173,7 @@
 		96188D63294CB68F008F8DA7 /* Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics.swift; sourceTree = "<group>"; };
 		96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsExamplesMain.swift; sourceTree = "<group>"; };
 		96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_1_Initializer_Bootcamp.swift; sourceTree = "<group>"; };
+		96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_2_ForEach_Bootcamp.swift; sourceTree = "<group>"; };
 		96402E8228DF70F400DA5E40 /* MyAdvancedSwiftLearnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdvancedSwiftLearnings.swift; sourceTree = "<group>"; };
 		96402E8528DF754F00DA5E40 /* AdvExample_1_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvExample_1_Main.swift; sourceTree = "<group>"; };
 		96402E8728DF756A00DA5E40 /* Adv-Example_1_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adv-Example_1_1.swift"; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 				96188D63294CB68F008F8DA7 /* Basics.swift */,
 				96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */,
 				96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */,
+				96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -823,6 +826,7 @@
 				969E72D928D75C3A00422DA6 /* Example_9_2.swift in Sources */,
 				96E3EBC128CE0242007C60AC /* Example_4_Main.swift in Sources */,
 				969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */,
+				96188D6A294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift in Sources */,
 				96402E8628DF754F00DA5E40 /* AdvExample_1_Main.swift in Sources */,
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
 				9650E4B928D10318001923DB /* Example_4_8.swift in Sources */,

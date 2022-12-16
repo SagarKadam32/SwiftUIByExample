@@ -14,6 +14,10 @@ struct BasicsExamplesMain: View {
                 Text("1. How to use inits and enums in SwiftUI | Bootcamp #13")
             }
             
+            NavigationLink(destination: Basics_2_ForEach_Bootcamp()) {
+                Text("2. How to use ForEach loops in SwiftUI | Bootcamp #14")
+            }
+            
         }
     }
 }
