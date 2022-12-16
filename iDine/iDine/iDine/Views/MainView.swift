@@ -10,6 +10,10 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
+            Basics()
+                .tabItem {
+                    Label("Basic Swift", systemImage: "pencil.and.outline")
+                }
             MyAdvancedSwiftLearnings()
                 .tabItem {
                     Label("Advanced Swift", systemImage: "pencil.and.outline")
