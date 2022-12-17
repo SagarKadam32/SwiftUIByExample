@@ -26,6 +26,10 @@ struct BasicsExamplesMain: View {
                 Text("4. LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16")
             }
             
+            NavigationLink(destination: Basics_5_SafeArea_Bootcamp()) {
+                Text("5. How to use and ignore the Safe Area in SwiftUI | Bootcamp #17")
+            }
+            
         }
     }
 }
