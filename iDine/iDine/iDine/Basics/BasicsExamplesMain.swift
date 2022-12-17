@@ -22,6 +22,10 @@ struct BasicsExamplesMain: View {
                 Text("3. Implementing a ScrollView in SwiftUI | Bootcamp #15")
             }
             
+            NavigationLink(destination: Basics_4_LazyVGrid_Bootcamp()) {
+                Text("4. LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16")
+            }
+            
         }
     }
 }
