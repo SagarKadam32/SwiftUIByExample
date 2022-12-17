@@ -11,11 +11,10 @@ struct Basics_3_ScrollView_Bootcamp: View {
     var body: some View {
         VStack {
             ScrollView {
-                VStack {
+                LazyVStack {
                     ForEach(0..<10) { index in
                         ScrollView(.horizontal, showsIndicators: false, content: {
-                            
-                            HStack {
+                            LazyHStack {
                                 ForEach(0..<20) { index in
                                     RoundedRectangle(cornerRadius: 25.0)
                                         .fill(Color.white)
