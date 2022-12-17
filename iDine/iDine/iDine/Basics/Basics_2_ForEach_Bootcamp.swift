@@ -22,7 +22,8 @@ struct Basics_2_ForEach_Bootcamp: View {
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=CKmsqRN-VM0&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=15", title: "How to use ForEach loops in SwiftUI | Bootcamp #14")
             }
-        }    }
+        }
+    }
 }
 
 struct Basics_2_ForEach_Bootcamp_Previews: PreviewProvider {

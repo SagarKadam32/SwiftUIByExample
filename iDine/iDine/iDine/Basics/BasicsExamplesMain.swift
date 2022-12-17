@@ -18,6 +18,10 @@ struct BasicsExamplesMain: View {
                 Text("2. How to use ForEach loops in SwiftUI | Bootcamp #14")
             }
             
+            NavigationLink(destination: Basics_3_ScrollView_Bootcamp()) {
+                Text("3. Implementing a ScrollView in SwiftUI | Bootcamp #15")
+            }
+            
         }
     }
 }
