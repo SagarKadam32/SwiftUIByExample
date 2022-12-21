@@ -30,6 +30,10 @@ struct BasicsExamplesMain: View {
                 Text("5. How to use and ignore the Safe Area in SwiftUI | Bootcamp #17")
             }
             
+            NavigationLink(destination: Basics_6_Button_Bootcamp()) {
+                Text("6. How to add Buttons to SwiftUI application | Bootcamp #18")
+            }
+            
         }
     }
 }
