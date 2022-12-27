@@ -34,6 +34,10 @@ struct BasicsExamplesMain: View {
                 Text("6. How to add Buttons to SwiftUI application | Bootcamp #18")
             }
             
+            NavigationLink(destination: Basics_7_State_Bootcamp()) {
+                Text("7. How to use @State property wrapper in SwiftUI | Bootcamp #19")
+            }
+            
         }
     }
 }
