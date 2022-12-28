@@ -42,6 +42,11 @@ struct BasicsExamplesMain: View {
                 Text("8. Extracting functions and subviews in SwiftUI | Bootcamp #20")
             }
             
+            NavigationLink(destination: Basics_9_ExtractSubviews_Bootcamp()) {
+                Text("9. How to Extract Subviews in SwiftUI | Bootcamp #21")
+            }
+            
+            
         }
     }
 }
