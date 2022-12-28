@@ -22,7 +22,7 @@ struct Basics_8_ExtractedFunctions_Bootcamp: View {
                     .font(.largeTitle)
                 
                 Button(action: {
-                    backgroundColor = .yellow
+                    buttonPressed()
                 }, label: {
                     Text("PRESS ME")
                         .font(.headline)
@@ -40,6 +40,11 @@ struct Basics_8_ExtractedFunctions_Bootcamp: View {
                 }
             }
         }
+    }
+    
+    func buttonPressed() {
+        backgroundColor = .yellow
+
     }
 }
 
