@@ -50,6 +50,12 @@ struct BasicsExamplesMain: View {
                 Text("10. How to use @Binding property wrapper in SwiftUI | Bootcamp #22")
             }
         }
+        
+        Group {
+            NavigationLink(destination: Basics_11_Conditional_Bootcamp()) {
+                Text("11. How to use if-else and conditional statements in SwiftUI | Bootcamp #23")
+            }
+        }
     }
 }
 
