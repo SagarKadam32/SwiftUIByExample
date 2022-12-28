@@ -16,28 +16,31 @@ struct Basics_8_ExtractedFunctions_Bootcamp: View {
             backgroundColor
                 .edgesIgnoringSafeArea(.all)
             
-            VStack {
-                
-                Text("Title")
-                    .font(.largeTitle)
-                
-                Button(action: {
-                    buttonPressed()
-                }, label: {
-                    Text("PRESS ME")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.black)
-                        .cornerRadius(10)
-                })
-                
-                
-                Section {
-                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=pIUBC6wZjpM&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=23", title: "Extracting functions and subviews in SwiftUI | Bootcamp #20")
-                        .foregroundColor(.white)
-                        .padding()
-                }
+            // content layer
+            contentLayer
+        }
+    }
+    
+    var contentLayer: some View {
+        VStack {
+            Text("Title")
+                .font(.largeTitle)
+            
+            Button(action: {
+                buttonPressed()
+            }, label: {
+                Text("PRESS ME")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.black)
+                    .cornerRadius(10)
+            })
+            
+            Section {
+                MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=pIUBC6wZjpM&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=23", title: "Extracting functions and subviews in SwiftUI | Bootcamp #20")
+                    .foregroundColor(.white)
+                    .padding()
             }
         }
     }
