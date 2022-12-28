@@ -38,6 +38,10 @@ struct BasicsExamplesMain: View {
                 Text("7. How to use @State property wrapper in SwiftUI | Bootcamp #19")
             }
             
+            NavigationLink(destination: Basics_8_ExtractedFunctions_Bootcamp()) {
+                Text("8. Extracting functions and subviews in SwiftUI | Bootcamp #20")
+            }
+            
         }
     }
 }
