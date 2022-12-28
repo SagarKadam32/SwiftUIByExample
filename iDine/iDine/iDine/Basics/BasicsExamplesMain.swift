@@ -55,6 +55,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_11_Conditional_Bootcamp()) {
                 Text("11. How to use if-else and conditional statements in SwiftUI | Bootcamp #23")
             }
+            
+            NavigationLink(destination: Basics_12_TernaryOperator_Bootcamp()) {
+                Text("12. How to use Ternary Operators in SwiftUI | Bootcamp #24")
+            }
         }
     }
 }
