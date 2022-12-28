@@ -14,28 +14,7 @@ struct Basics_10_Binding_Bootcamp: View {
         ZStack {
             backgroundColor
                 .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                
-                Button(action: {
-                    backgroundColor = .orange
-                }, label: {
-                    Text("Button")
-                        .foregroundColor(.white)
-                        .padding()
-                        .padding(.horizontal)
-                        .background(.blue)
-                        .cornerRadius(10)
-                })
-                
-                
-                Section {
-                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=btDMzB5x2Gs&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=23", title: "How to use @Binding property wrapper in SwiftUI | Bootcamp #22")
-                }
-                .foregroundColor(.white)
-            }
-            
-
+            ButtonView(backgroundColor: $backgroundColor)
         }
     }
 }
@@ -43,5 +22,28 @@ struct Basics_10_Binding_Bootcamp: View {
 struct Basics_10_Binding_Bootcamp_Previews: PreviewProvider {
     static var previews: some View {
         Basics_10_Binding_Bootcamp()
+    }
+}
+
+struct ButtonView: View {
+    @Binding var backgroundColor: Color
+    var body: some View {
+        VStack {
+            Button(action: {
+                backgroundColor = .orange
+            }, label: {
+                Text("Button")
+                    .foregroundColor(.white)
+                    .padding()
+                    .padding(.horizontal)
+                    .background(.blue)
+                    .cornerRadius(10)
+            })
+            
+            Section {
+                MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=btDMzB5x2Gs&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=23", title: "How to use @Binding property wrapper in SwiftUI | Bootcamp #22")
+            }
+            .foregroundColor(.white)
+        }
     }
 }
