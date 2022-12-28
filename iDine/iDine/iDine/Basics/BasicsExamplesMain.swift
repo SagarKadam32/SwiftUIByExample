@@ -46,7 +46,9 @@ struct BasicsExamplesMain: View {
                 Text("9. How to Extract Subviews in SwiftUI | Bootcamp #21")
             }
             
-            
+            NavigationLink(destination: Basics_10_Binding_Bootcamp()) {
+                Text("10. How to use @Binding property wrapper in SwiftUI | Bootcamp #22")
+            }
         }
     }
 }
