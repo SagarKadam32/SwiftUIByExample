@@ -39,6 +39,13 @@ struct Basics_14_AnimationCurvesAndTimings_Bootcamp: View {
                 .frame(width: isAnimating ? 350 : 50, height: 100)
                 .animation(Animation.easeOut, value: timing)
             
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: isAnimating ? 350 : 50, height: 100)
+                .animation(.spring(
+                    response: 0.5,
+                    dampingFraction: 0.7,
+                    blendDuration: 1.0), value: timing)
+            
             
             Section {
                 MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=0H4G3lGnJE0&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=27", title: "Animation Curves and Animation Timing in SwiftUI | Bootcamp #26")
