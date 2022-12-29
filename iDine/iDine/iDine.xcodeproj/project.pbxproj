@@ -146,6 +146,7 @@
 		969E72E228D762D500422DA6 /* Example_10_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72E128D762D500422DA6 /* Example_10_Main.swift */; };
 		969E72E428D7631200422DA6 /* Example_10_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E72E328D7631200422DA6 /* Example_10_1.swift */; };
 		96A15BE2295DAFEE00276135 /* Basics_13_Animations_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A15BE1295DAFEE00276135 /* Basics_13_Animations_Bootcamp.swift */; };
+		96A15BE4295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A15BE3295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift */; };
 		96A25959295C3506008AEB19 /* Basics_8_ExtractedFunctions_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A25958295C3506008AEB19 /* Basics_8_ExtractedFunctions_Bootcamp.swift */; };
 		96A2595B295C3BA4008AEB19 /* Basics_9_ExtractSubviews_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2595A295C3BA4008AEB19 /* Basics_9_ExtractSubviews_Bootcamp.swift */; };
 		96A2595F295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2595E295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift */; };
@@ -322,6 +323,7 @@
 		969E72E128D762D500422DA6 /* Example_10_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_10_Main.swift; sourceTree = "<group>"; };
 		969E72E328D7631200422DA6 /* Example_10_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_10_1.swift; sourceTree = "<group>"; };
 		96A15BE1295DAFEE00276135 /* Basics_13_Animations_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_13_Animations_Bootcamp.swift; sourceTree = "<group>"; };
+		96A15BE3295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_14_AnimationCurvesAndTimings_Bootcamp.swift; sourceTree = "<group>"; };
 		96A25958295C3506008AEB19 /* Basics_8_ExtractedFunctions_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_8_ExtractedFunctions_Bootcamp.swift; sourceTree = "<group>"; };
 		96A2595A295C3BA4008AEB19 /* Basics_9_ExtractSubviews_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_9_ExtractSubviews_Bootcamp.swift; sourceTree = "<group>"; };
 		96A2595E295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basics_10_Binding_Bootcamp.swift; sourceTree = "<group>"; };
@@ -382,6 +384,7 @@
 				96A25960295C7FD7008AEB19 /* Basics_11_Conditional_Bootcamp.swift */,
 				96A25962295C8D6E008AEB19 /* Basics_12_TernaryOperator_Bootcamp.swift */,
 				96A15BE1295DAFEE00276135 /* Basics_13_Animations_Bootcamp.swift */,
+				96A15BE3295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -991,6 +994,7 @@
 				960ACA0E29533DDA0013619C /* Basics_6_Button_Bootcamp.swift in Sources */,
 				96994EFE28D3B0CD002ECBDD /* Example_6_2.swift in Sources */,
 				9664845128E071FA00F19508 /* Adv_Example_1_3.swift in Sources */,
+				96A15BE4295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift in Sources */,
 				96994EFC28D37EDF002ECBDD /* Example_6_1.swift in Sources */,
 				969C66BA28CCABAA005EAC29 /* Example_3_3.swift in Sources */,
 				969944CD28C79B42001F98D4 /* Menu.swift in Sources */,

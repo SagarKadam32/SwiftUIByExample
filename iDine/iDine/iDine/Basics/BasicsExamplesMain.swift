@@ -63,6 +63,12 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_13_Animations_Bootcamp()) {
                 Text("13. Adding Animations in SwiftUI | Bootcamp #25")
             }
+            
+            NavigationLink(destination: Basics_14_AnimationCurvesAndTimings_Bootcamp()) {
+                Text("14. Animation Curves and Animation Timing in SwiftUI | Bootcamp #26")
+            }
+            
+            
         }
     }
 }
