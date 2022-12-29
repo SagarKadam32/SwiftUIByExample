@@ -14,7 +14,12 @@ struct Basics_13_Animations_Bootcamp: View {
         VStack {
 
             Button("Click Me") {
-                withAnimation(.default) {
+                withAnimation(
+                    Animation
+                        .default
+                        //.repeatCount(5, autoreverses: true)
+                       // .repeatForever(autoreverses: false)
+                ) {
                     isAnimated.toggle()
                 }
             }
