@@ -59,6 +59,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_12_TernaryOperator_Bootcamp()) {
                 Text("12. How to use Ternary Operators in SwiftUI | Bootcamp #24")
             }
+            
+            NavigationLink(destination: Basics_13_Animations_Bootcamp()) {
+                Text("13. Adding Animations in SwiftUI | Bootcamp #25")
+            }
         }
     }
 }
