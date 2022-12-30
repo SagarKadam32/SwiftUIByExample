@@ -77,6 +77,7 @@
 		968F065728CA73EE00D364E4 /* Example_1_11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F065628CA73EE00D364E4 /* Example_1_11.swift */; };
 		968F065928CA74A800D364E4 /* Example_1_12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968F065828CA74A800D364E4 /* Example_1_12.swift */; };
 		96907652295ECDED000B989E /* Basics_16_Sheets_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96907651295ECDED000B989E /* Basics_16_Sheets_Bootcamp.swift */; };
+		96907654295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96907653295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift */; };
 		96927A0428F9D69000152814 /* CacheBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96927A0328F9D69000152814 /* CacheBootcamp.swift */; };
 		969944BA28C799A5001F98D4 /* iDineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944B928C799A5001F98D4 /* iDineApp.swift */; };
 		969944BC28C799A5001F98D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969944BB28C799A5001F98D4 /* ContentView.swift */; };
@@ -255,6 +256,7 @@
 		968F065628CA73EE00D364E4 /* Example_1_11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_11.swift; sourceTree = "<group>"; };
 		968F065828CA74A800D364E4 /* Example_1_12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_12.swift; sourceTree = "<group>"; };
 		96907651295ECDED000B989E /* Basics_16_Sheets_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_16_Sheets_Bootcamp.swift; sourceTree = "<group>"; };
+		96907653295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_17_Popovers_Bootcamp.swift; sourceTree = "<group>"; };
 		96927A0328F9D69000152814 /* CacheBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBootcamp.swift; sourceTree = "<group>"; };
 		969944B628C799A5001F98D4 /* iDine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		969944B928C799A5001F98D4 /* iDineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDineApp.swift; sourceTree = "<group>"; };
@@ -391,6 +393,7 @@
 				96A15BE3295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift */,
 				96A15BE5295DCE0A00276135 /* Basics_15_Transition_Bootcamp.swift */,
 				96907651295ECDED000B989E /* Basics_16_Sheets_Bootcamp.swift */,
+				96907653295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -919,6 +922,7 @@
 				962E937C295B430100475993 /* Basics_7_State_Bootcamp.swift in Sources */,
 				96A2595F295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift in Sources */,
 				96B8100828D1C33900F76E8B /* Example_5_1.swift in Sources */,
+				96907654295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift in Sources */,
 				968A1E6329006DB400D5EE49 /* DownloadingImagesViewModel.swift in Sources */,
 				968EA54628CFAD3100736416 /* Example_4_6.swift in Sources */,
 				96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */,

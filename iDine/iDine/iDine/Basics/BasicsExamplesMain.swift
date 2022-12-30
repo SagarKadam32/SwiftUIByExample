@@ -55,7 +55,6 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_11_Conditional_Bootcamp()) {
                 Text("11. Using if-else and conditional statements in SwiftUI-BCMP-#23")
             }
-            
             NavigationLink(destination: Basics_12_TernaryOperator_Bootcamp()) {
                 Text("12. Using Ternary Operators in SwiftUI-BCMP-#24")
             }
@@ -63,18 +62,19 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_13_Animations_Bootcamp()) {
                 Text("13. Adding Animations in SwiftUI-BCMP-#25")
             }
-            
             NavigationLink(destination: Basics_14_AnimationCurvesAndTimings_Bootcamp()) {
                 Text("14. Animation Curves and Animation Timing in SwiftUI-BCMP-#26")
             }
             NavigationLink(destination: Basics_15_Transition_Bootcamp()) {
                 Text("15. Using Transition in SwiftUI-BCMP-#27")
             }
-            
-            
             NavigationLink(destination: Basics_16_Sheets_Bootcamp()) {
                 Text("16. Display pop-up Sheets and FullScreenCovers in SwiftUI-BCMP-#28")
             }
+            NavigationLink(destination: Basics_17_Popovers_Bootcamp()) {
+                Text("17. Using Sheets, Transitions, and Offsets to create a popover-BCMP-#29")
+            }
+            
             
             
         }
