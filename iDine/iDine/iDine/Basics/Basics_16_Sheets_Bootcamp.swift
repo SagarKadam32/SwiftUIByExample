@@ -38,6 +38,8 @@ struct Basics_16_Sheets_Bootcamp: View {
        // .sheet(isPresented: $showSheet) {
        //     SecondScreen()
        // }
+        
+        /** DO NOT & NEVER USE CONDITIONAL LOGIC IF-ELSE IN THE SHEET */
         .fullScreenCover(isPresented: $showSheet) {
             SecondScreen()
         }
