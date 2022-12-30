@@ -36,9 +36,30 @@ struct Basics_16_Sheets_Bootcamp: View {
 
         }
         .sheet(isPresented: $showSheet) {
-            Text("Hello THere !!!")
+            SecondScreen()
         }
 
+    }
+}
+
+struct SecondScreen : View {
+    
+    var body: some View {
+        ZStack {
+            Color.red
+                .edgesIgnoringSafeArea(.all)
+           
+            VStack {
+                Button(action: {
+                }, label: {
+                     Text("Second Screen")
+                        .foregroundColor(.red)
+                        .font(.headline)
+                        .padding(20)
+                        .background(Color.white.cornerRadius(10))
+                })
+            }
+        }
     }
 }
 
