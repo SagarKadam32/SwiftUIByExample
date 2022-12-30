@@ -22,6 +22,21 @@ struct Basics_18_NavigationViewAndLink_Bootcamp: View {
                 }
             }
             .navigationTitle("All Inboxes")
+            .navigationBarItems(
+                leading:
+                    HStack {
+                        Image(systemName: "person.fill")
+                        Image(systemName: "flame.fill")
+                    }
+                    ,
+                trailing:
+                    NavigationLink(destination: MyOtherScreen(),
+                                   label: {
+                                       Image(systemName: "gear")
+                                   })
+                    .accentColor(.red)
+            )
+        
             
 
         }
