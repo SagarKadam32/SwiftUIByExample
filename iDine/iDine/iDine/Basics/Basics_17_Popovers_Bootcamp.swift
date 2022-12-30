@@ -29,17 +29,31 @@ struct Basics_17_Popovers_Bootcamp: View {
                         .foregroundColor(.white)
                 }
             }
-            // Method-1
+            // Method-1 - SHEET
+            /*
             .sheet(isPresented: $showNewScreen) {
                 NewScreen()
             }
+             */
+            
+            // Method-2 - TRANSISTION
+            ZStack {
+                if showNewScreen {
+                    NewScreen(showNewScreen: $showNewScreen)
+                        .padding(.top, 100)
+                        .transition(.move(edge: .bottom))
+                        .animation(.spring(), value: 10)
+                }
+            }
+            .zIndex(2.0)
+
 
         }
     }
 }
 
 struct NewScreen : View {
-    //@Binding var showNewScreen: Bool
+    @Binding var showNewScreen: Bool
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -48,7 +62,8 @@ struct NewScreen : View {
                 .edgesIgnoringSafeArea(.all)
             
             Button(action: {
-                presentationMode.wrappedValue.dismiss()
+                //presentationMode.wrappedValue.dismiss()
+                showNewScreen.toggle()
             }, label: {
                 Image(systemName: "xmark")
                     .foregroundColor(.white)
