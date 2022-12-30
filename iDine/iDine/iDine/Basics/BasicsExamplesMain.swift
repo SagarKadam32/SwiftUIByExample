@@ -74,7 +74,9 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_17_Popovers_Bootcamp()) {
                 Text("17. Using Sheets, Transitions, and Offsets to create a popover-BCMP-#29")
             }
-            
+            NavigationLink(destination: Basics_18_NavigationViewAndLink_Bootcamp()) {
+                Text("18. Using How to use NavigationView and NavigationLink in SwiftUI-BCMP-#30")
+            }
             
             
         }
