@@ -71,6 +71,12 @@ struct BasicsExamplesMain: View {
                 Text("15. How to use Transition in SwiftUI | Bootcamp #27")
             }
             
+            
+            NavigationLink(destination: Basics_16_Sheets_Bootcamp()) {
+                Text("16. Display pop-up Sheets and FullScreenCovers in SwiftUI | Bootcamp #28")
+            }
+            
+            
         }
     }
 }
