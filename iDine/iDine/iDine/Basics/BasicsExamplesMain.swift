@@ -11,69 +11,69 @@ struct BasicsExamplesMain: View {
     var body: some View {
         Group {
             NavigationLink(destination: Basics_1_Initializer_Bootcamp(count: 12, fruit: .apple)) {
-                Text("1. How to use inits and enums in SwiftUI | Bootcamp #13")
+                Text("1. Using inits and enums in SwiftUI-BCMP-#13")
             }
             
             NavigationLink(destination: Basics_2_ForEach_Bootcamp()) {
-                Text("2. How to use ForEach loops in SwiftUI | Bootcamp #14")
+                Text("2. Using ForEach loops in SwiftUI-BCMP-#14")
             }
             
             NavigationLink(destination: Basics_3_ScrollView_Bootcamp()) {
-                Text("3. Implementing a ScrollView in SwiftUI | Bootcamp #15")
+                Text("3. Implementing a ScrollView in SwiftUI-BCMP-#15")
             }
             
             NavigationLink(destination: Basics_4_LazyVGrid_Bootcamp()) {
-                Text("4. LazyVGrid, LazyHGrid, and GridItems in SwiftUI | Bootcamp #16")
+                Text("4. LazyVGrid, LazyHGrid, and GridItems in SwiftUI-BCMP-#16")
             }
             
             NavigationLink(destination: Basics_5_SafeArea_Bootcamp()) {
-                Text("5. How to use and ignore the Safe Area in SwiftUI | Bootcamp #17")
+                Text("5. Using and ignore the Safe Area in SwiftUI-BCMP-#17")
             }
             
             NavigationLink(destination: Basics_6_Button_Bootcamp()) {
-                Text("6. How to add Buttons to SwiftUI application | Bootcamp #18")
+                Text("6. How to add Buttons to SwiftUI application-BCMP-#18")
             }
             
             NavigationLink(destination: Basics_7_State_Bootcamp()) {
-                Text("7. How to use @State property wrapper in SwiftUI | Bootcamp #19")
+                Text("7. Using @State property wrapper in SwiftUI-BCMP-#19")
             }
             
             NavigationLink(destination: Basics_8_ExtractedFunctions_Bootcamp()) {
-                Text("8. Extracting functions and subviews in SwiftUI | Bootcamp #20")
+                Text("8. Extracting functions and subviews in SwiftUI-BCMP-#20")
             }
             
             NavigationLink(destination: Basics_9_ExtractSubviews_Bootcamp()) {
-                Text("9. How to Extract Subviews in SwiftUI | Bootcamp #21")
+                Text("9. How to Extract Subviews in SwiftUI-BCMP-#21")
             }
             
             NavigationLink(destination: Basics_10_Binding_Bootcamp()) {
-                Text("10. How to use @Binding property wrapper in SwiftUI | Bootcamp #22")
+                Text("10. Using @Binding property wrapper in SwiftUI-BCMP-#22")
             }
         }
         
         Group {
             NavigationLink(destination: Basics_11_Conditional_Bootcamp()) {
-                Text("11. How to use if-else and conditional statements in SwiftUI | Bootcamp #23")
+                Text("11. Using if-else and conditional statements in SwiftUI-BCMP-#23")
             }
             
             NavigationLink(destination: Basics_12_TernaryOperator_Bootcamp()) {
-                Text("12. How to use Ternary Operators in SwiftUI | Bootcamp #24")
+                Text("12. Using Ternary Operators in SwiftUI-BCMP-#24")
             }
             
             NavigationLink(destination: Basics_13_Animations_Bootcamp()) {
-                Text("13. Adding Animations in SwiftUI | Bootcamp #25")
+                Text("13. Adding Animations in SwiftUI-BCMP-#25")
             }
             
             NavigationLink(destination: Basics_14_AnimationCurvesAndTimings_Bootcamp()) {
-                Text("14. Animation Curves and Animation Timing in SwiftUI | Bootcamp #26")
+                Text("14. Animation Curves and Animation Timing in SwiftUI-BCMP-#26")
             }
             NavigationLink(destination: Basics_15_Transition_Bootcamp()) {
-                Text("15. How to use Transition in SwiftUI | Bootcamp #27")
+                Text("15. Using Transition in SwiftUI-BCMP-#27")
             }
             
             
             NavigationLink(destination: Basics_16_Sheets_Bootcamp()) {
-                Text("16. Display pop-up Sheets and FullScreenCovers in SwiftUI | Bootcamp #28")
+                Text("16. Display pop-up Sheets and FullScreenCovers in SwiftUI-BCMP-#28")
             }
             
             

@@ -35,7 +35,10 @@ struct Basics_16_Sheets_Bootcamp: View {
             }
 
         }
-        .sheet(isPresented: $showSheet) {
+       // .sheet(isPresented: $showSheet) {
+       //     SecondScreen()
+       // }
+        .fullScreenCover(isPresented: $showSheet) {
             SecondScreen()
         }
 
