@@ -37,6 +37,7 @@ struct Basics_17_Popovers_Bootcamp: View {
              */
             
             // Method-2 - TRANSISTION
+            /*
             ZStack {
                 if showNewScreen {
                     NewScreen(showNewScreen: $showNewScreen)
@@ -46,8 +47,13 @@ struct Basics_17_Popovers_Bootcamp: View {
                 }
             }
             .zIndex(2.0)
-
-
+             */
+            
+            // Method-3 - ANIMATION OFFSET
+            NewScreen(showNewScreen: $showNewScreen)
+                .padding(.top, 100)
+                .offset( y: showNewScreen ? 0 : UIScreen.main.bounds.height)
+                .animation(.spring(), value: 10)
         }
     }
 }
