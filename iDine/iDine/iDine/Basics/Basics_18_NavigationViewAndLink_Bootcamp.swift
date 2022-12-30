@@ -18,9 +18,10 @@ struct Basics_18_NavigationViewAndLink_Bootcamp: View {
                 Text("Hello, World!")
 
                 Section {
-                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=su0KLQq0JM0&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=14", title: "How to use inits and enums in SwiftUI | Bootcamp #13")
+                    MoreDetailsView(linkURL: "https://www.youtube.com/watch?v=tXFwyFdkSas&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=31", title: "How to use NavigationView and NavigationLink in SwiftUI | Bootcamp #30")
                 }
             }
+            .navigationTitle("All Inboxes")
             
 
         }
@@ -28,13 +29,21 @@ struct Basics_18_NavigationViewAndLink_Bootcamp: View {
 }
 
 struct MyOtherScreen: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         ZStack {
             Color.green.edgesIgnoringSafeArea(.all)
                 .navigationTitle("Green Screen!")
             
-            NavigationLink("Click Here", destination: Text("3rd Screen!"))
+            VStack {
+                Button("Back Button") {
+                    presentationMode.wrappedValue.dismiss()
+                }
+                NavigationLink("Click Here", destination: Text("3rd Screen!"))
+            }
         }
+        .navigationBarHidden(true)
     }
 }
 
