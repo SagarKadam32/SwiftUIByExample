@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368C618C29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */; };
 		960ACA0E29533DDA0013619C /* Basics_6_Button_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ACA0D29533DDA0013619C /* Basics_6_Button_Bootcamp.swift */; };
 		96188D64294CB68F008F8DA7 /* Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D63294CB68F008F8DA7 /* Basics.swift */; };
 		96188D66294CB773008F8DA7 /* BasicsExamplesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */; };
@@ -186,6 +187,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_19_Lists_Bootcamp.swift; sourceTree = "<group>"; };
 		960ACA0D29533DDA0013619C /* Basics_6_Button_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_6_Button_Bootcamp.swift; sourceTree = "<group>"; };
 		96188D63294CB68F008F8DA7 /* Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics.swift; sourceTree = "<group>"; };
 		96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsExamplesMain.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 				96907651295ECDED000B989E /* Basics_16_Sheets_Bootcamp.swift */,
 				96907653295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift */,
 				968A5B24295F0BE300296230 /* Basics_18_NavigationViewAndLink_Bootcamp.swift */,
+				368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -883,6 +886,7 @@
 				96188D64294CB68F008F8DA7 /* Basics.swift in Sources */,
 				968F064D28CA546E00D364E4 /* Example_1_6.swift in Sources */,
 				96994EF528D37CDC002ECBDD /* Example_5_6.swift in Sources */,
+				368C618C29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift in Sources */,
 				9689F3AF28E75984002BD7DA /* WeakSelfBootcamp.swift in Sources */,
 				9650E4C728D11259001923DB /* Example_4_15.swift in Sources */,
 				969D29CC28D4BFD900443238 /* Example_6_8.swift in Sources */,
