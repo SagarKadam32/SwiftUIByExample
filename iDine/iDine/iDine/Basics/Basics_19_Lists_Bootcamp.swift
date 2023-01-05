@@ -20,6 +20,7 @@ struct Basics_19_Lists_Bootcamp: View {
                             Text(fruit.capitalized)
                         }
                         .onDelete(perform: delete)
+                        .onMove (perform: move)
                     }
             }
             .navigationTitle("Grocery List")
@@ -29,6 +30,10 @@ struct Basics_19_Lists_Bootcamp: View {
     
     func delete(indexSet: IndexSet) {
         fruits.remove(atOffsets: indexSet)
+    }
+    
+    func move(indices: IndexSet, newOffSet: Int) {
+        fruits.move(fromOffsets: indices, toOffset: newOffSet)
     }
 }
 
