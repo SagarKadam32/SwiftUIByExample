@@ -12,15 +12,19 @@ struct Basics_19_Lists_Bootcamp: View {
     @State var fruits: [String] = ["Apple", "Orange", "Banana","Peach"]
     
     var body: some View {
-        List {
-            Section(
-                header: Text("Fruits")) {
-                    ForEach(fruits, id: \.self) { fruit in
-                        Text(fruit.capitalized)
+        NavigationView {
+            List {
+                Section(
+                    header: Text("Fruits")) {
+                        ForEach(fruits, id: \.self) { fruit in
+                            Text(fruit.capitalized)
+                        }
+                        .onDelete(perform: delete)
                     }
-                    .onDelete(perform: delete)
-                }
             }
+            .navigationTitle("Grocery List")
+            .navigationBarItems(leading: EditButton())
+        }
     }
     
     func delete(indexSet: IndexSet) {
