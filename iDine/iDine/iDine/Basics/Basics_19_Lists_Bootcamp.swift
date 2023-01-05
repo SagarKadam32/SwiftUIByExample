@@ -18,9 +18,7 @@ struct Basics_19_Lists_Bootcamp: View {
                     ForEach(fruits, id: \.self) { fruit in
                         Text(fruit.capitalized)
                     }
-                    .onDelete { indexSet in
-                        delete(indexSet: indexSet)
-                    }
+                    .onDelete(perform: delete)
                 }
             }
     }
