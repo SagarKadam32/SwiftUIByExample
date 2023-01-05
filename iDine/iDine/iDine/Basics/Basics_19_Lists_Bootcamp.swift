@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Basics_19_Lists_Bootcamp: View {
     
-    @State var fruits: [String] = ["Apple", "Orange", "Banana"]
+    @State var fruits: [String] = ["Apple", "Orange", "Banana","Peach"]
     
     var body: some View {
         List {
@@ -18,10 +18,13 @@ struct Basics_19_Lists_Bootcamp: View {
                     ForEach(fruits, id: \.self) { fruit in
                         Text(fruit.capitalized)
                     }
+                    .onDelete { indexSet in
+                        fruits.remove(atOffsets: indexSet)
+                    }
+                }
             }
         }
     }
-}
 
 struct Basics_19_Lists_Bootcamp_Previews: PreviewProvider {
     static var previews: some View {
