@@ -10,6 +10,7 @@ import SwiftUI
 struct Basics_19_Lists_Bootcamp: View {
     
     @State var fruits: [String] = ["Apple", "Orange", "Banana","Peach"]
+    @State var veggies: [String] = ["tomato", "potato", "carrot"]
     
     var body: some View {
         NavigationView {
@@ -22,7 +23,15 @@ struct Basics_19_Lists_Bootcamp: View {
                         .onDelete(perform: delete)
                         .onMove (perform: move)
                     }
+                
+                Section(
+                    header: Text("Veggies")) {
+                        ForEach(veggies, id: \.self) { vegetable in
+                            Text(vegetable.capitalized)
+                        }
+                    }
             }
+            .listStyle(InsetGroupedListStyle())
             .navigationTitle("Grocery List")
             .navigationBarItems(
                 leading: EditButton(),
