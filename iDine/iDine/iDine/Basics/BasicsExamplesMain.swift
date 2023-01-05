@@ -77,6 +77,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_18_NavigationViewAndLink_Bootcamp()) {
                 Text("18. Using How to use NavigationView and NavigationLink in SwiftUI-BCMP-#30")
             }
+            NavigationLink(destination: Basics_19_Lists_Bootcamp()) {
+                Text("19. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
+            }
+            
             
             
         }
