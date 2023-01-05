@@ -19,12 +19,16 @@ struct Basics_19_Lists_Bootcamp: View {
                         Text(fruit.capitalized)
                     }
                     .onDelete { indexSet in
-                        fruits.remove(atOffsets: indexSet)
+                        delete(indexSet: indexSet)
                     }
                 }
             }
-        }
     }
+    
+    func delete(indexSet: IndexSet) {
+        fruits.remove(atOffsets: indexSet)
+    }
+}
 
 struct Basics_19_Lists_Bootcamp_Previews: PreviewProvider {
     static var previews: some View {
