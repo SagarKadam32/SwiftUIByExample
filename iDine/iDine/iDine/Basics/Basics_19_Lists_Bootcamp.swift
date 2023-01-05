@@ -24,8 +24,17 @@ struct Basics_19_Lists_Bootcamp: View {
                     }
             }
             .navigationTitle("Grocery List")
-            .navigationBarItems(leading: EditButton())
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing: addButton
+            )
         }
+    }
+    
+    var addButton: some View {
+        Button("Add", action: {
+            add()
+        })
     }
     
     func delete(indexSet: IndexSet) {
@@ -34,6 +43,10 @@ struct Basics_19_Lists_Bootcamp: View {
     
     func move(indices: IndexSet, newOffSet: Int) {
         fruits.move(fromOffsets: indices, toOffset: newOffSet)
+    }
+    
+    func add(){
+        fruits.append("Strawberry")
     }
 }
 
