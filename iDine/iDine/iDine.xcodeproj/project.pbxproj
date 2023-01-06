@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		368C618C29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */; };
+		368C618E2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C618D2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift */; };
 		960ACA0E29533DDA0013619C /* Basics_6_Button_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960ACA0D29533DDA0013619C /* Basics_6_Button_Bootcamp.swift */; };
 		96188D64294CB68F008F8DA7 /* Basics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D63294CB68F008F8DA7 /* Basics.swift */; };
 		96188D66294CB773008F8DA7 /* BasicsExamplesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */; };
@@ -188,6 +189,7 @@
 
 /* Begin PBXFileReference section */
 		368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_19_Lists_Bootcamp.swift; sourceTree = "<group>"; };
+		368C618D2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_20_Alerts_Bootcamp.swift; sourceTree = "<group>"; };
 		960ACA0D29533DDA0013619C /* Basics_6_Button_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_6_Button_Bootcamp.swift; sourceTree = "<group>"; };
 		96188D63294CB68F008F8DA7 /* Basics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics.swift; sourceTree = "<group>"; };
 		96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsExamplesMain.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				96907653295EDB15000B989E /* Basics_17_Popovers_Bootcamp.swift */,
 				968A5B24295F0BE300296230 /* Basics_18_NavigationViewAndLink_Bootcamp.swift */,
 				368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */,
+				368C618D2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -946,6 +949,7 @@
 				969C66AF28CC6E86005EAC29 /* Example_2_11.swift in Sources */,
 				968A1E5F29006C1F00D5EE49 /* DownloadingImagesBootcamp.swift in Sources */,
 				968F064728CA28AD00D364E4 /* Example_1_3.swift in Sources */,
+				368C618E2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift in Sources */,
 				967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */,
 				969D29CA28D4BE4200443238 /* Example_6_7.swift in Sources */,
 				96402E8328DF70F400DA5E40 /* MyAdvancedSwiftLearnings.swift in Sources */,

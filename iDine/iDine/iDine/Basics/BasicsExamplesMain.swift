@@ -80,8 +80,9 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_19_Lists_Bootcamp()) {
                 Text("19. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
             }
-            
-            
+            NavigationLink(destination: Basics_20_Alerts_Bootcamp()) {
+                Text("20. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
+            }
             
         }
     }
