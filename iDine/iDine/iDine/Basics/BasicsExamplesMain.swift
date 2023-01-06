@@ -83,7 +83,11 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_20_Alerts_Bootcamp()) {
                 Text("20. How to show Alerts in SwiftUI-BCMP-#32")
             }
-            
+        }
+        Group {
+            NavigationLink(destination: Basics_21_ActionSheets_Bootcamp()) {
+                Text("21. How to make a reusable ActionSheet in SwiftUI-BCMP-#33")
+            }
         }
     }
 }
