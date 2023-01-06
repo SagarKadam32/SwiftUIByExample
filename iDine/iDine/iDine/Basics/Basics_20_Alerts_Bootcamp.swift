@@ -14,6 +14,13 @@ struct Basics_20_Alerts_Bootcamp: View {
     @State var alertTitle: String = ""
     @State var alertMessage: String = ""
     
+    @State var alertType: MyAlerts? = nil
+    
+    enum MyAlerts {
+        case success
+        case error
+    }
+    
     var body: some View {
         ZStack {
             backgroundColor.edgesIgnoringSafeArea(.all)
@@ -39,6 +46,16 @@ struct Basics_20_Alerts_Bootcamp: View {
                     alertMessage = "This is alert message-2"
                     showAlert.toggle()
                 }
+                
+                Button("B-3 Get Dynamic Alert - Success!!") {
+                    alertType = .success
+                    showAlert.toggle()
+                }
+                
+                Button("B-4 Get Dynamic Alert - Error!!") {
+                    alertType = .error
+                    showAlert.toggle()
+                }
 
             }
             .font(.largeTitle)
@@ -46,7 +63,8 @@ struct Basics_20_Alerts_Bootcamp: View {
             .alert(isPresented: $showAlert) {
                 //getBasicAlert()
                 //getStandardAlert()
-                getCustomAlert()
+                //getCustomAlert()
+                getDynamicAlert()
             }
         }
         
@@ -80,6 +98,21 @@ struct Basics_20_Alerts_Bootcamp: View {
             secondaryButton: .cancel(Text("Reset"), action: {
                 backgroundColor = .yellow
             }))
+    }
+    
+    func getDynamicAlert() -> Alert {
+        switch alertType {
+            case .success:
+                return Alert(title: Text("This was success"), message: nil, dismissButton: .destructive(Text("OK"), action: {
+                    backgroundColor = .green
+                }))
+        
+            case .error:
+                return Alert(title: Text("There was an error!"))
+            
+            default:
+                return Alert(title: Text("Error!"))
+        }
     }
 }
 
