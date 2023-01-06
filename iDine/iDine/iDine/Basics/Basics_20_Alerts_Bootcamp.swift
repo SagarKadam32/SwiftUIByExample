@@ -11,22 +11,52 @@ struct Basics_20_Alerts_Bootcamp: View {
     
     @State var showAlert: Bool = false
     @State var backgroundColor: Color = .yellow
+    @State var alertTitle: String = ""
+    @State var alertMessage: String = ""
+    
     var body: some View {
         ZStack {
             backgroundColor.edgesIgnoringSafeArea(.all)
-            Button("Click Me!!") {
-                showAlert.toggle()
+            
+            
+            VStack {
+                Button("Get Basic Alert!!") {
+                    showAlert.toggle()
+                }
+                
+                Button("Get Standard Alert!!") {
+                    showAlert.toggle()
+                }
+                
+                Button("B-1 Get Custom Alert!!") {
+                    alertTitle = "Alert Title-1"
+                    alertMessage = "This is alert message-1"
+                    showAlert.toggle()
+                }
+                
+                Button("B-2 Get Custom Alert!!") {
+                    alertTitle = "Alert Title-2"
+                    alertMessage = "This is alert message-2"
+                    showAlert.toggle()
+                }
+
             }
             .font(.largeTitle)
             .foregroundColor(.white)
             .alert(isPresented: $showAlert) {
-                getAlert()
+                //getBasicAlert()
+                //getStandardAlert()
+                getCustomAlert()
             }
         }
         
     }
     
-    func getAlert() -> Alert {
+    func getBasicAlert() -> Alert {
+        return Alert(title: Text("There was an error!"))
+    }
+    
+    func getStandardAlert() -> Alert {
         return Alert(
             title: Text("Alert Title"),
             message: Text("This is optional error message"),
@@ -37,7 +67,19 @@ struct Basics_20_Alerts_Bootcamp: View {
             secondaryButton: .cancel(Text("Reset"), action: {
                 backgroundColor = .yellow
             }))
-        //Alert(title: Text("There was an error!"))
+    }
+    
+    func getCustomAlert() -> Alert {
+        return Alert(
+            title: Text(alertTitle),
+            message: Text(alertMessage),
+            primaryButton: .destructive(Text("Delete"), action: {
+                // Delete Action
+                backgroundColor = .red
+            }),
+            secondaryButton: .cancel(Text("Reset"), action: {
+                backgroundColor = .yellow
+            }))
     }
 }
 
