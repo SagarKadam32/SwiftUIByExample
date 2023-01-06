@@ -81,7 +81,7 @@ struct BasicsExamplesMain: View {
                 Text("19. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
             }
             NavigationLink(destination: Basics_20_Alerts_Bootcamp()) {
-                Text("20. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
+                Text("20. How to show Alerts in SwiftUI-BCMP-#32")
             }
             
         }
