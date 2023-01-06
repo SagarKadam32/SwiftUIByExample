@@ -20,20 +20,24 @@ struct Basics_20_Alerts_Bootcamp: View {
             .font(.largeTitle)
             .foregroundColor(.white)
             .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Alert Title"),
-                    message: Text("This is optional error message"),
-                    primaryButton: .destructive(Text("Delete"), action: {
-                        // Delete Action
-                        backgroundColor = .red
-                    }),
-                    secondaryButton: .cancel(Text("Reset"), action: {
-                        backgroundColor = .yellow
-                    }))
-                //Alert(title: Text("There was an error!"))
+                getAlert()
+            }
         }
-        }
-
+        
+    }
+    
+    func getAlert() -> Alert {
+        return Alert(
+            title: Text("Alert Title"),
+            message: Text("This is optional error message"),
+            primaryButton: .destructive(Text("Delete"), action: {
+                // Delete Action
+                backgroundColor = .red
+            }),
+            secondaryButton: .cancel(Text("Reset"), action: {
+                backgroundColor = .yellow
+            }))
+        //Alert(title: Text("There was an error!"))
     }
 }
 
