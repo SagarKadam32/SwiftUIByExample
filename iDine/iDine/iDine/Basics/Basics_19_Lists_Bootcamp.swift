@@ -16,28 +16,49 @@ struct Basics_19_Lists_Bootcamp: View {
         NavigationView {
             List {
                 Section(
-                    header: Text("Fruits")) {
+                    header:
+                        HStack {
+                            Text("Fruits")
+                            Image(systemName: "flame.fill")
+                        }
+                        .font(.headline)
+                        .foregroundColor(.orange)
+                ) {
                         ForEach(fruits, id: \.self) { fruit in
                             Text(fruit.capitalized)
+                                .font(.caption)
+                                .foregroundColor(.white)
+                                .padding(.vertical)
                         }
                         .onDelete(perform: delete)
                         .onMove (perform: move)
+                        .listRowBackground(Color.blue)
                     }
                 
                 Section(
-                    header: Text("Veggies")) {
+                    header:
+                        HStack {
+                            Text("Veggies")
+                            Image(systemName: "cone.fill")
+                        }
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                
+                ) {
                         ForEach(veggies, id: \.self) { vegetable in
                             Text(vegetable.capitalized)
                         }
                     }
             }
-            .listStyle(InsetGroupedListStyle())
+            .accentColor(.purple)
+            //.listStyle(InsetGroupedListStyle())
             .navigationTitle("Grocery List")
             .navigationBarItems(
                 leading: EditButton(),
                 trailing: addButton
             )
         }
+        .accentColor(.red)
     }
     
     var addButton: some View {
