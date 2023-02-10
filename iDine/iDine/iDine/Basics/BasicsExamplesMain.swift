@@ -88,6 +88,9 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_21_ActionSheets_Bootcamp()) {
                 Text("21. How to make a reusable ActionSheet in SwiftUI-BCMP-#33")
             }
+            NavigationLink(destination: Basics_22_ContextMenu_Bootcamp()) {
+                Text("22. How to use ContextMenu in SwiftUI-BCMP-#34")
+            }
         }
     }
 }

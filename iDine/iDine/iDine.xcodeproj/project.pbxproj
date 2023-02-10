@@ -23,6 +23,7 @@
 		964B667428E4B08E00B32B96 /* UnitTestingBootcampViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B667328E4B08E00B32B96 /* UnitTestingBootcampViewModel.swift */; };
 		964B667C28E4B1D400B32B96 /* iDine_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B667B28E4B1D400B32B96 /* iDine_Tests.swift */; };
 		964B668328E4B29900B32B96 /* UnitTestingBootcampViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B668228E4B29900B32B96 /* UnitTestingBootcampViewModel_Tests.swift */; };
+		965074852996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965074842996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift */; };
 		9650E4B928D10318001923DB /* Example_4_8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4B828D10318001923DB /* Example_4_8.swift */; };
 		9650E4BB28D104E1001923DB /* Example_4_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4BA28D104E1001923DB /* Example_4_9.swift */; };
 		9650E4BD28D1062D001923DB /* Example_4_10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9650E4BC28D1062D001923DB /* Example_4_10.swift */; };
@@ -206,6 +207,7 @@
 		964B667928E4B1D400B32B96 /* iDine_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDine_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B667B28E4B1D400B32B96 /* iDine_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDine_Tests.swift; sourceTree = "<group>"; };
 		964B668228E4B29900B32B96 /* UnitTestingBootcampViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingBootcampViewModel_Tests.swift; sourceTree = "<group>"; };
+		965074842996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_22_ContextMenu_Bootcamp.swift; sourceTree = "<group>"; };
 		9650E4B828D10318001923DB /* Example_4_8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_8.swift; sourceTree = "<group>"; };
 		9650E4BA28D104E1001923DB /* Example_4_9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_9.swift; sourceTree = "<group>"; };
 		9650E4BC28D1062D001923DB /* Example_4_10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_10.swift; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				368C618B29643D3400AD6F10 /* Basics_19_Lists_Bootcamp.swift */,
 				368C618D2968536E00AD6F10 /* Basics_20_Alerts_Bootcamp.swift */,
 				368C618F296870D300AD6F10 /* 		.swift */,
+				965074842996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -962,6 +965,7 @@
 				96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */,
 				969C66B628CC756E005EAC29 /* Example_3_1.swift in Sources */,
 				9664844F28E0352E00F19508 /* Adv_Example_1_2.swift in Sources */,
+				965074852996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift in Sources */,
 				969D3B7A28F3CEEC0039FCF1 /* SubscriberBootcamp.swift in Sources */,
 				969B14072901B8A400180111 /* DownloadingImagesRow.swift in Sources */,
 				964B667428E4B08E00B32B96 /* UnitTestingBootcampViewModel.swift in Sources */,
