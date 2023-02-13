@@ -91,6 +91,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_22_ContextMenu_Bootcamp()) {
                 Text("22. How to use ContextMenu in SwiftUI-BCMP-#34")
             }
+            NavigationLink(destination: Basics_23_TextField_Bootcamp()) {
+                Text("23. How to use TextField in SwiftUI-BCMP-#35")
+            }
+            
         }
     }
 }
