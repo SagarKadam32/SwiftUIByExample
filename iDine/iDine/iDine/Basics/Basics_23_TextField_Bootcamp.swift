@@ -14,14 +14,13 @@ struct Basics_23_TextField_Bootcamp: View {
     
     var body: some View {
         NavigationView {
-            
             VStack {
                 TextField("Type something here..",text: $textFieldText)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                     .background(Color.gray.opacity(0.3).cornerRadius(10))
                     .foregroundColor(.red)
-                .font(.headline)
+                    .font(.headline)
                 
                 Button(action: {
                     if textIsAppropriate() {
