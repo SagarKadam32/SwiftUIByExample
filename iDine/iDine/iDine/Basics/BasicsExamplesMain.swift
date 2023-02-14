@@ -98,6 +98,11 @@ struct BasicsExamplesMain: View {
                 Text("24. How to use TextEditor in SwiftUI-BCMP-#36")
             }
             
+            NavigationLink(destination: Basics_26_Picker_Bootcamp()) {
+                Text("25. How to use Picker and PickerStyles in SwiftUI-BCMP-#36")
+            }
+            
+            
             
         }
     }

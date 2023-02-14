@@ -180,6 +180,7 @@
 		96EBDC5828F5DE0C0018D49C /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */; };
 		96FD3533299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */; };
 		96FD3535299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */; };
+		96FD3537299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -368,6 +369,7 @@
 		96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
 		96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_24_TextEditor_Bootcamp.swift; sourceTree = "<group>"; };
 		96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_25_Toggle_Bootcamp.swift; sourceTree = "<group>"; };
+		96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_26_Picker_Bootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 			children = (
 				96188D63294CB68F008F8DA7 /* Basics.swift */,
 				96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */,
+				96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */,
 				96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */,
 				96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */,
 				969B4140294DAC4000C33CBD /* Basics_3_ScrollView_Bootcamp.swift */,
@@ -997,6 +1000,7 @@
 				967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */,
 				968F065328CA6FA500D364E4 /* Example_1_9.swift in Sources */,
 				968DFB3628CB5DEC00657D72 /* Example_1_Main.swift in Sources */,
+				96FD3537299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift in Sources */,
 				9665279F28D63FD800BF5DA6 /* Example_8_Main.swift in Sources */,
 				969C66B828CCA981005EAC29 /* Example_3_2.swift in Sources */,
 				969B140D2901BA2C00180111 /* ImageLoadingViewModel.swift in Sources */,
