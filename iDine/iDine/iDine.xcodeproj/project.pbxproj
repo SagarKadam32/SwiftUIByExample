@@ -181,6 +181,7 @@
 		96FD3533299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */; };
 		96FD3535299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */; };
 		96FD3537299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */; };
+		96FD3539299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3538299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -370,6 +371,7 @@
 		96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_24_TextEditor_Bootcamp.swift; sourceTree = "<group>"; };
 		96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_25_Toggle_Bootcamp.swift; sourceTree = "<group>"; };
 		96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_26_Picker_Bootcamp.swift; sourceTree = "<group>"; };
+		96FD3538299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_27_ColorPicker_Bootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,7 +397,6 @@
 			children = (
 				96188D63294CB68F008F8DA7 /* Basics.swift */,
 				96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */,
-				96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */,
 				96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */,
 				96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */,
 				969B4140294DAC4000C33CBD /* Basics_3_ScrollView_Bootcamp.swift */,
@@ -421,6 +422,8 @@
 				96346A0E299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift */,
 				96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */,
 				96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */,
+				96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */,
+				96FD3538299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -962,6 +965,7 @@
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				9664845328E0988D00F19508 /* DependancyInjectionBootcamp.swift in Sources */,
 				969E72DF28D761A300422DA6 /* Example_9_5.swift in Sources */,
+				96FD3539299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift in Sources */,
 				9650E4C928D11480001923DB /* Example_4_16.swift in Sources */,
 				96B8101228D2068800F76E8B /* Example_5_5.swift in Sources */,
 				969C159228D5D96B00A920DC /* Example_7_4.swift in Sources */,
