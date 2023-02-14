@@ -94,6 +94,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_23_TextField_Bootcamp()) {
                 Text("23. How to use TextField in SwiftUI-BCMP-#35")
             }
+            NavigationLink(destination: Basics_24_TextEditor_Bootcamp()) {
+                Text("24. How to use TextEditor in SwiftUI-BCMP-#36")
+            }
+            
             
         }
     }

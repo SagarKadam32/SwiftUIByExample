@@ -178,6 +178,7 @@
 		96E3EBC328CE06DC007C60AC /* Example_4_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBC228CE06DC007C60AC /* Example_4_1.swift */; };
 		96E3EBC528CE1943007C60AC /* Example_4_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBC428CE1943007C60AC /* Example_4_2.swift */; };
 		96EBDC5828F5DE0C0018D49C /* FileManagerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */; };
+		96FD3533299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -364,6 +365,7 @@
 		96E3EBC228CE06DC007C60AC /* Example_4_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_1.swift; sourceTree = "<group>"; };
 		96E3EBC428CE1943007C60AC /* Example_4_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_2.swift; sourceTree = "<group>"; };
 		96EBDC5728F5DE0C0018D49C /* FileManagerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerBootcamp.swift; sourceTree = "<group>"; };
+		96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_24_TextEditor_Bootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +414,7 @@
 				368C618F296870D300AD6F10 /* 		.swift */,
 				965074842996A94B00A61AE5 /* Basics_22_ContextMenu_Bootcamp.swift */,
 				96346A0E299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift */,
+				96FD3532299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -948,6 +951,7 @@
 				96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */,
 				969C66A928CC5921005EAC29 /* Example_2_8.swift in Sources */,
 				969B4141294DAC4000C33CBD /* Basics_3_ScrollView_Bootcamp.swift in Sources */,
+				96FD3533299B51F2000A4C9B /* Basics_24_TextEditor_Bootcamp.swift in Sources */,
 				9689F3B128E76490002BD7DA /* TypealiasBootcamp.swift in Sources */,
 				969944BC28C799A5001F98D4 /* ContentView.swift in Sources */,
 				9664845328E0988D00F19508 /* DependancyInjectionBootcamp.swift in Sources */,
