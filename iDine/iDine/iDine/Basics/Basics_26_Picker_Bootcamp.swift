@@ -9,9 +9,42 @@ import SwiftUI
 
 struct Basics_26_Picker_Bootcamp: View {
     
-    @State var mySelection: String = "1"
+    @State var mySelection: String = "Most Recent"
+    let myFilterOptions: [String] = ["Most Recent", "Most Popular", "Most Liked"]
+    
     var body: some View {
         
+        /* MenuPickerStyle */
+        Picker(
+            selection: $mySelection,
+            label:
+                HStack {
+                    Text("Filter:")
+                    Text(mySelection)
+                }
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .padding(.horizontal)
+                .background(.blue)
+                .cornerRadius(10)
+                .shadow(color: .blue, radius: 10, x: 0, y: 10)
+            
+            ,
+            content: {
+                ForEach(myFilterOptions, id: \.self) { option in
+                    HStack {
+                        Text(option)
+                        Image(systemName: "heart.fill")
+                    }
+                    .tag(option)
+
+                }
+            })
+        .pickerStyle(MenuPickerStyle())
+        
+        /* WheelPickerStyle */
+        /*
         VStack {
             HStack {
                 Text("Age:")
@@ -30,7 +63,7 @@ struct Basics_26_Picker_Bootcamp: View {
                        })
                        .pickerStyle(WheelPickerStyle())
             })
-        }
+        } */
     }
 }
 
