@@ -12,9 +12,27 @@ struct Basics_26_Picker_Bootcamp: View {
     @State var mySelection: String = "Most Recent"
     let myFilterOptions: [String] = ["Most Recent", "Most Popular", "Most Liked"]
     
+    init() {
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor.red
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor : UIColor.white]
+        UISegmentedControl.appearance().setTitleTextAttributes(attributes, for: .selected)
+    }
+    
     var body: some View {
         
+        /* SegmentedPickerStyle */
+        Picker(selection: $mySelection,
+               label: Text("Picker"),
+               content: {
+            ForEach(myFilterOptions.indices) { index in
+                Text(myFilterOptions[index])
+                    .tag(myFilterOptions[index])
+            }
+        })
+        .pickerStyle(SegmentedPickerStyle())
+        
         /* MenuPickerStyle */
+        /*
         Picker(
             selection: $mySelection,
             label:
@@ -42,6 +60,7 @@ struct Basics_26_Picker_Bootcamp: View {
                 }
             })
         .pickerStyle(MenuPickerStyle())
+         */
         
         /* WheelPickerStyle */
         /*
