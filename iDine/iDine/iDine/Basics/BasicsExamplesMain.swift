@@ -107,6 +107,10 @@ struct BasicsExamplesMain: View {
                 Text("27. How to use ColorPicker in SwiftUI-BCMP-#39")
             }
             
+            NavigationLink(destination: Basics_28_DatePicker_Bootcamp()) {
+                Text("28. How to use DatePicker to select dates in SwiftUI-BCMP-#40")
+            }
+            
             
         }
     }
