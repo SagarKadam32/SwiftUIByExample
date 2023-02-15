@@ -110,7 +110,9 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_28_DatePicker_Bootcamp()) {
                 Text("28. How to use DatePicker to select dates in SwiftUI-BCMP-#40")
             }
-            
+            NavigationLink(destination: Basics_29_Stepper_Bootcamp()) {
+                Text("29. Create a Stepper in SwiftUI-BCMP-#41")
+            }
             
         }
     }
