@@ -129,9 +129,12 @@ struct BasicsExamplesMain: View {
             }
             
             NavigationLink(destination: Basics_33_OnAppear_Bootcamp()) {
-                Text("33. How to use onAppear and onDisappear in SwiftUI-BCMP-#44")
+                Text("33. How to use onAppear and onDisappear in SwiftUI-BCMP-#46")
             }
             
+            NavigationLink(destination: Basics_34_IfLetGuard_Bootcamp()) {
+                Text("34. How to safely unwrap optionals in Swift with if-let and guard statements -BCMP-#47")
+            }
             
         }
     }
