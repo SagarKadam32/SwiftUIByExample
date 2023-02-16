@@ -11,17 +11,22 @@ struct Basics_31_Tabview_Bootcamp: View {
     
     @State var selectedTab: Int = 0
     
+    let icons: [String] = ["heart.fill", "globe", "person.fill"]
+    
     var body: some View {
         
-        
         TabView {
-            RoundedRectangle(cornerRadius: 25.0)
-                .foregroundColor(.red)
-            RoundedRectangle(cornerRadius: 25.0)
-                .foregroundColor(.green)
-            RoundedRectangle(cornerRadius: 25.0)
+            ForEach(icons, id: \.self) { icon in
+                Image(systemName: icon)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(30)
+            }
         }
-        .frame(height: 300)
+        .background(
+            RadialGradient(gradient: Gradient(colors: [Color.red, Color.blue]), center: .center, startRadius: 5, endRadius: 300)
+        )
+        .frame(height: 300 )
         .tabViewStyle(PageTabViewStyle())
         
         /* TabView with a View */
