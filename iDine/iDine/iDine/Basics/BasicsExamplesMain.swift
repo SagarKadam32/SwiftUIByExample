@@ -114,6 +114,19 @@ struct BasicsExamplesMain: View {
                 Text("29. Create a Stepper in SwiftUI-BCMP-#41")
             }
             
+            NavigationLink(destination: Basics_30_Slider_Bootcamp()) {
+                Text("30. How to use Slider in SwiftUI-BCMP-#42")
+            }
+        }
+        
+        Group {
+            NavigationLink(destination: Basics_31_Tabview_Bootcamp()) {
+                Text("31. Create a tab bar with TabView and PageTabViewStyle in SwiftUI-BCMP-#43")
+            }
+            
+            NavigationLink(destination: Basics_32_Darkmode_Bootcamp()) {
+                Text("32. Adapt for Dark Mode in in SwiftUI-BCMP-#44")
+            }
         }
     }
 }
