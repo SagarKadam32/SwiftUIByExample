@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct Basics_31_Tabview_Bootcamp: View {
+    
+    @State var selectedTab: Int = 0
+    
     var body: some View {
         
         /* TabView with a View */
-        TabView {
-            HomeView()
+        TabView(selection: $selectedTab) {
+            HomeView(selectedTab: $selectedTab)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
@@ -24,12 +27,14 @@ struct Basics_31_Tabview_Bootcamp: View {
                     Image(systemName: "globe")
                     Text("Browse")
                 }
+                .tag(1)
             
             ProfileView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")
                 }
+                .tag(2)
         }
 
         
@@ -66,13 +71,29 @@ struct Basics_31_Tabview_Bootcamp_Previews: PreviewProvider {
 }
 
 struct HomeView: View {
+    @Binding var selectedTab: Int
     var body: some View {
         ZStack {
             Color.blue
-            Text("HOME TAB")
-                .font(.largeTitle)
-                .foregroundColor(.white)
-            
+            VStack {
+                Text("HOME TAB")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                
+                Button(action: {
+                    selectedTab = 2
+                }, label: {
+                    Text("Go To Profile")
+                        .font(.headline)
+                        .padding()
+                        .padding(.horizontal)
+                        .background(.white)
+                        .cornerRadius(10)
+                    
+                })
+               
+                
+            }
         }
         
     }
