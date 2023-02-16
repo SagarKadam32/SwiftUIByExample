@@ -127,6 +127,12 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_32_Darkmode_Bootcamp()) {
                 Text("32. Adapt for Dark Mode in in SwiftUI-BCMP-#44")
             }
+            
+            NavigationLink(destination: Basics_33_OnAppear_Bootcamp()) {
+                Text("33. How to use onAppear and onDisappear in SwiftUI-BCMP-#44")
+            }
+            
+            
         }
     }
 }

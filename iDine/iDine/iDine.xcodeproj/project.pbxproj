@@ -51,6 +51,7 @@
 		966527A128D6407100BF5DA6 /* Example_8_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527A028D6407100BF5DA6 /* Example_8_1.swift */; };
 		96757ADB299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */; };
 		96757ADD299E02530070E6D7 /* Basics_32_Darkmode_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96757ADC299E02530070E6D7 /* Basics_32_Darkmode_Bootcamp.swift */; };
+		96757ADF299E274E0070E6D7 /* Basics_33_OnAppear_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96757ADE299E274E0070E6D7 /* Basics_33_OnAppear_Bootcamp.swift */; };
 		967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A628CBB2DD0027F77E /* Example_2_1.swift */; };
 		967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A828CBB70A0027F77E /* Example_2_2.swift */; };
 		967648AB28CBB8CD0027F77E /* Example_2_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648AA28CBB8CD0027F77E /* Example_2_3.swift */; };
@@ -245,6 +246,7 @@
 		966527A028D6407100BF5DA6 /* Example_8_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_1.swift; sourceTree = "<group>"; };
 		96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_31_Tabview_Bootcamp.swift; sourceTree = "<group>"; };
 		96757ADC299E02530070E6D7 /* Basics_32_Darkmode_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_32_Darkmode_Bootcamp.swift; sourceTree = "<group>"; };
+		96757ADE299E274E0070E6D7 /* Basics_33_OnAppear_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_33_OnAppear_Bootcamp.swift; sourceTree = "<group>"; };
 		967648A628CBB2DD0027F77E /* Example_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_1.swift; sourceTree = "<group>"; };
 		967648A828CBB70A0027F77E /* Example_2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_2.swift; sourceTree = "<group>"; };
 		967648AA28CBB8CD0027F77E /* Example_2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_3.swift; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 				9679651A299CABC00092B1E7 /* Basics_30_Slider_Bootcamp.swift */,
 				96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */,
 				96757ADC299E02530070E6D7 /* Basics_32_Darkmode_Bootcamp.swift */,
+				96757ADE299E274E0070E6D7 /* Basics_33_OnAppear_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -985,6 +988,7 @@
 				9664845328E0988D00F19508 /* DependancyInjectionBootcamp.swift in Sources */,
 				969E72DF28D761A300422DA6 /* Example_9_5.swift in Sources */,
 				96FD3539299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift in Sources */,
+				96757ADF299E274E0070E6D7 /* Basics_33_OnAppear_Bootcamp.swift in Sources */,
 				9650E4C928D11480001923DB /* Example_4_16.swift in Sources */,
 				96B8101228D2068800F76E8B /* Example_5_5.swift in Sources */,
 				969C159228D5D96B00A920DC /* Example_7_4.swift in Sources */,
