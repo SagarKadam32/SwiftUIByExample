@@ -13,54 +13,65 @@ struct Basics_31_Tabview_Bootcamp: View {
     
     var body: some View {
         
-        /* TabView with a View */
-        TabView(selection: $selectedTab) {
-            HomeView(selectedTab: $selectedTab)
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-                .tag(0)
-            
-            BrowseView()
-                .tabItem {
-                    Image(systemName: "globe")
-                    Text("Browse")
-                }
-                .tag(1)
-            
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
-                .tag(2)
+        
+        TabView {
+            RoundedRectangle(cornerRadius: 25.0)
+                .foregroundColor(.red)
+            RoundedRectangle(cornerRadius: 25.0)
+                .foregroundColor(.green)
+            RoundedRectangle(cornerRadius: 25.0)
         }
+        .frame(height: 300)
+        .tabViewStyle(PageTabViewStyle())
+        
+        /* TabView with a View */
+//        TabView(selection: $selectedTab) {
+//            HomeView(selectedTab: $selectedTab)
+//                .tabItem {
+//                    Image(systemName: "house.fill")
+//                    Text("Home")
+//                }
+//                .tag(0)
+//
+//            BrowseView()
+//                .tabItem {
+//                    Image(systemName: "globe")
+//                    Text("Browse")
+//                }
+//                .tag(1)
+//
+//            ProfileView()
+//                .tabItem {
+//                    Image(systemName: "person.fill")
+//                    Text("Profile")
+//                }
+//                .tag(2)
+//        }
 
         
-        /*
+        
         /* Basic TabView */
-        TabView {
-            Text("HOME TAB")
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-            
-            Text("BROWSE TAB")
-                .tabItem {
-                    Image(systemName: "globe")
-                    Text("Browse")
-                }
-            
-            Text("PROFILE TAB")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
-        }
-        .accentColor(.teal)
-        */
+//        TabView {
+//            Text("HOME TAB")
+//                .tabItem {
+//                    Image(systemName: "house.fill")
+//                    Text("Home")
+//                }
+//
+//            Text("BROWSE TAB")
+//                .tabItem {
+//                    Image(systemName: "globe")
+//                    Text("Browse")
+//                }
+//
+//            Text("PROFILE TAB")
+//                .tabItem {
+//                    Image(systemName: "person.fill")
+//                    Text("Profile")
+//                }
+//        }
+//        .accentColor(.teal)
+        
     }
 }
 
@@ -88,7 +99,7 @@ struct HomeView: View {
                         .padding()
                         .padding(.horizontal)
                         .background(.white)
-                        .cornerRadius(10)
+                        .cornerRadius(10 )
                     
                 })
                
