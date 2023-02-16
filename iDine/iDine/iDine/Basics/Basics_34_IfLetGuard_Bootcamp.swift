@@ -30,7 +30,8 @@ struct Basics_34_IfLetGuard_Bootcamp: View {
                 Spacer()
             }
             .onAppear() {
-                loadData()
+                //loadData()
+                loadDataWithGuard()
             }
             .navigationTitle("Safe Codeing")
         }
@@ -45,6 +46,20 @@ struct Basics_34_IfLetGuard_Bootcamp: View {
             }
         }else {
             displayText = "ERROR !! There is no USER ID"
+        }
+    }
+    
+    func loadDataWithGuard() {
+        
+        guard let userID = currentUerID else {
+            displayText = "ERROR !! There is no USER ID"
+            return
+        }
+        
+        isLoading = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            displayText = "This is the new data! and User ID = \(userID)"
+            isLoading = false
         }
     }
 }
