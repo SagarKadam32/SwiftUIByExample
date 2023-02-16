@@ -49,6 +49,7 @@
 		9665279C28D63C6900BF5DA6 /* Example_7_7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279B28D63C6900BF5DA6 /* Example_7_7.swift */; };
 		9665279F28D63FD800BF5DA6 /* Example_8_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9665279E28D63FD800BF5DA6 /* Example_8_Main.swift */; };
 		966527A128D6407100BF5DA6 /* Example_8_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966527A028D6407100BF5DA6 /* Example_8_1.swift */; };
+		96757ADB299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */; };
 		967648A728CBB2DD0027F77E /* Example_2_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A628CBB2DD0027F77E /* Example_2_1.swift */; };
 		967648A928CBB70A0027F77E /* Example_2_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648A828CBB70A0027F77E /* Example_2_2.swift */; };
 		967648AB28CBB8CD0027F77E /* Example_2_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967648AA28CBB8CD0027F77E /* Example_2_3.swift */; };
@@ -241,6 +242,7 @@
 		9665279B28D63C6900BF5DA6 /* Example_7_7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_7_7.swift; sourceTree = "<group>"; };
 		9665279E28D63FD800BF5DA6 /* Example_8_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_Main.swift; sourceTree = "<group>"; };
 		966527A028D6407100BF5DA6 /* Example_8_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_8_1.swift; sourceTree = "<group>"; };
+		96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_31_Tabview_Bootcamp.swift; sourceTree = "<group>"; };
 		967648A628CBB2DD0027F77E /* Example_2_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_1.swift; sourceTree = "<group>"; };
 		967648A828CBB70A0027F77E /* Example_2_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_2.swift; sourceTree = "<group>"; };
 		967648AA28CBB8CD0027F77E /* Example_2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_3.swift; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 				96796516299C95360092B1E7 /* Basics_28_DatePicker_Bootcamp.swift */,
 				96796518299CA4DF0092B1E7 /* Basics_29_Stepper_Bootcamp.swift */,
 				9679651A299CABC00092B1E7 /* Basics_30_Slider_Bootcamp.swift */,
+				96757ADA299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -958,6 +961,7 @@
 				969E72D028D7549500422DA6 /* Example_8_12.swift in Sources */,
 				969C66B128CC709B005EAC29 /* Example_2_12.swift in Sources */,
 				969C158C28D5A78300A920DC /* Example_7_1.swift in Sources */,
+				96757ADB299DF6890070E6D7 /* Basics_31_Tabview_Bootcamp.swift in Sources */,
 				9650E4CB28D1158A001923DB /* Example_4_17.swift in Sources */,
 				96796519299CA4DF0092B1E7 /* Basics_29_Stepper_Bootcamp.swift in Sources */,
 				969E72C828D7030D00422DA6 /* Example_8_8.swift in Sources */,
