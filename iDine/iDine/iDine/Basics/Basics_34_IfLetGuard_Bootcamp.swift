@@ -11,6 +11,7 @@ struct Basics_34_IfLetGuard_Bootcamp: View {
     
     @State var displayText: String? = nil
     @State var isLoading: Bool = false
+    @State var currentUerID: String? = nil //"Sagar"
     
     var body: some View {
         NavigationView {
@@ -36,10 +37,14 @@ struct Basics_34_IfLetGuard_Bootcamp: View {
     }
     
     func loadData() {
-        isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            displayText = "This is the new data!"
-            isLoading = false
+        if let userID = currentUerID {
+            isLoading = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                displayText = "This is the new data! and User ID = \(userID)"
+                isLoading = false
+            }
+        }else {
+            displayText = "ERROR !! There is no USER ID"
         }
     }
 }
