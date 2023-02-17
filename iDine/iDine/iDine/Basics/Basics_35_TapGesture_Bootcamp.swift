@@ -13,7 +13,7 @@ struct Basics_35_TapGesture_Bootcamp: View {
     
     var body: some View {
         
-        VStack(spacing: 25) {
+        VStack(spacing: 10) {
             RoundedRectangle(cornerRadius: 25)
                 .frame(height: 200)
                 .foregroundColor(isSelected ? Color.green : Color.red)

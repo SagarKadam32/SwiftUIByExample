@@ -136,6 +136,9 @@ struct BasicsExamplesMain: View {
                 Text("34. How to safely unwrap optionals in Swift with if-let and guard statements -BCMP-#47")
             }
             
+            NavigationLink(destination: Basics_35_TapGesture_Bootcamp()) {
+                Text("35. How to use Tap Gestures in SwiftUI -BCMP-#48")
+            }
         }
     }
 }
