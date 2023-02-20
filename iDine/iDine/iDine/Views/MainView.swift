@@ -14,6 +14,10 @@ struct MainView: View {
                 .tabItem {
                     Label("Basic Swift", systemImage: "pencil.and.outline")
                 }
+            LighthouseDemos()
+                .tabItem {
+                    Label("Lighthouse", systemImage: "pencil.and.outline")
+                }
             MyAdvancedSwiftLearnings()
                 .tabItem {
                     Label("Advanced Swift", systemImage: "pencil.and.outline")
