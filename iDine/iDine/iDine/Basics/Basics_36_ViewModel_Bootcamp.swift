@@ -14,33 +14,9 @@ struct FruitModel : Identifiable {
     
 }
 
-struct Basics_36_ViewModel_Bootcamp: View {
+class FruitViewModel : ObservableObject {
     
-    @State var fruitArray: [FruitModel] = [
-    FruitModel(name: "Apples", count: 5)
-    ]
-    var body: some View {
-        NavigationView {
-            List {
-                ForEach(fruitArray) { fruit in
-                    HStack {
-                        Text("\(fruit.count)")
-                            .foregroundColor(.red)
-                        Text(fruit.name)
-                            .font(.headline)
-                            .bold()
-                    }
-                }
-                .onDelete(perform: deleteFrouit)
-                
-            }
-            .listStyle(GroupedListStyle())
-            .navigationTitle("Fruit List")
-            .onAppear() {
-                getFruits()
-            }
-        }
-    }
+    @Published var fruitArray: [FruitModel] = []
     
     func getFruits() {
         let fruit1 = FruitModel(name: "Oranges", count: 1)
@@ -54,6 +30,39 @@ struct Basics_36_ViewModel_Bootcamp: View {
     
     func deleteFrouit(index: IndexSet) {
         fruitArray.remove(atOffsets: index)
+    }
+}
+
+struct Basics_36_ViewModel_Bootcamp: View {
+    
+//    @State var fruitArray: [FruitModel] = [
+//    FruitModel(name: "Apples", count: 5)
+//    ]
+    
+    
+    @ObservedObject var fruitViewModel: FruitViewModel = FruitViewModel()
+    
+    var body: some View {
+        NavigationView {
+            List {
+                ForEach(fruitViewModel.fruitArray) { fruit in
+                    HStack {
+                        Text("\(fruit.count)")
+                            .foregroundColor(.red)
+                        Text(fruit.name)
+                            .font(.headline)
+                            .bold()
+                    }
+                }
+                .onDelete(perform: fruitViewModel.deleteFrouit)
+                
+            }
+            .listStyle(GroupedListStyle())
+            .navigationTitle("Fruit List")
+            .onAppear() {
+                fruitViewModel.getFruits()
+            }
+        }
     }
 }
 
