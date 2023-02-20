@@ -41,6 +41,8 @@ class FruitViewModel : ObservableObject {
 
 struct Basics_36_ViewModel_Bootcamp: View {
     
+    // @StateObject --> USE THIS ON CREATION / INIT
+    // @ObservedObject --> USE THIS FOR SUBVIEWS
     
     @StateObject var fruitViewModel: FruitViewModel = FruitViewModel()
     
