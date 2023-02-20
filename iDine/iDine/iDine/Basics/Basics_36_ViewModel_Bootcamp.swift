@@ -17,15 +17,21 @@ struct FruitModel : Identifiable {
 class FruitViewModel : ObservableObject {
     
     @Published var fruitArray: [FruitModel] = []
+    @Published var isLoading: Bool = false
     
     func getFruits() {
         let fruit1 = FruitModel(name: "Oranges", count: 1)
         let fruit2 = FruitModel(name: "Banana", count: 3)
         let fruit3 = FruitModel(name: "Watermelon", count: 5)
         
-        fruitArray.append(fruit1)
-        fruitArray.append(fruit2)
-        fruitArray.append(fruit3)
+        isLoading = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            self.fruitArray.append(fruit1)
+            self.fruitArray.append(fruit2)
+            self.fruitArray.append(fruit3)
+            self.isLoading = false
+        }
+
     }
     
     func deleteFrouit(index: IndexSet) {
@@ -35,26 +41,28 @@ class FruitViewModel : ObservableObject {
 
 struct Basics_36_ViewModel_Bootcamp: View {
     
-//    @State var fruitArray: [FruitModel] = [
-//    FruitModel(name: "Apples", count: 5)
-//    ]
-    
     
     @ObservedObject var fruitViewModel: FruitViewModel = FruitViewModel()
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(fruitViewModel.fruitArray) { fruit in
-                    HStack {
-                        Text("\(fruit.count)")
-                            .foregroundColor(.red)
-                        Text(fruit.name)
-                            .font(.headline)
-                            .bold()
+                
+                if fruitViewModel.isLoading {
+                    ProgressView()
+                } else {
+                    ForEach(fruitViewModel.fruitArray) { fruit in
+                        HStack {
+                            Text("\(fruit.count)")
+                                .foregroundColor(.red)
+                            Text(fruit.name)
+                                .font(.headline)
+                                .bold()
+                        }
                     }
+                    .onDelete(perform: fruitViewModel.deleteFrouit)
                 }
-                .onDelete(perform: fruitViewModel.deleteFrouit)
+
                 
             }
             .listStyle(GroupedListStyle())
