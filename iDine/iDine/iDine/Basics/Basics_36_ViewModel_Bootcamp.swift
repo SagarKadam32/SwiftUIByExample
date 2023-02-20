@@ -69,9 +69,36 @@ struct Basics_36_ViewModel_Bootcamp: View {
             }
             .listStyle(GroupedListStyle())
             .navigationTitle("Fruit List")
+            .navigationBarItems(trailing:
+                                    NavigationLink(destination: NewSecondScreen(), label: {
+                    Image(systemName: "arrow.right")
+                    .font(.title)
+            })
+                )
             .onAppear() {
                 fruitViewModel.getFruits()
             }
+        }
+    }
+}
+
+
+struct NewSecondScreen: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
+    var body: some View {
+        ZStack {
+            Color.green.ignoresSafeArea()
+            
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("GO BACK")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+            })
         }
     }
 }
