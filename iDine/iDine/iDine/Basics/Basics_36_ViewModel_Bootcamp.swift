@@ -74,7 +74,7 @@ struct Basics_36_ViewModel_Bootcamp: View {
             .listStyle(GroupedListStyle())
             .navigationTitle("Fruit List")
             .navigationBarItems(trailing:
-                                    NavigationLink(destination: NewSecondScreen(), label: {
+                                    NavigationLink(destination: NewSecondScreen(fruitViewModel: fruitViewModel), label: {
                     Image(systemName: "arrow.right")
                     .font(.title)
             }))
@@ -86,11 +86,20 @@ struct Basics_36_ViewModel_Bootcamp: View {
 struct NewSecondScreen: View {
     
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var fruitViewModel : FruitViewModel
     
     var body: some View {
         ZStack {
             Color.green.ignoresSafeArea()
             
+            VStack {
+                ForEach(fruitViewModel.fruitArray) { fruit in
+                    Text(fruit.name)
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
+            }
+            /*
             Button(action: {
                 presentationMode.wrappedValue.dismiss()
             }, label: {
@@ -98,7 +107,7 @@ struct NewSecondScreen: View {
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .fontWeight(.semibold)
-            })
+            }) */
         }
     }
 }
