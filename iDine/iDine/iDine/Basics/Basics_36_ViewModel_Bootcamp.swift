@@ -19,6 +19,10 @@ class FruitViewModel : ObservableObject {
     @Published var fruitArray: [FruitModel] = []
     @Published var isLoading: Bool = false
     
+    init() {
+        getFruits()
+    }
+    
     func getFruits() {
         let fruit1 = FruitModel(name: "Oranges", count: 1)
         let fruit2 = FruitModel(name: "Banana", count: 3)
@@ -73,11 +77,7 @@ struct Basics_36_ViewModel_Bootcamp: View {
                                     NavigationLink(destination: NewSecondScreen(), label: {
                     Image(systemName: "arrow.right")
                     .font(.title)
-            })
-                )
-            .onAppear() {
-                fruitViewModel.getFruits()
-            }
+            }))
         }
     }
 }
