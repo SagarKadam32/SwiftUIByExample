@@ -196,6 +196,7 @@
 		96FD3535299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */; };
 		96FD3537299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */; };
 		96FD3539299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FD3538299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift */; };
+		96FED34329A4A33F00C2A5DB /* Basics_37_EnviromentObject_Demo-Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FED34229A4A33F00C2A5DB /* Basics_37_EnviromentObject_Demo-Bootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -400,6 +401,7 @@
 		96FD3534299B5656000A4C9B /* Basics_25_Toggle_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_25_Toggle_Bootcamp.swift; sourceTree = "<group>"; };
 		96FD3536299B62B3000A4C9B /* Basics_26_Picker_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_26_Picker_Bootcamp.swift; sourceTree = "<group>"; };
 		96FD3538299B7350000A4C9B /* Basics_27_ColorPicker_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_27_ColorPicker_Bootcamp.swift; sourceTree = "<group>"; };
+		96FED34229A4A33F00C2A5DB /* Basics_37_EnviromentObject_Demo-Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basics_37_EnviromentObject_Demo-Bootcamp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +465,7 @@
 				96757AE0299E38960070E6D7 /* Basics_34_IfLetGuard_Bootcamp.swift */,
 				969F597C299F9CCF0097D905 /* Basics_35_TapGesture_Bootcamp.swift */,
 				96A1EF5029A33D9F00FA77EE /* Basics_36_ViewModel_Bootcamp.swift */,
+				96FED34229A4A33F00C2A5DB /* Basics_37_EnviromentObject_Demo-Bootcamp.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
@@ -1092,6 +1095,7 @@
 				96B8100A28D1C56E00F76E8B /* Example_5_2.swift in Sources */,
 				968A1E6529006EA200D5EE49 /* PhotoModelDataService.swift in Sources */,
 				96994EF728D37E13002ECBDD /* Example_5_7.swift in Sources */,
+				96FED34329A4A33F00C2A5DB /* Basics_37_EnviromentObject_Demo-Bootcamp.swift in Sources */,
 				96A1EF5129A33D9F00FA77EE /* Basics_36_ViewModel_Bootcamp.swift in Sources */,
 				969E72D228D7568C00422DA6 /* Example_8_13.swift in Sources */,
 				96B8101028D203CB00F76E8B /* Example_5_4.swift in Sources */,
