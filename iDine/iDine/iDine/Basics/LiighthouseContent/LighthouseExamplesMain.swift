@@ -17,6 +17,10 @@ struct LighthouseExamplesMain: View {
             NavigationLink(destination: IconBootcampDemo()) {
                 Text("2. Demo Image Icons() ")
             }
+            
+            NavigationLink(destination: Basics_37_EnviromentObject_Demo_Bootcamp()) {
+                Text("3. How to use @EnvironmentObject in SwiftUI")
+            }
         }
     }
 }

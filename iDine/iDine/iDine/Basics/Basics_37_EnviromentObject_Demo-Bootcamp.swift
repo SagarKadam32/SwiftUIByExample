@@ -25,25 +25,24 @@ struct Basics_37_EnviromentObject_Demo_Bootcamp: View {
         NavigationView {
             List {
                 ForEach(viewModel.dataArray, id: \.self) { item in
-                    NavigationLink(destination: SecondScreenView(selectedItem: item, viewModel: viewModel)) {
+                    NavigationLink(destination: SecondScreenView(selectedItem: item)) {
                         Text(item)
                     }
                 }
             }
             .navigationTitle("iOS Devices")
         }
+        .environmentObject(viewModel)
     }
 }
 
 struct SecondScreenView : View {
     let selectedItem: String
-    @ObservedObject var viewModel: EnviormentViewModel
-    
     var body: some View {
         ZStack {
             Color.orange.ignoresSafeArea()
             
-            NavigationLink(destination: FinalScreenView(viewModel: viewModel)) {
+            NavigationLink(destination: FinalScreenView()) {
                 Text(selectedItem)
                     .font(.headline)
                     .padding()
@@ -57,8 +56,8 @@ struct SecondScreenView : View {
 }
 
 struct FinalScreenView : View {
-    @ObservedObject var viewModel: EnviormentViewModel
-
+    
+    @EnvironmentObject var viewModel: EnviormentViewModel
     
     var body: some View {
         ZStack {

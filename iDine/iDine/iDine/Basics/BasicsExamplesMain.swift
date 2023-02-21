@@ -143,6 +143,11 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_36_ViewModel_Bootcamp()) {
                 Text("36. How to use @ObservableObject and @StateObject in SwiftUI -BCMP-#49")
             }
+            
+            NavigationLink(destination: Basics_37_EnviromentObject_Demo_Bootcamp()) {
+                Text("37. How to use @EnvironmentObject in SwiftUI -BCMP-#50")
+            }
+            
         }
     }
 }
