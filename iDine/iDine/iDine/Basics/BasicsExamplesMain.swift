@@ -139,6 +139,10 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_35_TapGesture_Bootcamp()) {
                 Text("35. How to use Tap Gestures in SwiftUI -BCMP-#48")
             }
+            
+            NavigationLink(destination: Basics_36_ViewModel_Bootcamp()) {
+                Text("36. How to use @ObservableObject and @StateObject in SwiftUI -BCMP-#49")
+            }
         }
     }
 }
