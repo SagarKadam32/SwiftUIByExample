@@ -15,6 +15,7 @@
 		96188D66294CB773008F8DA7 /* BasicsExamplesMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */; };
 		96188D68294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */; };
 		96188D6A294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */; };
+		961895BD29A6224500695DFA /* AppStorageBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961895BC29A6224500695DFA /* AppStorageBootcampDemo.swift */; };
 		962E937C295B430100475993 /* Basics_7_State_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E937B295B430100475993 /* Basics_7_State_Bootcamp.swift */; };
 		963043DE29A0AE0F00E32555 /* TextDemoBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963043DD29A0AE0F00E32555 /* TextDemoBootcamp.swift */; };
 		96346A0F299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96346A0E299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift */; };
@@ -218,6 +219,7 @@
 		96188D65294CB773008F8DA7 /* BasicsExamplesMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsExamplesMain.swift; sourceTree = "<group>"; };
 		96188D67294CB908008F8DA7 /* Basics_1_Initializer_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_1_Initializer_Bootcamp.swift; sourceTree = "<group>"; };
 		96188D69294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_2_ForEach_Bootcamp.swift; sourceTree = "<group>"; };
+		961895BC29A6224500695DFA /* AppStorageBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcampDemo.swift; sourceTree = "<group>"; };
 		962E937B295B430100475993 /* Basics_7_State_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_7_State_Bootcamp.swift; sourceTree = "<group>"; };
 		963043DD29A0AE0F00E32555 /* TextDemoBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemoBootcamp.swift; sourceTree = "<group>"; };
 		96346A0E299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_23_TextField_Bootcamp.swift; sourceTree = "<group>"; };
@@ -477,6 +479,7 @@
 				96E50DE129A0B16700819B41 /* LighthouseDemos.swift */,
 				96E50DE329A0E01900819B41 /* LighthouseExamplesMain.swift */,
 				96B0A71929A2679600A88853 /* IconBootcampDemo.swift */,
+				961895BC29A6224500695DFA /* AppStorageBootcampDemo.swift */,
 			);
 			path = LiighthouseContent;
 			sourceTree = "<group>";
@@ -1119,6 +1122,7 @@
 				969C572028C9234D00D1BA9C /* MyLearnings.swift in Sources */,
 				9650E4C528D10E56001923DB /* Example_4_14.swift in Sources */,
 				969944CC28C79B42001F98D4 /* Helper.swift in Sources */,
+				961895BD29A6224500695DFA /* AppStorageBootcampDemo.swift in Sources */,
 				96B8100628D1C2B900F76E8B /* Example_5_Main.swift in Sources */,
 				96346A0F299A31B2000ACD09 /* Basics_23_TextField_Bootcamp.swift in Sources */,
 				9650E4BB28D104E1001923DB /* Example_4_9.swift in Sources */,
