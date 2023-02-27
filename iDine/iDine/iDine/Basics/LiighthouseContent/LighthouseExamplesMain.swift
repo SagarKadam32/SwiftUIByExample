@@ -26,6 +26,11 @@ struct LighthouseExamplesMain: View {
                 Text("4. How to use @AppStorage in SwiftUI")
             }
             
+            NavigationLink(destination: AsyncImageBootcampDemo()) {
+                Text("5. How to use AsyncImage in SwiftUI")
+            }
+            
+            
         }
     }
 }

@@ -173,6 +173,7 @@
 		96A2595F295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A2595E295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift */; };
 		96A25961295C7FD7008AEB19 /* Basics_11_Conditional_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A25960295C7FD7008AEB19 /* Basics_11_Conditional_Bootcamp.swift */; };
 		96A25963295C8D6E008AEB19 /* Basics_12_TernaryOperator_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A25962295C8D6E008AEB19 /* Basics_12_TernaryOperator_Bootcamp.swift */; };
+		96A7094129ACA69600CED8B0 /* AsyncImageBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7094029ACA69600CED8B0 /* AsyncImageBootcampDemo.swift */; };
 		96B0A71A29A2679600A88853 /* IconBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0A71929A2679600A88853 /* IconBootcampDemo.swift */; };
 		96B8100628D1C2B900F76E8B /* Example_5_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100528D1C2B900F76E8B /* Example_5_Main.swift */; };
 		96B8100828D1C33900F76E8B /* Example_5_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100728D1C33900F76E8B /* Example_5_1.swift */; };
@@ -379,6 +380,7 @@
 		96A2595E295C5171008AEB19 /* Basics_10_Binding_Bootcamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Basics_10_Binding_Bootcamp.swift; sourceTree = "<group>"; };
 		96A25960295C7FD7008AEB19 /* Basics_11_Conditional_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_11_Conditional_Bootcamp.swift; sourceTree = "<group>"; };
 		96A25962295C8D6E008AEB19 /* Basics_12_TernaryOperator_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_12_TernaryOperator_Bootcamp.swift; sourceTree = "<group>"; };
+		96A7094029ACA69600CED8B0 /* AsyncImageBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageBootcampDemo.swift; sourceTree = "<group>"; };
 		96B0A71929A2679600A88853 /* IconBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBootcampDemo.swift; sourceTree = "<group>"; };
 		96B8100528D1C2B900F76E8B /* Example_5_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_Main.swift; sourceTree = "<group>"; };
 		96B8100728D1C33900F76E8B /* Example_5_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_1.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 				96E50DE329A0E01900819B41 /* LighthouseExamplesMain.swift */,
 				96B0A71929A2679600A88853 /* IconBootcampDemo.swift */,
 				961895BC29A6224500695DFA /* AppStorageBootcampDemo.swift */,
+				96A7094029ACA69600CED8B0 /* AsyncImageBootcampDemo.swift */,
 			);
 			path = LiighthouseContent;
 			sourceTree = "<group>";
@@ -958,6 +961,7 @@
 				96E3EBC128CE0242007C60AC /* Example_4_Main.swift in Sources */,
 				969C66AB28CC6A02005EAC29 /* Example_2_9.swift in Sources */,
 				96188D6A294CC510008F8DA7 /* Basics_2_ForEach_Bootcamp.swift in Sources */,
+				96A7094129ACA69600CED8B0 /* AsyncImageBootcampDemo.swift in Sources */,
 				96402E8628DF754F00DA5E40 /* AdvExample_1_Main.swift in Sources */,
 				969C571828C8EBDE00D1BA9C /* ItemDetail.swift in Sources */,
 				9650E4B928D10318001923DB /* Example_4_8.swift in Sources */,
@@ -1233,7 +1237,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1287,7 +1291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
