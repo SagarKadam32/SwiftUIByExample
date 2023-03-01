@@ -31,6 +31,10 @@ struct LighthouseExamplesMain: View {
             }
             
             
+            NavigationLink(destination: BackgroundMaterialBootcampDemo()) {
+                Text("6. System Materials and Backgrounds in SwiftUI")
+            }
+            
         }
     }
 }

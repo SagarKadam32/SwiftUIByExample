@@ -20,7 +20,7 @@ struct BackgroundMaterialBootcampDemo: View {
             }
             .frame(height:350)
             .frame(maxWidth:.infinity)
-            .background(.thinMaterial)
+            .background(.ultraThinMaterial)
             .cornerRadius(30)
         
         }
