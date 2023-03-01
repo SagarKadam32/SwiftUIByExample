@@ -77,7 +77,76 @@ struct BasicsExamplesMain: View {
             NavigationLink(destination: Basics_18_NavigationViewAndLink_Bootcamp()) {
                 Text("18. Using How to use NavigationView and NavigationLink in SwiftUI-BCMP-#30")
             }
+            NavigationLink(destination: Basics_19_Lists_Bootcamp()) {
+                Text("19. Add, Edit, Delete & Move Items in Lists in SwiftUI-BCMP-#31")
+            }
+            NavigationLink(destination: Basics_20_Alerts_Bootcamp()) {
+                Text("20. How to show Alerts in SwiftUI-BCMP-#32")
+            }
+        }
+        Group {
+            NavigationLink(destination: Basics_21_ActionSheets_Bootcamp()) {
+                Text("21. How to make a reusable ActionSheet in SwiftUI-BCMP-#33")
+            }
+            NavigationLink(destination: Basics_22_ContextMenu_Bootcamp()) {
+                Text("22. How to use ContextMenu in SwiftUI-BCMP-#34")
+            }
+            NavigationLink(destination: Basics_23_TextField_Bootcamp()) {
+                Text("23. How to use TextField in SwiftUI-BCMP-#35")
+            }
+            NavigationLink(destination: Basics_24_TextEditor_Bootcamp()) {
+                Text("24. How to use TextEditor in SwiftUI-BCMP-#36")
+            }
+            NavigationLink(destination: Basics_25_Toggle_Bootcamp()) {
+                Text("25. How to use Toogle Switch in SwiftUI-BCMP-#37")
+            }
+            NavigationLink(destination: Basics_26_Picker_Bootcamp()) {
+                Text("26. How to use Picker and PickerStyles in SwiftUI-BCMP-#38")
+            }
+            NavigationLink(destination: Basics_27_ColorPicker_Bootcamp()) {
+                Text("27. How to use ColorPicker in SwiftUI-BCMP-#39")
+            }
             
+            NavigationLink(destination: Basics_28_DatePicker_Bootcamp()) {
+                Text("28. How to use DatePicker to select dates in SwiftUI-BCMP-#40")
+            }
+            NavigationLink(destination: Basics_29_Stepper_Bootcamp()) {
+                Text("29. Create a Stepper in SwiftUI-BCMP-#41")
+            }
+            
+            NavigationLink(destination: Basics_30_Slider_Bootcamp()) {
+                Text("30. How to use Slider in SwiftUI-BCMP-#42")
+            }
+        }
+        
+        Group {
+            NavigationLink(destination: Basics_31_Tabview_Bootcamp()) {
+                Text("31. Create a tab bar with TabView and PageTabViewStyle in SwiftUI-BCMP-#43")
+            }
+            
+            NavigationLink(destination: Basics_32_Darkmode_Bootcamp()) {
+                Text("32. Adapt for Dark Mode in in SwiftUI-BCMP-#44")
+            }
+            
+            NavigationLink(destination: Basics_33_OnAppear_Bootcamp()) {
+                Text("33. How to use onAppear and onDisappear in SwiftUI-BCMP-#46")
+            }
+            
+            NavigationLink(destination: Basics_34_IfLetGuard_Bootcamp()) {
+                Text("34. How to safely unwrap optionals in Swift with if-let and guard statements -BCMP-#47")
+            }
+            
+            NavigationLink(destination: Basics_35_TapGesture_Bootcamp()) {
+                Text("35. How to use Tap Gestures in SwiftUI -BCMP-#48")
+            }
+            
+            NavigationLink(destination: Basics_36_ViewModel_Bootcamp()) {
+                Text("36. How to use @ObservableObject and @StateObject in SwiftUI -BCMP-#49")
+            }
+            
+            NavigationLink(destination: Basics_37_EnviromentObject_Demo_Bootcamp()) {
+                Text("37. How to use @EnvironmentObject in SwiftUI -BCMP-#50")
+            }
             
         }
     }
