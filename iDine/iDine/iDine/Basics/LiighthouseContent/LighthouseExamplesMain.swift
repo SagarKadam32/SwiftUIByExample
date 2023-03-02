@@ -35,6 +35,11 @@ struct LighthouseExamplesMain: View {
                 Text("6. System Materials and Backgrounds in SwiftUI")
             }
             
+            NavigationLink(destination: TextSelectionBootcampDemo()) {
+                Text("7. TextSelection in SwiftUI")
+            }
+            
+            
         }
     }
 }
