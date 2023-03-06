@@ -39,6 +39,9 @@ struct LighthouseExamplesMain: View {
                 Text("7. TextSelection in SwiftUI")
             }
             
+            NavigationLink(destination: ListSwipeActionsBootcampDemo()) {
+                Text("8. Multi-SwipeActions in SwiftUI")
+            }
             
         }
     }
