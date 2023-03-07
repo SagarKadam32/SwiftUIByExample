@@ -75,6 +75,7 @@
 		968A1E6329006DB400D5EE49 /* DownloadingImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A1E6229006DB400D5EE49 /* DownloadingImagesViewModel.swift */; };
 		968A1E6529006EA200D5EE49 /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A1E6429006EA200D5EE49 /* PhotoModelDataService.swift */; };
 		968A5B25295F0BE300296230 /* Basics_18_NavigationViewAndLink_Bootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968A5B24295F0BE300296230 /* Basics_18_NavigationViewAndLink_Bootcamp.swift */; };
+		968C0B6B29B74CAB00121428 /* BadgesBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968C0B6A29B74CAB00121428 /* BadgesBootcampDemo.swift */; };
 		968DFB3628CB5DEC00657D72 /* Example_1_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DFB3528CB5DEC00657D72 /* Example_1_Main.swift */; };
 		968DFB3928CB822300657D72 /* Example_2_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968DFB3828CB822300657D72 /* Example_2_Main.swift */; };
 		968EA54028CF932E00736416 /* Example_4_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968EA53F28CF932E00736416 /* Example_4_3.swift */; };
@@ -284,6 +285,7 @@
 		968A1E6229006DB400D5EE49 /* DownloadingImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingImagesViewModel.swift; sourceTree = "<group>"; };
 		968A1E6429006EA200D5EE49 /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
 		968A5B24295F0BE300296230 /* Basics_18_NavigationViewAndLink_Bootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics_18_NavigationViewAndLink_Bootcamp.swift; sourceTree = "<group>"; };
+		968C0B6A29B74CAB00121428 /* BadgesBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesBootcampDemo.swift; sourceTree = "<group>"; };
 		968DFB3528CB5DEC00657D72 /* Example_1_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_1_Main.swift; sourceTree = "<group>"; };
 		968DFB3828CB822300657D72 /* Example_2_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_2_Main.swift; sourceTree = "<group>"; };
 		968EA53F28CF932E00736416 /* Example_4_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_4_3.swift; sourceTree = "<group>"; };
@@ -489,6 +491,7 @@
 				96B0A71929A2679600A88853 /* IconBootcampDemo.swift */,
 				961895BC29A6224500695DFA /* AppStorageBootcampDemo.swift */,
 				96A7094029ACA69600CED8B0 /* AsyncImageBootcampDemo.swift */,
+				968C0B6A29B74CAB00121428 /* BadgesBootcampDemo.swift */,
 				964D9D1629AE02590063B526 /* BackgroundMaterialBootcampDemo.swift */,
 				96F80CA329B0C96500C313BB /* TextSelectionBootcampDemo.swift */,
 				96C962DA29B622DB00911FDB /* ListSwipeActionsBootcampDemo.swift */,
@@ -1129,6 +1132,7 @@
 				969C158E28D5D37C00A920DC /* Example_7_2.swift in Sources */,
 				969C159028D5D5BD00A920DC /* Example_7_3.swift in Sources */,
 				960ACA0E29533DDA0013619C /* Basics_6_Button_Bootcamp.swift in Sources */,
+				968C0B6B29B74CAB00121428 /* BadgesBootcampDemo.swift in Sources */,
 				96994EFE28D3B0CD002ECBDD /* Example_6_2.swift in Sources */,
 				9664845128E071FA00F19508 /* Adv_Example_1_3.swift in Sources */,
 				96A15BE4295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift in Sources */,

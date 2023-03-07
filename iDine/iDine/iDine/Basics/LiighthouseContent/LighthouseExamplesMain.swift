@@ -43,6 +43,11 @@ struct LighthouseExamplesMain: View {
                 Text("8. Multi-SwipeActions in SwiftUI")
             }
             
+            NavigationLink(destination: BadgesBootcampDemo()) {
+                Text("9. Badges for TabView and List in SwiftUI")
+            }
+            
+            
         }
     }
 }
