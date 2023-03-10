@@ -47,6 +47,11 @@ struct LighthouseExamplesMain: View {
                 Text("9. Badges for TabView and List in SwiftUI")
             }
             
+            NavigationLink(destination: FocusStateBootcampDemo()) {
+                Text("10. @FocusState in SwiftUI")
+            }
+            
+            
             
         }
     }
