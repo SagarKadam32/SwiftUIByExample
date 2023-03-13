@@ -50,9 +50,12 @@ struct LighthouseExamplesMain: View {
             NavigationLink(destination: FocusStateBootcampDemo()) {
                 Text("10. @FocusState in SwiftUI")
             }
-            
-            
-            
+        }
+        
+        Group {
+            NavigationLink(destination: SubmitTextFieldBootcampDemo()) {
+                Text("11. Submit Label Customization in SwiftUI")
+            }
         }
     }
 }

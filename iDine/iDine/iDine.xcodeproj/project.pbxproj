@@ -186,6 +186,7 @@
 		96B8101028D203CB00F76E8B /* Example_5_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8100F28D203CB00F76E8B /* Example_5_4.swift */; };
 		96B8101228D2068800F76E8B /* Example_5_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8101128D2068800F76E8B /* Example_5_5.swift */; };
 		96B8101428D212F300F76E8B /* Example_5_5_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B8101328D212F300F76E8B /* Example_5_5_1.swift */; };
+		96B825B129BF62B400ED8508 /* SubmitTextFieldBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B825B029BF62B400ED8508 /* SubmitTextFieldBootcampDemo.swift */; };
 		96C962DB29B622DB00911FDB /* ListSwipeActionsBootcampDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C962DA29B622DB00911FDB /* ListSwipeActionsBootcampDemo.swift */; };
 		96E3EBB628CDC838007C60AC /* Example_3_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB528CDC838007C60AC /* Example_3_4.swift */; };
 		96E3EBB828CDD140007C60AC /* Example_3_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3EBB728CDD140007C60AC /* Example_3_5.swift */; };
@@ -398,6 +399,7 @@
 		96B8100F28D203CB00F76E8B /* Example_5_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_4.swift; sourceTree = "<group>"; };
 		96B8101128D2068800F76E8B /* Example_5_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_5.swift; sourceTree = "<group>"; };
 		96B8101328D212F300F76E8B /* Example_5_5_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_5_5_1.swift; sourceTree = "<group>"; };
+		96B825B029BF62B400ED8508 /* SubmitTextFieldBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitTextFieldBootcampDemo.swift; sourceTree = "<group>"; };
 		96C962DA29B622DB00911FDB /* ListSwipeActionsBootcampDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwipeActionsBootcampDemo.swift; sourceTree = "<group>"; };
 		96E3EBB528CDC838007C60AC /* Example_3_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_4.swift; sourceTree = "<group>"; };
 		96E3EBB728CDD140007C60AC /* Example_3_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example_3_5.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				964D9D1629AE02590063B526 /* BackgroundMaterialBootcampDemo.swift */,
 				96F80CA329B0C96500C313BB /* TextSelectionBootcampDemo.swift */,
 				96C962DA29B622DB00911FDB /* ListSwipeActionsBootcampDemo.swift */,
+				96B825B029BF62B400ED8508 /* SubmitTextFieldBootcampDemo.swift */,
 			);
 			path = LiighthouseContent;
 			sourceTree = "<group>";
@@ -1137,6 +1140,7 @@
 				960ACA0E29533DDA0013619C /* Basics_6_Button_Bootcamp.swift in Sources */,
 				968C0B6B29B74CAB00121428 /* BadgesBootcampDemo.swift in Sources */,
 				96994EFE28D3B0CD002ECBDD /* Example_6_2.swift in Sources */,
+				96B825B129BF62B400ED8508 /* SubmitTextFieldBootcampDemo.swift in Sources */,
 				9664845128E071FA00F19508 /* Adv_Example_1_3.swift in Sources */,
 				96A15BE4295DB5F200276135 /* Basics_14_AnimationCurvesAndTimings_Bootcamp.swift in Sources */,
 				96994EFC28D37EDF002ECBDD /* Example_6_1.swift in Sources */,
