@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PaddingAndSpacerBootcampDemo: View {
     var body: some View {
-        /*
+        
         Text("Sample Text")
             .background(.yellow)
             .padding(.all,10)
             .padding(.leading, 20)
             .background(.green)
-         */
-        
+         
+        /*
         VStack(alignment: .leading) {
             Text("Times of India")
                 .font(.largeTitle)
@@ -33,7 +33,7 @@ struct PaddingAndSpacerBootcampDemo: View {
                     color: Color.blue.opacity(0.3),
                     radius: 10, x: 0.0, y: 10)
         ).padding(.horizontal, 10)
-        
+        */
         
     }
 }
